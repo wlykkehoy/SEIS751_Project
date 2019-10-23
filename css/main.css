@@ -1,0 +1,116 @@
+
+/* ============================================================
+    SPECIAL FONTS
+============================================================ */
+@font-face {
+  font-family: 'brush-strokes';
+  src: url('../font/BrushStrokes.ttf') format('truetype');
+}
+
+
+/* ============================================================
+    MY CUSTOM COLOR PALLET FOR THE SITE; ADDITIONALLY
+    WILL USE BLACK AND WHITE
+============================================================ */
+:root {
+  --clr-green: #918C38;
+  --clr-tan: #C79735;
+  --clr-lt-tan: #E1C888;
+  --clr-brown: #452E1C;
+}
+
+
+
+/* ============================================================
+    OVERALL PAGE STYLING
+============================================================ */
+.my-page-wrapper {
+  padding: 0;
+  margin: 0;
+  background: var(--clr-lt-tan);
+}
+
+
+
+
+/* ============================================================
+    MAIN NAVIGATION BAR
+============================================================ */
+.navbar-brand {
+  color: var(--clr-brown);
+  font-family: brush-strokes;
+  font-size: 3rem;
+  font-style: italic;
+  padding: 0;
+}
+
+.navbar-brand:hover {
+  color: #E1C888;
+  color: var(--clr-lt-tan);
+}
+
+.navbar {
+  background: var(--clr-green);
+}
+
+.nav-link {
+  color: white;
+  font-size: 1.25rem;
+  margin-right: 1rem;
+}
+
+.nav-link:hover {
+  color: var(--clr-lt-tan);
+}
+
+
+
+/* ============================================================
+    HEADER TO WELCOME GUEST TO THE PAGE
+============================================================ */
+.header {
+  background-image: url('../img/hakutsuru-sake-brewery.jpg');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  height: 600px;
+}
+
+.overlay {
+  position: absolute;
+  min-height: 100%;
+  min-width: 100%;
+  left: 0;
+  top: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.description {
+  left: 50%;
+  position: absolute;
+  top: 45%;
+  transform: translate(-50%, -55%);
+  text-align: center;
+}
+
+.description h1 {
+  color: var(--clr-lt-tan);
+}
+
+.description p {
+  color: white;
+  font-size: 1.3rem;
+  line-height: 1.5;
+}
+
+.description button {
+  border: 1px solid black;
+  background: var(--clr-green);
+  color: white;
+}
+
+.description button:hover {
+  border: 1px solid black;
+  background: var(--clr-lt-tan);
+  color: var(--clr-brown);
+}
