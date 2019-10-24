@@ -19,13 +19,14 @@
   </head>
     
   <body id="page-index">
-    
     <div class="container-fluid my-page-wrapper">   <!-- wraps the entire page contents -->
 
       <!-- ===========================================================
-          HEADER - MAiN NAVIGATION BAR
+          HEADER - NAV BAR / BREADCRUMBS
       ============================================================ -->
       <header>
+        <!-- Main navigation bar / menu
+        ------------------------------------------------------------ -->
         <nav class="navbar navbar-expand-md fixed-top">
           <a class="navbar-brand" href="#">Sake</a>
           <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#main-navigation">
@@ -42,7 +43,7 @@
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown">Featured</a>
                 <div class="dropdown-menu">
                   <a class="dropdown-item" href="#">How Sake is Made</a>
-                  <a class="dropdown-item" href="sake-breweries.html">Sake Breweries</a>
+                  <a class="dropdown-item" href="sakebreweries.html">Sake Breweries</a>
                   <a class="dropdown-item" href="#">My Favorite Sake</a>
                   <a class="dropdown-item" href="#">Sake News</a>
                 </div>
@@ -61,23 +62,31 @@
               </li>
             </ul>
           </div>
+        </nav>      <!-- end of main navigation bar / menu -->
+
+        <!-- Breadcrumb
+        ------------------------------------------------------------ -->
+        <nav>
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item active">Home</li>
+          </ol>
         </nav>
+
       </header>
 
+
+
       <!-- ===========================================================
-          THE MAIN BODY OF THE PAGE
+          MAIN BODY OF THE PAGE
       ============================================================ -->
       <main>
-        <div class="overlay">
-
           <!-- Welcome / site overview
           ------------------------------------------------------------ -->
           <div class="page-description">
             <h1>Welcome to my Project Page</h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque interdum quam odio, quis placerat ante luctus eu. Sed aliquet dolor id sapien rutrum, id vulputate quam iaculis. Suspendisse consectetur mi id libero fringilla, in pharetra sem ullamcorper.</p>
           </div>        
-  
-  
+
           <!-- Cards grouping info about the site's content
           ------------------------------------------------------------ -->
           <div class="card-deck" style="margin-left:2rem;margin-right:2rem;margin-top:2rem;">
@@ -123,62 +132,13 @@
               </div>  
             </div>
 
-          </div>    <!-- end of the card-deck
-
-
-
-  <!--
-  <div class="card-deck" style="margin-left:2rem;margin-right:2rem;margin-top:2rem;">
-  <div class="card">
-    <div class="card-body">
-      <h5 class="card-title">Featured Content</h5>
-      <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-      <a href="#" class="btn">Go somewhere</a>
-    </div>
-  </div>
-  <div class="card">
-    <div class="card-body">
-      <h5 class="card-title">Bonus Items</h5>
-      <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-      <a href="#" class="btn">Go somewhere</a>
-    </div>
-  </div>
-  <div class="card">
-    <div class="card-body">
-      <h5 class="card-title">About This Project</h5>
-      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-      <a href="#" class="btn">Go somewhere</a>
-    </div>
-  </div>
-  </div>
-  
-  -->
-      </div>  <!-- overlay -->
-  
-  <!--
-      <div class="container">
-      <div class="row">
-        <div class="col-lg-4 col-md-4 col-sm-12">
-<p class="foo">column 1</p>
-        </div>
-        <div class="col-lg-4 col-md-4 col-sm-12">
-<p class="foo">column 2</p>
-        </div>
-        <div class="col-lg-4 col-md-4 col-sm-12">
-<p class="foo">column 3</p>
-        </div>
-      </div> 
-    </div>    
--->
-  
-  
-
+          </div>    <!-- end of Cards grouping info about the site's content -->
 
       </main>
 
 
       <!-- ===========================================================
-          LAST BUT NOT LEAST THE FOOTER OF THE PAGE
+          PAGE FOOTER
       ============================================================ -->
       <footer>
         <p>xxxx</p>
@@ -187,6 +147,7 @@
       </footer>
 
     </div>   <!-- end of the overall page wrapper -->
+
 
     <!-- ===========================================================
         SCRIPTS GO WAY DOWN HERE AT THE BOTTOM

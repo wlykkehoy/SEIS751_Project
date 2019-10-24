@@ -25,13 +25,13 @@
     OVERALL PAGE STYLING - APPLIES TO ALL PAGES
 ============================================================ */
 
-/* I want total control of padding and margins */
+/* Start off with no margins & padding, then add as needed */
 .my-page-wrapper {
-  padding: 0;
   margin: 0;
+  padding: 0;
 }
 
-/* For the main navigation bar
+/* Main navigation bar
   ------------------------------------------------------------ */
 .navbar-brand {
   color: var(--clr-brown);
@@ -65,12 +65,40 @@
   color: var(--clr-brown);
 }
 
-.nav-item.active .nav-link {
-  color: var(--clr-brown);
- 
+.dropdown-item:focus {
+  background-color: var(--clr-brown);
+  color: var(--clr-lt-tan);
 }
 
-/* For the page footer
+.nav-item.active .nav-link {
+  color: var(--clr-brown);
+}
+
+/* Breadcrumb
+  ------------------------------------------------------------ */
+/* Note we have to 'push' it down into position; this is because
+   the Bootstrap navbar we are using uses position:fixed */
+.breadcrumb {
+  padding-top: 100px; 
+  margin-bottom: 0;
+  background-color: var(--clr-lt-tan);
+}
+
+.breadcrumb-item a {
+  color: white;
+}
+
+.breadcrumb-item.active {
+  color: var(--clr-brown);
+}
+
+.breadcrumb-item:hover {
+  
+}
+
+
+
+/* Page footer
   ------------------------------------------------------------ */
 footer {
   background-color: var(--clr-brown);
@@ -86,23 +114,12 @@ footer {
     ?? WILL ALL PAGES USE THIS ??
 ============================================================ */
 main {
-  background-image: url('../img/sake-barrels.jpg');
+  padding-bottom: 2rem;
+  background-image: linear-gradient(to bottom, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
+                    url('../img/sake-barrels.jpg');
   background-size: cover;
   background-position: center;
-/*  position: relative; */
-/*  height: 1000px; */
   height: auto;
-}
-
-.overlay {
-  padding-top: 88px;
-  position: relative;
-  min-height: 100%;
-  min-width: 100%;
-  left: 0;
-  top: 0;
-  background: rgba(0, 0, 0, 0.6);
-  padding-bottom: 2rem;
 }
 
 .page-description {
@@ -126,6 +143,11 @@ main {
   line-height: 1.5;
 }
 
+
+
+/* ============================================================
+    STUFF SPECIFIC TO THE HOME PAGE
+============================================================ */
 .card-header {
   font-weight: bold;
 }
@@ -141,7 +163,6 @@ main {
 
 
 
-
 /* ============================================================
     STUFF SPECIFIC TO THE SAKE BREWERIES PAGE
 ============================================================ */
@@ -150,17 +171,29 @@ main {
   ------------------------------------------------------------ */
 .brewery-carousel {
   margin: auto;
-  width: 600px;
+  width: 600px;    /* photos are 600 x 600 */
   height: 600px;
   margin-top: 1rem;
 }
 
-.carousel-caption h5 {
-  font-size: 1.5rem;
-  color: white; */var(--clr-lt-tan); */
-  text-shadow: 1px 1px 2rem black;
+.carousel-caption {
+  background-color: rgba(100,100,100,.7);
+  box-shadow: 0px 0px 4px 4px rgba(100,100,100,.7);
+/*  text-shadow: 1px 1px 2rem black; */
 }
 
+.carousel-caption h5 {
+  font-size: 1.5rem;
+}
+
+/*
+.carousel-caption h5 {
+  font-size: 1.5rem;
+  background-color: rgba(100,100,100,.7);
+  color: white;
+  text-shadow: 1px 1px 2rem black;
+}
+*/
 
 
 
@@ -168,57 +201,8 @@ main {
 
 
 /* ============================================================
-    HEADER TO WELCOME GUEST TO THE PAGE
+    STUFF HANDY FOR TINKERING
 ============================================================ */
-/*
-.header {
-  background-image: url('../img/hakutsuru-sake-brewery.jpg');
-  background-size: cover;
-  background-position: center;
-  position: relative;
-  height: 600px;
-}
-
-.overlay {
-  position: absolute;
-  min-height: 100%;
-  min-width: 100%;
-  left: 0;
-  top: 0;
-  background: rgba(0, 0, 0, 0.5);
-}
-
-.description {
-  left: 50%;
-  position: absolute;
-  top: 45%;
-  transform: translate(-50%, -55%);
-  text-align: center;
-}
-
-.description h1 {
-  color: var(--clr-lt-tan);
-}
-
-.description p {
-  color: white;
-  font-size: 1.3rem;
-  line-height: 1.5;
-}
-
-.description button {
-  border: 1px solid black;
-  background: var(--clr-green);
-  color: white;
-}
-
-.description button:hover {
-  border: 1px solid black;
-  background: var(--clr-lt-tan);
-  color: var(--clr-brown);
-}
-*/
-
 
 .foo {
   background-color:white;
