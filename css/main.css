@@ -22,21 +22,17 @@
 
 
 /* ============================================================
-    OVERALL PAGE STYLING
+    OVERALL PAGE STYLING - APPLIES TO ALL PAGES
 ============================================================ */
+
+/* I want total control of padding and margins */
 .my-page-wrapper {
   padding: 0;
-/*
   margin: 0;
-*/  
 }
 
-
-
-
-/* ============================================================
-    MAIN NAVIGATION BAR
-============================================================ */
+/* For the main navigation bar
+  ------------------------------------------------------------ */
 .navbar-brand {
   color: var(--clr-brown);
   font-family: brush-strokes;
@@ -74,18 +70,28 @@
  
 }
 
+/* For the page footer
+  ------------------------------------------------------------ */
+footer {
+  background-color: var(--clr-brown);
+  color: white;
+}
+
+
 
 
 
 /* ============================================================
     MAIN SECTION OF THE PAGE
+    ?? WILL ALL PAGES USE THIS ??
 ============================================================ */
 main {
-  background-image: url('../img/hakutsuru-sake-brewery.jpg');
+  background-image: url('../img/sake-barrels.jpg');
   background-size: cover;
   background-position: center;
 /*  position: relative; */
-  height: 800px;
+/*  height: 1000px; */
+  height: auto;
 }
 
 .overlay {
@@ -96,14 +102,16 @@ main {
   left: 0;
   top: 0;
   background: rgba(0, 0, 0, 0.6);
+  padding-bottom: 2rem;
 }
-
 
 .page-description {
   text-align: center;
   padding-top: 2rem;
   padding-left: 4rem;
   padding-right: 4rem;
+  max-width: 60rem;
+  margin: auto;
 }
 
 .page-description h1 {
@@ -133,13 +141,30 @@ main {
 
 
 
+
 /* ============================================================
-    PAGE FOOTER
+    STUFF SPECIFIC TO THE SAKE BREWERIES PAGE
 ============================================================ */
-footer {
-  background-color: var(--clr-brown);
-  color: white;
+
+/* Formatting for the carousel / slide show
+  ------------------------------------------------------------ */
+.brewery-carousel {
+  margin: auto;
+  width: 600px;
+  height: 600px;
+  margin-top: 1rem;
 }
+
+.carousel-caption h5 {
+  font-size: 1.5rem;
+  color: white; */var(--clr-lt-tan); */
+  text-shadow: 1px 1px 2rem black;
+}
+
+
+
+
+
 
 
 /* ============================================================
