@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="css/main.css">
   </head>
     
-  <body id="page-home">
+  <body  id="page-my-favorite-sake">
     <div class="container-fluid my-page-wrapper">   <!-- wraps the entire page contents -->
 
       <!-- ===========================================================
@@ -27,36 +27,31 @@
       <header>
         <!-- Main navigation bar / menu
         ------------------------------------------------------------ -->
-        <nav class="navbar navbar-expand-md fixed-top " id="page-navbar">
-          <a class="navbar-brand" href="#">Sake</a>
+        <nav class="navbar navbar-expand-md fixed-top" id="page-navbar">
+          <a class="navbar-brand" href="index.html">Sake</a>
           <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#main-navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse justify-content-end" id="main-navigation">
             <ul class="navbar-nav">
-              
-              <li class="nav-item active">
-                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+              <li class="nav-item ">
+                <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
               </li>
-              
-              <li class="nav-item dropdown">
+              <li class="nav-item dropdown active">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown">Featured</a>
                 <div class="dropdown-menu">
                   <a class="dropdown-item" href="how-sake-is-made.html">How Sake is Made</a>
                   <a class="dropdown-item" href="sake-breweries.html">Sake Breweries</a>
-                  <a class="dropdown-item" href="my-favorite-sake.html">My Favorite Sake</a>
-                  <a class="dropdown-item" href="sake-news.html">Sake News</a>
+                  <a class="dropdown-item" href="#">My Favorite Sake</a>
+                  <a class="dropdown-item" href="#">Sake News</a>
                 </div>
               </li> 
-              
               <li class="nav-item">
                 <a class="nav-link" href="#">About</a>
               </li>
-              
               <li class="nav-item">
-                <a class="nav-link" href="bonus.html">Bonus</a>
+                <a class="nav-link" href="#">Bonus</a>
               </li>
-              
               <li class="nav-item">
                 <a class="nav-link" href="#">Contact</a>
               </li>
@@ -68,106 +63,116 @@
         ------------------------------------------------------------ -->
         <nav>
           <ol class="breadcrumb">
-            <li class="breadcrumb-item active">Home</li>
+            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+            <li class="breadcrumb-item active">My Favorite Sake</li>
           </ol>
         </nav>
 
       </header>
 
-
-
       <!-- ===========================================================
-          MAIN BODY OF THE PAGE
+          THE MAIN BODY OF THE PAGE
       ============================================================ -->
       <main>
-          <!-- Page introduction / general info
-          ------------------------------------------------------------ -->
-          <div class="page-description">
-            <h1>Welcome to my Project Page</h1>
-            <p>
-              This site was created as part of the <cite>SEIS751 - Web App Design and Development</cite> 
-              course at the University of St. Thomas.
-            </p>
-          </div>        
+        <!-- Page introduction / general info
+        ------------------------------------------------------------ -->
+        <div class="page-description">
+          <h1>My Favorite Sake</h1>
+          <p>
+            Here are some of my favorite Sake. Click on one for more information.
+          </p>
+        </div>        
 
-          <!-- Cards grouping info about the site's content
-          ------------------------------------------------------------ -->
-          <div class="card-deck">
-            
-            <div class="card">
-              <div class="card-header">Featured</div>
-              <div class="card-body">
-                <p class="card-text">
-                  Curious about Japanes Sake? Find out:
-                  <ul>
-                    <li>
-                      <a href="how-sake-is-made.html">How sake is made</a>
-                    </li>
-                    <li>
-                      <a href="sake-breweries.html">Information about sake breweries</a>
-                    </li>
-                    <li>
-                      <a href="my-favorite-sake.html">Some of my favorite sake</a>
-                    </li>
-                    <li>
-                      <a href="sake-news.html">Sake news</a>
-                    </li>
-                  </ul>
-                </p>
-              </div>
-<!--              
-              <div class="card-footer">
-                <a href="design.html" class="btn">Learn More</a>
-              </div>  
--->              
-            </div>  <!-- end of the card -->
+        <!-- xxxxxxxxxxxxx
+        ------------------------------------------------------------ -->
+
+<div id="list-and-details">
+
+<div class="row">
     
-            <div class="card">
-              <div class="card-header">About This Project</div>
-              <div class="card-body">
-                <p class="card-text">
-                  Explore some artifacts from building this site:
-                  <ul>
-                  <li>
-                    Content Map
-                  </li>
-                  <li>
-                    Wireframes
-                  </li>
-                  <li>
-                    Project walkthrough
-                  </li>
-                  <li>
-                    PageSpeed Insights
-                  </li>
-                  <li>
-                    Credits / Resources
-                  </li>
-                  </ul>
-                </p>
-              </div>
-<!--              
-              <div class="card-footer">
-                <a href="design.html" class="btn">Learn More</a>
-              </div>  
--->              
-            </div>   <!-- end of the card -->
+  <div class="col-4" id="sake-list">
+<!--    
+    <button type="button" class="list-group-item list-group-item-action">sake1</button>
+    <button type="button" class="list-group-item list-group-item-action">sake2</button>
+    <button type="button" class="list-group-item list-group-item-action">sake3</button>
+    <button type="button" class="list-group-item list-group-item-action">sake4</button>
+    <button type="button" class="list-group-item list-group-item-action">sake5</button>
+-->
+    <!-- content filled in by code when page loads -->
+  </div>
+  
+  <div class="col-8" id="sake-info">
 
-            <div class="card">
-              <div class="card-header">Bonus Items</div>
-              <div class="card-body">
-                <p class="card-text">
-                  ... coming soon ...
-                </p>
-              </div>
-<!--              
-              <div class="card-footer">
-                <a href="design.html" class="btn">Learn More</a>
-              </div>  
--->              
-            </div>  <!-- end of the card -->
+    <div class="row">
+      <div class="sake-info-label col-md-auto">Sake:</div>
+      <div class="sake-info-text col-md-auto" id="fld-name" >xxxx</div>
+    </div>
 
-          </div>    <!-- end of Cards grouping info about the site's content -->
+    <div class="row">
+      <div class="sake-info-label col-md-auto">Grade:</div>
+      <div class="sake-info-text col-md-auto" id="fld-grade" >xxxx</div>
+    </div>
+
+    <div class="row">
+      <div class="sake-info-label col-md-auto">Overview:</div>
+      <div class="sake-info-text col-md-auto" id="fld-overview" >xxxx</div>
+    </div>
+
+    <div class="row">
+      <div class="sake-info-label col-md-auto">Tasting Notes:</div>
+      <div class="sake-info-text col-md-auto" id="fld-tasting-notes" >xxxx</div>
+    </div>
+
+    <div class="row">
+      <div class="sake-info-label col-md-auto">Food Pairing:</div>
+      <div class="sake-info-text col-md-auto" id="fld-food-pairing" >xxxx</div>
+    </div>
+
+    <div class="row">
+      <div class="sake-info-label col-md-auto">Rice:</div>
+      <div class="sake-info-text col-md-auto" id="fld-rice" >xxxx</div>
+    </div>
+
+    <div class="row">
+      <div class="sake-info-label col-md-auto">Seimaibuai:</div>
+      <div class="sake-info-text col-md-auto" id="fld-seimaibuai" >xxxx</div>
+    </div>
+
+    <div class="row">
+      <div class="sake-info-label col-md-auto">Brewery:</div>
+      <div class="sake-info-text col-md-auto" id="fld-brewery-name" >xxxx</div>
+    </div>
+
+    <div class="row">
+      <div class="sake-info-label col-md-auto">Brewery Location:</div>
+      <div class="sake-info-text col-md-auto" id="fld-brewery-location" >xxxx</div>
+    </div>
+
+
+<!--    
+<p>Sake: <span id="fld-name">x</span></p>
+<p>Grade: <span id="fld-grade">x</span></p>
+<p>Overview: <span id="fld-overview">x</span></p>
+<p>Tasting Notes: <span id="fld-tasting-notes"></span></p>
+<p>Food Pairing: <span id="fld-food-pairing"></span></p>
+<p>Rice: <span id="fld-rice"></span></p>
+<p>Seimaibuai: <span id="fld-seimaibuai"></span></p>
+<p>Brewery: <span id="fld-brewery-name"></span></p>
+<p>Brewery Location: <span id="fld-brewery-location"></span></p>
+-->
+
+  </div>
+  
+  </div> 
+  
+</div>  <!-- end of the list plus details -->
+
+
+
+
+
+
+
 
       </main>
 
@@ -182,6 +187,7 @@
       </footer>
 
     </div>   <!-- end of the overall page wrapper -->
+    
 
 
     <!-- ===========================================================
@@ -196,6 +202,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
     <!-- My JS - very last -->
+    <script src="js/display-sake-info.js"></script>
 
 
   </body>

@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="css/main.css">
   </head>
     
-  <body id="page-home">
+  <body id="page-content-map">
     <div class="container-fluid my-page-wrapper">   <!-- wraps the entire page contents -->
 
       <!-- ===========================================================
@@ -27,7 +27,7 @@
       <header>
         <!-- Main navigation bar / menu
         ------------------------------------------------------------ -->
-        <nav class="navbar navbar-expand-md fixed-top " id="page-navbar">
+        <nav class="navbar navbar-expand-md fixed-top "  id="page-navbar">
           <a class="navbar-brand" href="#">Sake</a>
           <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#main-navigation">
             <span class="navbar-toggler-icon"></span>
@@ -44,7 +44,7 @@
                 <div class="dropdown-menu">
                   <a class="dropdown-item" href="how-sake-is-made.html">How Sake is Made</a>
                   <a class="dropdown-item" href="sake-breweries.html">Sake Breweries</a>
-                  <a class="dropdown-item" href="my-favorite-sake.html">My Favorite Sake</a>
+                  <a class="dropdown-item" href="#">My Favorite Sake</a>
                   <a class="dropdown-item" href="sake-news.html">Sake News</a>
                 </div>
               </li> 
@@ -54,7 +54,7 @@
               </li>
               
               <li class="nav-item">
-                <a class="nav-link" href="bonus.html">Bonus</a>
+                <a class="nav-link" href="#">Bonus</a>
               </li>
               
               <li class="nav-item">
@@ -68,7 +68,9 @@
         ------------------------------------------------------------ -->
         <nav>
           <ol class="breadcrumb">
-            <li class="breadcrumb-item active">Home</li>
+            <li class="breadcrumb-item "><a href="index.html">Home</a></li>
+            <li class="breadcrumb-item "><a href="about.html">??? About ???</a></li>
+            <li class="breadcrumb-item active">Content Map</li>
           </ol>
         </nav>
 
@@ -83,91 +85,22 @@
           <!-- Page introduction / general info
           ------------------------------------------------------------ -->
           <div class="page-description">
-            <h1>Welcome to my Project Page</h1>
+            <h1>Wireframes</h1>
             <p>
-              This site was created as part of the <cite>SEIS751 - Web App Design and Development</cite> 
-              course at the University of St. Thomas.
+              The first step in designing this website was creation of a content map. The content 
+              map captures, at a very high level, the logical groupings of content and how they 
+              will be organized within the website.
+            </p>
+            <p>
+              With no further ado, here is the content map:
             </p>
           </div>        
 
-          <!-- Cards grouping info about the site's content
+          <!-- An overall container for this section
           ------------------------------------------------------------ -->
-          <div class="card-deck">
-            
-            <div class="card">
-              <div class="card-header">Featured</div>
-              <div class="card-body">
-                <p class="card-text">
-                  Curious about Japanes Sake? Find out:
-                  <ul>
-                    <li>
-                      <a href="how-sake-is-made.html">How sake is made</a>
-                    </li>
-                    <li>
-                      <a href="sake-breweries.html">Information about sake breweries</a>
-                    </li>
-                    <li>
-                      <a href="my-favorite-sake.html">Some of my favorite sake</a>
-                    </li>
-                    <li>
-                      <a href="sake-news.html">Sake news</a>
-                    </li>
-                  </ul>
-                </p>
-              </div>
-<!--              
-              <div class="card-footer">
-                <a href="design.html" class="btn">Learn More</a>
-              </div>  
--->              
-            </div>  <!-- end of the card -->
-    
-            <div class="card">
-              <div class="card-header">About This Project</div>
-              <div class="card-body">
-                <p class="card-text">
-                  Explore some artifacts from building this site:
-                  <ul>
-                  <li>
-                    Content Map
-                  </li>
-                  <li>
-                    Wireframes
-                  </li>
-                  <li>
-                    Project walkthrough
-                  </li>
-                  <li>
-                    PageSpeed Insights
-                  </li>
-                  <li>
-                    Credits / Resources
-                  </li>
-                  </ul>
-                </p>
-              </div>
-<!--              
-              <div class="card-footer">
-                <a href="design.html" class="btn">Learn More</a>
-              </div>  
--->              
-            </div>   <!-- end of the card -->
-
-            <div class="card">
-              <div class="card-header">Bonus Items</div>
-              <div class="card-body">
-                <p class="card-text">
-                  ... coming soon ...
-                </p>
-              </div>
-<!--              
-              <div class="card-footer">
-                <a href="design.html" class="btn">Learn More</a>
-              </div>  
--->              
-            </div>  <!-- end of the card -->
-
-          </div>    <!-- end of Cards grouping info about the site's content -->
+          <div class="row" id="content-map-container">
+              <iframe src="pdf/content-map.pdf#toolbar=0" width="600px" height="400px"></iframe>
+          </div>   <!-- end of the container for this section of the page -->
 
       </main>
 

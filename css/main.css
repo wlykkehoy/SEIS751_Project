@@ -38,10 +38,16 @@
   padding: 0;
 }
 
+/* Set overall background to black, same as footer, thus for
+   shorter pages, do not get a white bar below footer */
+body {
+  background-color: black;
+}
+
 
 /* Main navigation bar
   ------------------------------------------------------------ */
-.navbar-brand {
+#page-navbar .navbar-brand {
   color: var(--clr-brown);
   font-family: brush-strokes;
   font-size: 3rem;
@@ -49,36 +55,36 @@
   padding: 0;
 }
 
-.navbar-brand:hover {
+#page-navbar .navbar-brand:hover {
   color: var(--clr-brown);
 }
 
-.navbar, 
-.dropdown-menu {
+#page-navbar, 
+#page-navbar .dropdown-menu {
   background: var(--clr-green);
 }
 
-.nav-link {
+#page-navbar .nav-link {
   color: white;
   font-size: 1.25rem;
   margin-right: 1rem;
 }
 
-.dropdown-item {
+#page-navbar .dropdown-item {
   color: white;
 }
 
-.nav-link:hover,
-.dropdown-item:hover {
+#page-navbar .nav-link:hover,
+#page-navbar .dropdown-item:hover {
   color: var(--clr-brown);
 }
 
-.dropdown-item:focus {
+#page-navbar .dropdown-item:focus {
   background-color: var(--clr-brown);
   color: var(--clr-lt-tan);
 }
 
-.nav-item.active .nav-link {
+#page-navbar .nav-item.active .nav-link {
   color: var(--clr-brown);
 }
 
@@ -115,6 +121,7 @@ main {
   background-size: cover;
   background-position: center;
   height: auto;
+  min-height: 800px;
 }
 
 .page-description {
@@ -142,7 +149,8 @@ main {
 /* Footer for the page
   ------------------------------------------------------------ */
 footer {
-  background-color: var(--clr-brown);
+/*  background-color: var(--clr-brown); */
+  background-color: black;
   color: white;
 }
 
@@ -173,6 +181,96 @@ footer {
 
 
 /* ============================================================
+    HOW SAKE IS MADE PAGE SPECIFIC ITEMS
+============================================================ */
+
+/* Make the video responsive
+  ------------------------------------------------------------ */
+#page-how-sake-is-made video {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2rem;
+  max-width: 66%;
+  outline-style: none;
+}
+
+
+
+/* ============================================================
+    MY FAVORITE SAKE PAGE SPECIFIC ITEMS
+============================================================ */
+#page-my-favorite-sake #list-and-details {
+  background-color: white;
+  margin-top: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+
+
+/*  min-width: 50rem; */
+  max-width: 60rem;
+  
+/*  min-height: 40rem; */
+  max-height: 40rem;
+
+/*
+  margin-top: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 50rem;
+  max-height: 40rem;
+*/
+/*
+border-style: solid;
+border-width: 2px;
+border-color: red;
+*/
+
+}
+
+#page-my-favorite-sake .sake-info {
+/*
+  border-style: solid;
+  border-width: 2px;
+  border-color: purple;
+*/  
+}
+
+#page-my-favorite-sake .sake-info-label {
+  font-weight: bold;
+
+  /* do not allow the label to shrink or grow; keep at a fixed # chars */  
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: 20ch; /* 12rem; */
+
+  margin-top: .5rem;  
+
+/*
+  border-style: solid;
+  border-width: 2px;
+  border-color: blue;
+*/
+  
+}
+
+#page-my-favorite-sake .sake-info-text {
+  /* the text area can shrink and grow; use 40 chars for it's flex-basis */
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 40ch;
+
+  margin-top: .5rem;  
+/*
+  border-style: solid;
+  border-width: 2px;
+  border-color: green;
+*/
+}
+
+
+
+/* ============================================================
     SAKE BREWERIES PAGE SPECIFIC ITEMS
 ============================================================ */
 
@@ -197,30 +295,26 @@ footer {
 
 
 /* ============================================================
-    HOW SAKE IS MADE PAGE SPECIFIC ITEMS
-============================================================ */
-
-/* Make the video responsive
-  ------------------------------------------------------------ */
-#page-how-sake-is-made video {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 2rem;
-  max-width: 66%;
-}
-
-
-/* ============================================================
     SAKE NEWS PAGE SPECIFIC ITEMS
 ============================================================ */
+#page-sake-news #news-list {
+  margin-top: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 50rem;
+  max-height: 40rem;
+}
+
 #page-sake-news .media {
   background-color: white;
   color: black;
+/*
   margin-top: 1rem;
-  margin-left: auto; /* 2rem; */
-  margin-right: auto; /* 2rem; */
+  margin-left: auto;
+  margin-right: auto;
   max-width: 50rem;
+*/
+  margin-bottom: 1rem;
   border-style: solid;
   border-color: black;
   border-width: 1px;
@@ -245,6 +339,181 @@ footer {
 }
 
 #page-sake-news .media .footer {
+  font-size: .75em;
+  font-style: italic;
+  margin-top: .5rem;
+  margin-bottom: .5em;
+}
+
+#page-sake-news audio {
+  outline-style: none;
+  display: block;
+  margin-top: .5rem;
+  margin-bottom: .5rem;
+}
+
+#page-sake-news .media-body button {
+  margin-top: .5rem;
+}
+
+
+
+/* ============================================================
+    BONUS PAGE SPECIFIC ITEMS
+============================================================ */
+#page-bonus #tabbed-area {
+  background-color: white;
+  margin-top: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 50rem;
+  min-height: 45rem;
+}
+
+#page-bonus #canvas-drawing {
+  display: block;
+  border-style: solid;
+  border-width: 1px;
+  border-color: black;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#page-bonus .tab-pane {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+#page-bonus .pane-header {
+  margin-top: .25rem;
+  text-align: center;
+}
+
+#page-bonus .tab-content p {
+  line-height: 120%;
+}  
+
+#page-bonus .tab-content code {
+  color: slategray;
+  display: inline-block;
+  line-height: normal;
+}  
+
+#page-bonus #canvas-drawing {
+  margin-top: 1rem;
+}
+
+
+
+/* ============================================================
+    CONTACT PAGE SPECIFIC ITEMS
+============================================================ */
+
+
+
+/* ============================================================
+    CONTENT MAP PAGE SPECIFIC ITEMS
+============================================================ */
+#page-content-map #content-map-container {
+  margin-top: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 66%;
+  height: 500px;
+/*  background-color: white; */
+}
+
+#page-content-map #content-map-container iframe {
+  margin-top: 0;
+  margin-left: auto;
+  margin-right: auto;
+/*  max-width: 700px; */
+  background-color: white;
+}
+
+
+
+/* ============================================================
+    WIREFRAMES PAGE SPECIFIC ITEMS
+============================================================ */
+#page-wireframes #wireframes-container {
+  margin-top: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 90%;
+  background-color: white;
+}
+
+#page-wireframes #wireframes-list {
+  padding-left: 0;
+}
+
+#page-wireframes #wireframes {
+  position: relative;
+  height: 500px;
+  overflow-y: scroll;
+  
+  border-style: solid;
+  border-width: 4px;
+  border-color: red;
+  background-color: white;
+}
+
+
+
+/* ============================================================
+    PROJECT WALKTHROUGH PAGE SPECIFIC ITEMS
+============================================================ */
+
+
+
+/* ============================================================
+    PAGESPEED INSIGHTS PAGE SPECIFIC ITEMS
+============================================================ */
+
+
+
+
+/* ============================================================
+    CREDITS PAGE SPECIFIC ITEMS
+============================================================ */
+#page-credits #credits-list {
+  margin-top: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 50rem;
+  max-height: 40rem;
+}
+
+#page-credits .media {
+  background-color: white;
+  color: black;
+  margin-bottom: 1rem;
+  border-style: solid;
+  border-color: black;
+  border-width: 1px;
+  border-radius: 10px;
+}
+
+#page-credits .media .footer {
+  font-size: .75em;
+  font-style: italic;
+  margin-top: .5rem;
+  margin-bottom: .5em;
+  color: red;
+}
+
+#page-credits .media img {
+  margin-left: 5px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border-style: solid;
+  border-color: black;
+  border-width: 1px;
+  border-radius: 10px;
+}
+
+#page-credits .media .footer {
   font-size: .75em;
   font-style: italic;
   margin-bottom: .5em;

@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="css/main.css">
   </head>
     
-  <body id="page-home">
+  <body id="page-wireframes">
     <div class="container-fluid my-page-wrapper">   <!-- wraps the entire page contents -->
 
       <!-- ===========================================================
@@ -44,7 +44,7 @@
                 <div class="dropdown-menu">
                   <a class="dropdown-item" href="how-sake-is-made.html">How Sake is Made</a>
                   <a class="dropdown-item" href="sake-breweries.html">Sake Breweries</a>
-                  <a class="dropdown-item" href="my-favorite-sake.html">My Favorite Sake</a>
+                  <a class="dropdown-item" href="#">My Favorite Sake</a>
                   <a class="dropdown-item" href="sake-news.html">Sake News</a>
                 </div>
               </li> 
@@ -54,7 +54,7 @@
               </li>
               
               <li class="nav-item">
-                <a class="nav-link" href="bonus.html">Bonus</a>
+                <a class="nav-link" href="#">Bonus</a>
               </li>
               
               <li class="nav-item">
@@ -68,7 +68,9 @@
         ------------------------------------------------------------ -->
         <nav>
           <ol class="breadcrumb">
-            <li class="breadcrumb-item active">Home</li>
+            <li class="breadcrumb-item "><a href="index.html">Home</a></li>
+            <li class="breadcrumb-item "><a href="about.html">??? About ???</a></li>
+            <li class="breadcrumb-item active">Wireframes</li>
           </ol>
         </nav>
 
@@ -83,91 +85,51 @@
           <!-- Page introduction / general info
           ------------------------------------------------------------ -->
           <div class="page-description">
-            <h1>Welcome to my Project Page</h1>
+            <h1>Wireframes</h1>
             <p>
-              This site was created as part of the <cite>SEIS751 - Web App Design and Development</cite> 
-              course at the University of St. Thomas.
+              Wireframes are a critical part of the website design process and are often referred 
+              to as the skeleton or blueprint for the website. They provide a tool for thinking 
+              through and capturing page structure, including content placement, rough sizing, 
+              and navigation. Wireframes also help ensure each page has a clear and concise purpose. 
+              During wireframing, we are not concerned with styling; that comes later. 
+            </p>
+            <p>
+              Here are the wireframes created during the design of this website:
             </p>
           </div>        
 
-          <!-- Cards grouping info about the site's content
+          <!-- An overall container for this section; so we can place
+               the list of windows and the wireframe side-by-side
           ------------------------------------------------------------ -->
-          <div class="card-deck">
-            
-            <div class="card">
-              <div class="card-header">Featured</div>
-              <div class="card-body">
-                <p class="card-text">
-                  Curious about Japanes Sake? Find out:
-                  <ul>
-                    <li>
-                      <a href="how-sake-is-made.html">How sake is made</a>
-                    </li>
-                    <li>
-                      <a href="sake-breweries.html">Information about sake breweries</a>
-                    </li>
-                    <li>
-                      <a href="my-favorite-sake.html">Some of my favorite sake</a>
-                    </li>
-                    <li>
-                      <a href="sake-news.html">Sake news</a>
-                    </li>
-                  </ul>
-                </p>
-              </div>
-<!--              
-              <div class="card-footer">
-                <a href="design.html" class="btn">Learn More</a>
-              </div>  
--->              
-            </div>  <!-- end of the card -->
-    
-            <div class="card">
-              <div class="card-header">About This Project</div>
-              <div class="card-body">
-                <p class="card-text">
-                  Explore some artifacts from building this site:
-                  <ul>
-                  <li>
-                    Content Map
-                  </li>
-                  <li>
-                    Wireframes
-                  </li>
-                  <li>
-                    Project walkthrough
-                  </li>
-                  <li>
-                    PageSpeed Insights
-                  </li>
-                  <li>
-                    Credits / Resources
-                  </li>
-                  </ul>
-                </p>
-              </div>
-<!--              
-              <div class="card-footer">
-                <a href="design.html" class="btn">Learn More</a>
-              </div>  
--->              
-            </div>   <!-- end of the card -->
+          <div class="row" id="wireframes-container">
 
-            <div class="card">
-              <div class="card-header">Bonus Items</div>
-              <div class="card-body">
-                <p class="card-text">
-                  ... coming soon ...
-                </p>
-              </div>
-<!--              
-              <div class="card-footer">
-                <a href="design.html" class="btn">Learn More</a>
-              </div>  
--->              
-            </div>  <!-- end of the card -->
+            <!-- The nav menu listing each page
+            ------------------------------------------------------------ -->
+            <div id="wireframes-list" class="col-sm-4">
+              <a class="list-group-item list-group-item-action" href="#list-item-1">Home</a>
+              <a class="list-group-item list-group-item-action" href="#list-item-2">How Sake is Made</a>
+              <a class="list-group-item list-group-item-action" href="#list-item-3">My Favorite Sake</a>
+              <a class="list-group-item list-group-item-action" href="#list-item-4">Sake Breweries</a>
+              <a class="list-group-item list-group-item-action" href="#list-item-5">Sake News</a>
+              
+            </div>
 
-          </div>    <!-- end of Cards grouping info about the site's content -->
+            <!-- The PDF for the wireframe of each page
+            ------------------------------------------------------------ -->
+            <div data-spy="scroll" data-target="#wireframes-list" data-offset="0" class="col-sm-8" id="wireframes">
+              <h4 id="list-item-1">Page: Home</h4>
+              <iframe src="pdf/wireframe-home.pdf#toolbar=0" width="600px" height="375px"></iframe>
+              <h4 id="list-item-2">Page: How Sake is Made</h4>
+              <iframe src="pdf/wireframe-how-sake-is-made.pdf#toolbar=0" width="600px" height="375px"></iframe>
+              <h4 id="list-item-3">Page: My Favorite Sake</h4>
+              <iframe src="pdf/wireframe-my-favorite-sake.pdf#toolbar=0" width="600px" height="375px"></iframe>
+              <h4 id="list-item-4">Page: Sake Breweries</h4>
+              <iframe src="pdf/wireframe-sake-breweries.pdf#toolbar=0" width="600px" height="375px"></iframe>
+              <h4 id="list-item-5">Page: Sake News</h4>
+              <iframe src="pdf/xxxxxxx.pdf#toolbar=0" width="600px" height="375px"></iframe>
+            </div>
+
+          </div>   <!-- end of the container for this section of the page -->
 
       </main>
 
@@ -196,6 +158,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
     <!-- My JS - very last -->
+
 
 
   </body>
