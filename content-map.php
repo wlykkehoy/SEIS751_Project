@@ -28,38 +28,22 @@
         <!-- Main navigation bar / menu
         ------------------------------------------------------------ -->
         <nav class="navbar navbar-expand-md fixed-top "  id="page-navbar">
-          <a class="navbar-brand" href="#">Sake</a>
+          <a class="navbar-brand" href="index.php">Sake</a>
           <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#main-navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse justify-content-end" id="main-navigation">
             <ul class="navbar-nav">
               
-              <li class="nav-item active">
-                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+              <li class="nav-item ">
+                <a class="nav-link" href="index.php">Home <span class="sr-only">(current)</span></a>
               </li>
               
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown">Featured</a>
-                <div class="dropdown-menu">
-                  <a class="dropdown-item" href="how-sake-is-made.html">How Sake is Made</a>
-                  <a class="dropdown-item" href="sake-breweries.html">Sake Breweries</a>
-                  <a class="dropdown-item" href="#">My Favorite Sake</a>
-                  <a class="dropdown-item" href="sake-news.html">Sake News</a>
-                </div>
-              </li> 
-              
+<!-- navbar will be updated from Home when fully fleshed out -->
               <li class="nav-item">
-                <a class="nav-link" href="#">About</a>
+                <a class="nav-link" href="#">!! add rest !!</a>
               </li>
-              
-              <li class="nav-item">
-                <a class="nav-link" href="#">Bonus</a>
-              </li>
-              
-              <li class="nav-item">
-                <a class="nav-link" href="#">Contact</a>
-              </li>
+
             </ul>
           </div>
         </nav>      <!-- end of main navigation bar / menu -->
@@ -68,8 +52,7 @@
         ------------------------------------------------------------ -->
         <nav>
           <ol class="breadcrumb">
-            <li class="breadcrumb-item "><a href="index.html">Home</a></li>
-            <li class="breadcrumb-item "><a href="about.html">??? About ???</a></li>
+            <li class="breadcrumb-item "><a href="index.php">Home</a></li>
             <li class="breadcrumb-item active">Content Map</li>
           </ol>
         </nav>
@@ -85,7 +68,7 @@
           <!-- Page introduction / general info
           ------------------------------------------------------------ -->
           <div class="page-description">
-            <h1>Wireframes</h1>
+            <h1>Content Map</h1>
             <p>
               The first step in designing this website was creation of a content map. The content 
               map captures, at a very high level, the logical groupings of content and how they 
@@ -109,9 +92,7 @@
           PAGE FOOTER
       ============================================================ -->
       <footer>
-        <p>xxxx</p>
-        <p>MY FOOTER - NEED TO FILL THIS IN</p>
-        <p>xxxx</p>
+        <?php require_once("footer.php"); ?>
       </footer>
 
     </div>   <!-- end of the overall page wrapper -->

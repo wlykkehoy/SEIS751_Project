@@ -40,25 +40,32 @@
               </li>
               
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown">Featured</a>
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownFeatured" role="button" data-toggle="dropdown">Featured</a>
                 <div class="dropdown-menu">
-                  <a class="dropdown-item" href="how-sake-is-made.html">How Sake is Made</a>
-                  <a class="dropdown-item" href="sake-breweries.html">Sake Breweries</a>
-                  <a class="dropdown-item" href="my-favorite-sake.html">My Favorite Sake</a>
-                  <a class="dropdown-item" href="sake-news.html">Sake News</a>
+                  <a class="dropdown-item" href="how-sake-is-made.php">How Sake is Made</a>
+                  <a class="dropdown-item" href="sake-breweries.php">Sake Breweries</a>
+                  <a class="dropdown-item" href="my-favorite-sake.php">My Favorite Sake</a>
+                  <a class="dropdown-item" href="sake-industry-news.php">Sake Industry News</a>
                 </div>
               </li> 
-              
+
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownAbout" role="button" data-toggle="dropdown">About</a>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="content-map.php">Content Map</a>
+                  <a class="dropdown-item" href="wireframes.php">Wireframes</a>
+                  <a class="dropdown-item" href="project-walkthrough.php">Project Walkthrough</a>
+                  <a class="dropdown-item" href="pagespeed-insights.php">PageSpeed Insights</a>
+                  <a class="dropdown-item" href="credits-and-resources.php">Credits and Resources</a>
+                </div>
+              </li> 
+
               <li class="nav-item">
-                <a class="nav-link" href="#">About</a>
+                <a class="nav-link" href="bonus.php">Bonus</a>
               </li>
               
               <li class="nav-item">
-                <a class="nav-link" href="bonus.html">Bonus</a>
-              </li>
-              
-              <li class="nav-item">
-                <a class="nav-link" href="#">Contact</a>
+                <a class="nav-link" href="contact.php">Contact</a>
               </li>
             </ul>
           </div>
@@ -98,26 +105,26 @@
               <div class="card-header">Featured</div>
               <div class="card-body">
                 <p class="card-text">
-                  Curious about Japanes Sake? Find out:
+                  Curious about Japanes Sake? Find information about:
                   <ul>
                     <li>
-                      <a href="how-sake-is-made.html">How sake is made</a>
+                      <a href="how-sake-is-made.php">How sake is made</a>
                     </li>
                     <li>
-                      <a href="sake-breweries.html">Information about sake breweries</a>
+                      <a href="sake-breweries.php">Some sake breweries</a>
                     </li>
                     <li>
-                      <a href="my-favorite-sake.html">Some of my favorite sake</a>
+                      <a href="my-favorite-sake.php">Some of my favorite sake</a>
                     </li>
                     <li>
-                      <a href="sake-news.html">Sake news</a>
+                      <a href="sake-industry-news.php">Sake industry news</a>
                     </li>
                   </ul>
                 </p>
               </div>
 <!--              
               <div class="card-footer">
-                <a href="design.html" class="btn">Learn More</a>
+                <a href="design.php" class="btn">Learn More</a>
               </div>  
 -->              
             </div>  <!-- end of the card -->
@@ -129,26 +136,26 @@
                   Explore some artifacts from building this site:
                   <ul>
                   <li>
-                    Content Map
+                    <a href="content-map.php">Content Map</a>
                   </li>
                   <li>
-                    Wireframes
+                    <a href="wireframes.php">Wireframes</a>
                   </li>
                   <li>
-                    Project walkthrough
+                    <a href="project-walkthrough.php">Project Walkthrough</a>
                   </li>
                   <li>
-                    PageSpeed Insights
+                    <a href="pagespeed-insights.php">PageSpeed Insights</a>
                   </li>
                   <li>
-                    Credits / Resources
+                    <a href="credits-and-resources.php">Credits and Resources</a>
                   </li>
                   </ul>
                 </p>
               </div>
 <!--              
               <div class="card-footer">
-                <a href="design.html" class="btn">Learn More</a>
+                <a href="design.php" class="btn">Learn More</a>
               </div>  
 -->              
             </div>   <!-- end of the card -->
@@ -162,7 +169,7 @@
               </div>
 <!--              
               <div class="card-footer">
-                <a href="design.html" class="btn">Learn More</a>
+                <a href="design.php" class="btn">Learn More</a>
               </div>  
 -->              
             </div>  <!-- end of the card -->
@@ -176,9 +183,7 @@
           PAGE FOOTER
       ============================================================ -->
       <footer>
-        <p>xxxx</p>
-        <p>MY FOOTER - NEED TO FILL THIS IN</p>
-        <p>xxxx</p>
+        <?php require_once("footer.php"); ?>
       </footer>
 
     </div>   <!-- end of the overall page wrapper -->

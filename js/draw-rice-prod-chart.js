@@ -3,7 +3,11 @@
     Note the data is curently 'hard coded' here.
 ============================================================ */
 
-google.charts.load('current', {packages: ['corechart', 'line']});
+/* After the page loads, load up Google Charts
+  ------------------------------------------------------------ */
+$(function() {
+  google.charts.load('current', {packages: ['corechart', 'line']});
+});
 
 
 /* The function to actually draw the chart
@@ -46,10 +50,11 @@ function drawRiceProdChart() {
         fontSize: 10,
       }          
     },
-    width: 750,
-    height: 500              
+    width: '100%',
+    height: 'auto'
   };
   
+
   var chart = new google.visualization.LineChart(document.getElementById('rice-prod-modal_chart_div'));
   chart.draw(data, options);
 }

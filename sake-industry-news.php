@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="css/main.css">
   </head>
     
-  <body  id="page-sake-news">
+  <body  id="page-sake-industry-news">
     <div class="container-fluid my-page-wrapper">   <!-- wraps the entire page contents -->
 
       <!-- ===========================================================
@@ -28,33 +28,23 @@
         <!-- Main navigation bar / menu
         ------------------------------------------------------------ -->
         <nav class="navbar navbar-expand-md fixed-top"  id="page-navbar">
-          <a class="navbar-brand" href="index.html">Sake</a>
+          <a class="navbar-brand" href="index.php">Sake</a>
           <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#main-navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse justify-content-end" id="main-navigation">
             <ul class="navbar-nav">
+              
               <li class="nav-item ">
-                <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="index.php">Home <span class="sr-only">(current)</span></a>
               </li>
-              <li class="nav-item dropdown active">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown">Featured</a>
-                <div class="dropdown-menu">
-                  <a class="dropdown-item" href="how-sake-is-made.html">How Sake is Made</a>
-                  <a class="dropdown-item" href="sake-breweries.html">Sake Breweries</a>
-                  <a class="dropdown-item" href="#">My Favorite Sake</a>
-                  <a class="dropdown-item" href="#">Sake News</a>
-                </div>
-              </li> 
+              
+              
+<!-- navbar will be updated from Home when fully fleshed out -->
               <li class="nav-item">
-                <a class="nav-link" href="#">About</a>
+                <a class="nav-link" href="#">!! add rest !!</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Bonus</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Contact</a>
-              </li>
+
             </ul>
           </div>
         </nav>      <!-- end of main navigation bar / menu -->
@@ -63,8 +53,8 @@
         ------------------------------------------------------------ -->
         <nav>
           <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-            <li class="breadcrumb-item active">Sake News</li>
+            <li class="breadcrumb-item"><a href="index.php">Home</a></li>
+            <li class="breadcrumb-item active">Sake Industry News</li>
           </ol>
         </nav>
 
@@ -77,7 +67,7 @@
         <!-- Page introduction / general info
         ------------------------------------------------------------ -->
         <div class="page-description">
-          <h1>Sake News</h1>
+          <h1>Sake Industry News</h1>
           <p>
             The latest news from the Sake industry...
           </p>
@@ -121,8 +111,8 @@
             <img src="img/news-thumbnails/news_006.jpg" class="mr-3" alt="...">
             <div class="media-body">
               <h5 class="mt-0">Rice harvest complete <span class="publish-date">Sept 30, 2019</span></h5>
-              The last of the 2019 rice is now in. Yields varied across Japan, though total quantity is up 
-              about 5% from 2018.
+              The last of the 2019 rice is now in. Yields varied across Japan, with the total quantity
+              slightly down from 2018.
               <p>
                 <button type="button" class="btn btn-secondary btn-sm" data-toggle="modal" data-target="#rice-prod-modal">
                   10-Year Rice Production Chart
@@ -192,9 +182,7 @@
           PAGE FOOTER
       ============================================================ -->
       <footer>
-        <p>xxxx</p>
-        <p>MY FOOTER - NEED TO FILL THIS IN</p>
-        <p>xxxx</p>
+        <?php require_once("footer.php"); ?>
       </footer>
 
     </div>   <!-- end of the overall page wrapper -->
@@ -204,10 +192,10 @@
         MODAL POP-UP FOR CHART OF RICE PRODUCTION
         
         Put way down here as it is not in the page proper; it is
-        rendered modal dialog is popped-up
+        rendered when the modal dialog is popped-up
      ============================================================ -->
     <div class="modal fade" id="rice-prod-modal" tabindex="-1" role="dialog">
-      <div class="modal-dialog modal-lg">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
         <div class="modal-content">
           <div class="modal-header">
             <h5 class="modal-title" id="rice-prod-modal-label">10-Year Sake Rice Production</h5>

@@ -28,38 +28,22 @@
         <!-- Main navigation bar / menu
         ------------------------------------------------------------ -->
         <nav class="navbar navbar-expand-md fixed-top " id="page-navbar">
-          <a class="navbar-brand" href="#">Sake</a>
+          <a class="navbar-brand" href="index.php">Sake</a>
           <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#main-navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse justify-content-end" id="main-navigation">
             <ul class="navbar-nav">
               
-              <li class="nav-item active">
-                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+              <li class="nav-item ">
+                <a class="nav-link" href="index.php">Home <span class="sr-only">(current)</span></a>
               </li>
               
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown">Featured</a>
-                <div class="dropdown-menu">
-                  <a class="dropdown-item" href="how-sake-is-made.html">How Sake is Made</a>
-                  <a class="dropdown-item" href="sake-breweries.html">Sake Breweries</a>
-                  <a class="dropdown-item" href="#">My Favorite Sake</a>
-                  <a class="dropdown-item" href="sake-news.html">Sake News</a>
-                </div>
-              </li> 
-              
+<!-- navbar will be updated from Home when fully fleshed out -->
               <li class="nav-item">
-                <a class="nav-link" href="#">About</a>
+                <a class="nav-link" href="#">!! add rest !!</a>
               </li>
-              
-              <li class="nav-item">
-                <a class="nav-link" href="#">Bonus</a>
-              </li>
-              
-              <li class="nav-item">
-                <a class="nav-link" href="#">Contact</a>
-              </li>
+
             </ul>
           </div>
         </nav>      <!-- end of main navigation bar / menu -->
@@ -68,8 +52,7 @@
         ------------------------------------------------------------ -->
         <nav>
           <ol class="breadcrumb">
-            <li class="breadcrumb-item "><a href="index.html">Home</a></li>
-            <li class="breadcrumb-item "><a href="about.html">??? About ???</a></li>
+            <li class="breadcrumb-item "><a href="index.php">Home</a></li>
             <li class="breadcrumb-item active">Wireframes</li>
           </ol>
         </nav>
@@ -125,7 +108,7 @@
               <iframe src="pdf/wireframe-my-favorite-sake.pdf#toolbar=0" width="600px" height="375px"></iframe>
               <h4 id="list-item-4">Page: Sake Breweries</h4>
               <iframe src="pdf/wireframe-sake-breweries.pdf#toolbar=0" width="600px" height="375px"></iframe>
-              <h4 id="list-item-5">Page: Sake News</h4>
+              <h4 id="list-item-5">Page: Sake Industry News</h4>
               <iframe src="pdf/xxxxxxx.pdf#toolbar=0" width="600px" height="375px"></iframe>
             </div>
 
@@ -138,9 +121,7 @@
           PAGE FOOTER
       ============================================================ -->
       <footer>
-        <p>xxxx</p>
-        <p>MY FOOTER - NEED TO FILL THIS IN</p>
-        <p>xxxx</p>
+        <?php require_once("footer.php"); ?>
       </footer>
 
     </div>   <!-- end of the overall page wrapper -->

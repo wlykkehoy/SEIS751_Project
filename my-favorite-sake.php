@@ -28,33 +28,22 @@
         <!-- Main navigation bar / menu
         ------------------------------------------------------------ -->
         <nav class="navbar navbar-expand-md fixed-top" id="page-navbar">
-          <a class="navbar-brand" href="index.html">Sake</a>
+          <a class="navbar-brand" href="index.php">Sake</a>
           <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#main-navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse justify-content-end" id="main-navigation">
             <ul class="navbar-nav">
+              
               <li class="nav-item ">
-                <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="index.php">Home <span class="sr-only">(current)</span></a>
               </li>
-              <li class="nav-item dropdown active">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown">Featured</a>
-                <div class="dropdown-menu">
-                  <a class="dropdown-item" href="how-sake-is-made.html">How Sake is Made</a>
-                  <a class="dropdown-item" href="sake-breweries.html">Sake Breweries</a>
-                  <a class="dropdown-item" href="#">My Favorite Sake</a>
-                  <a class="dropdown-item" href="#">Sake News</a>
-                </div>
-              </li> 
+              
+<!-- navbar will be updated from Home when fully fleshed out -->
               <li class="nav-item">
-                <a class="nav-link" href="#">About</a>
+                <a class="nav-link" href="#">!! add rest !!</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Bonus</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Contact</a>
-              </li>
+
             </ul>
           </div>
         </nav>      <!-- end of main navigation bar / menu -->
@@ -63,7 +52,7 @@
         ------------------------------------------------------------ -->
         <nav>
           <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+            <li class="breadcrumb-item"><a href="index.php">Home</a></li>
             <li class="breadcrumb-item active">My Favorite Sake</li>
           </ol>
         </nav>
@@ -101,51 +90,51 @@
     <!-- content filled in by code when page loads -->
   </div>
   
-  <div class="col-8" id="sake-info">
+  <div class="col-8" id="sake-detail">
 
     <div class="row">
-      <div class="sake-info-label col-md-auto">Sake:</div>
-      <div class="sake-info-text col-md-auto" id="fld-name" >xxxx</div>
+      <div class="sake-detail-label col-md-auto">Sake:</div>
+      <div class="sake-detail-text col-md-auto" id="fld-name" >xxxx</div>
     </div>
 
     <div class="row">
-      <div class="sake-info-label col-md-auto">Grade:</div>
-      <div class="sake-info-text col-md-auto" id="fld-grade" >xxxx</div>
+      <div class="sake-detail-label col-md-auto">Grade:</div>
+      <div class="sake-detail-text col-md-auto" id="fld-grade" >xxxx</div>
     </div>
 
     <div class="row">
-      <div class="sake-info-label col-md-auto">Overview:</div>
-      <div class="sake-info-text col-md-auto" id="fld-overview" >xxxx</div>
+      <div class="sake-detail-label col-md-auto">Overview:</div>
+      <div class="sake-detail-text col-md-auto" id="fld-overview" >xxxx</div>
     </div>
 
     <div class="row">
-      <div class="sake-info-label col-md-auto">Tasting Notes:</div>
-      <div class="sake-info-text col-md-auto" id="fld-tasting-notes" >xxxx</div>
+      <div class="sake-detail-label col-md-auto">Tasting Notes:</div>
+      <div class="sake-detail-text col-md-auto" id="fld-tasting-notes" >xxxx</div>
     </div>
 
     <div class="row">
-      <div class="sake-info-label col-md-auto">Food Pairing:</div>
-      <div class="sake-info-text col-md-auto" id="fld-food-pairing" >xxxx</div>
+      <div class="sake-detail-label col-md-auto">Food Pairing:</div>
+      <div class="sake-detail-text col-md-auto" id="fld-food-pairing" >xxxx</div>
     </div>
 
     <div class="row">
-      <div class="sake-info-label col-md-auto">Rice:</div>
-      <div class="sake-info-text col-md-auto" id="fld-rice" >xxxx</div>
+      <div class="sake-detail-label col-md-auto">Rice:</div>
+      <div class="sake-detail-text col-md-auto" id="fld-rice" >xxxx</div>
     </div>
 
     <div class="row">
-      <div class="sake-info-label col-md-auto">Seimaibuai:</div>
-      <div class="sake-info-text col-md-auto" id="fld-seimaibuai" >xxxx</div>
+      <div class="sake-detail-label col-md-auto">Seimaibuai:</div>
+      <div class="sake-detail-text col-md-auto" id="fld-seimaibuai" >xxxx</div>
     </div>
 
     <div class="row">
-      <div class="sake-info-label col-md-auto">Brewery:</div>
-      <div class="sake-info-text col-md-auto" id="fld-brewery-name" >xxxx</div>
+      <div class="sake-detail-label col-md-auto">Brewery:</div>
+      <div class="sake-detail-text col-md-auto" id="fld-brewery-name" >xxxx</div>
     </div>
 
     <div class="row">
-      <div class="sake-info-label col-md-auto">Brewery Location:</div>
-      <div class="sake-info-text col-md-auto" id="fld-brewery-location" >xxxx</div>
+      <div class="sake-detail-label col-md-auto">Brewery Location:</div>
+      <div class="sake-detail-text col-md-auto" id="fld-brewery-location" >xxxx</div>
     </div>
 
 
@@ -181,9 +170,7 @@
           PAGE FOOTER
       ============================================================ -->
       <footer>
-        <p>xxxx</p>
-        <p>MY FOOTER - NEED TO FILL THIS IN</p>
-        <p>xxxx</p>
+        <?php require_once("footer.php"); ?>
       </footer>
 
     </div>   <!-- end of the overall page wrapper -->
@@ -202,7 +189,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
     <!-- My JS - very last -->
-    <script src="js/display-sake-info.js"></script>
+    <script src="js/display-sake-list.js"></script>
 
 
   </body>

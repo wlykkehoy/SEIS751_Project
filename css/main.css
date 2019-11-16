@@ -116,12 +116,15 @@ body {
   ------------------------------------------------------------ */
 main {
   padding-bottom: 2rem;
+/*  
   background-image: linear-gradient(to bottom, rgba(0,0,0,0.7), rgba(0,0,0,0.6)), 
                     url('../img/sake-barrels.jpg');
   background-size: cover;
   background-position: center;
   height: auto;
   min-height: 800px;
+*/
+
 }
 
 .page-description {
@@ -149,9 +152,40 @@ main {
 /* Footer for the page
   ------------------------------------------------------------ */
 footer {
-/*  background-color: var(--clr-brown); */
   background-color: black;
+
+  border-top-style:solid;
+  border-top-width: 1px;
+  border-top-color: var(--clr-lt-tan);
+}
+
+footer .footer-nav {
+  margin-top: 1rem;
+  color: darkgray;
+  font-size: 100%;
+}
+
+footer .footer-nav li {
+  list-style: none;
+  margin-left: 2ch;
+  font-size: 80%;
+}
+
+footer .footer-nav a {
+  color: darkgray;
+}
+
+footer .footer-nav a:hover {
   color: white;
+}
+
+footer .footer-copyright {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  font-size: 75%;
+  font-style: italic;
+  color: silver;
 }
 
 
@@ -167,6 +201,8 @@ footer {
 
 #page-home .card-header {
   font-weight: bold;
+  text-align: center;
+  font-size: 1.25rem;
 }
 
 #page-home .card-footer .btn {
@@ -228,7 +264,7 @@ border-color: red;
 
 }
 
-#page-my-favorite-sake .sake-info {
+#page-my-favorite-sake .sake-detail {
 /*
   border-style: solid;
   border-width: 2px;
@@ -236,13 +272,13 @@ border-color: red;
 */  
 }
 
-#page-my-favorite-sake .sake-info-label {
+#page-my-favorite-sake .sake-detail-label {
   font-weight: bold;
 
   /* do not allow the label to shrink or grow; keep at a fixed # chars */  
   flex-grow: 0;
   flex-shrink: 0;
-  flex-basis: 20ch; /* 12rem; */
+  flex-basis: 20ch;
 
   margin-top: .5rem;  
 
@@ -254,7 +290,7 @@ border-color: red;
   
 }
 
-#page-my-favorite-sake .sake-info-text {
+#page-my-favorite-sake .sake-detail-text {
   /* the text area can shrink and grow; use 40 chars for it's flex-basis */
   flex-grow: 1;
   flex-shrink: 1;
@@ -297,7 +333,7 @@ border-color: red;
 /* ============================================================
     SAKE NEWS PAGE SPECIFIC ITEMS
 ============================================================ */
-#page-sake-news #news-list {
+#page-sake-industry-news #news-list {
   margin-top: 2rem;
   margin-left: auto;
   margin-right: auto;
@@ -305,7 +341,7 @@ border-color: red;
   max-height: 40rem;
 }
 
-#page-sake-news .media {
+#page-sake-industry-news .media {
   background-color: white;
   color: black;
 /*
@@ -321,7 +357,7 @@ border-color: red;
   border-radius: 10px;
 }
 
-#page-sake-news .media img {
+#page-sake-industry-news .media img {
   margin-left: 5px;
   margin-top: 5px;
   margin-bottom: 5px;
@@ -331,31 +367,38 @@ border-color: red;
   border-radius: 10px;
 }
 
-#page-sake-news .media .publish-date {
+#page-sake-industry-news .media .publish-date {
   color: silver;
   font-size: .66em;
   font-style: italic;
   margin-left: 1em;
 }
 
-#page-sake-news .media .footer {
+#page-sake-industry-news .media .footer {
   font-size: .75em;
   font-style: italic;
   margin-top: .5rem;
   margin-bottom: .5em;
 }
 
-#page-sake-news audio {
+#page-sake-industry-news audio {
   outline-style: none;
   display: block;
   margin-top: .5rem;
   margin-bottom: .5rem;
 }
 
-#page-sake-news .media-body button {
+#page-sake-industry-news .media-body button {
   margin-top: .5rem;
 }
 
+#page-sake-industry-news #rice-prod-modal_chart_div {
+  border-style: solid;
+  border-width: 1px;
+  border-color: black;
+  margin-left: auto;
+  margin-right: auto;
+}
 
 
 /* ============================================================
@@ -464,6 +507,42 @@ border-color: red;
 /* ============================================================
     PROJECT WALKTHROUGH PAGE SPECIFIC ITEMS
 ============================================================ */
+#page-project-walkthrough #requirements-list {
+  margin-top: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 50rem;
+  max-height: 40rem;
+  background-color: white;
+}
+
+#page-project-walkthrough .requirements-list-item {
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-bottom-color: silver;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-top: .5rem;
+}
+
+#page-project-walkthrough .requirements-list-item:last-child {
+  border-bottom-style: none;
+}
+
+
+#page-project-walkthrough .list-item-header {
+  font-weight: bold;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-bottom: .5rem;
+}
+
+#page-project-walkthrough .list-item-detail {
+  margin-left: 6ch;
+  margin-right: 1rem;
+}
+
+  
 
 
 
@@ -525,7 +604,8 @@ border-color: red;
     STUFF HANDY FOR TINKERING
 ============================================================ */
 
-.foo {
-  background-color:white;
-  color: red;
+.debug-show-box {
+  border-style: solid;
+  border-width: 1px;
+  border-color: red;
 }

@@ -1,8 +1,17 @@
+/* ============================================================
+    This code retrieves the list of sake from the server
+    and displays it.
+============================================================ */
 
 
+/* This function fires when the page is loaded. It merely
+   gets the list of sake from the server and creates buttons
+   for each of the sake. 
+  ------------------------------------------------------------ */
 $(function() {
+
   /* fetch the list of sake from the server and populate the list */
-  $.getJSON("php/get-sake-list.php", function(resp) {
+  $.getJSON("http-request-handlers/get-sake-list.php", function(resp) {
 /*    console.log(resp); */
     var idx;
     var item;
@@ -11,6 +20,11 @@ $(function() {
       $("#sake-list").append(item);
     }
   });
+
+  /* Add an event handler to the list that fires when a  list item is clicked */
+  $("#sake-list").click(displaySakeDetail);
+  
+
 
   /* automatically select the first one */
 /* seems is not yet defined 
@@ -25,23 +39,21 @@ $(function() {
 
 });
   
-  
-  
-  
-  
-$("#sake-list").click(function(event){
+ 
+/* This is the event handler for when an individual sake's
+   button is clicked. It retrieves the details from the
+   server and populates the fields (elements) on screen.
+  ------------------------------------------------------------ */
+function displaySakeDetail(event) {
 
-/*  console.log("==> " + event.target.innerHTML); */
+  console.log("==> " + event.target.innerHTML); 
 
-  event.preventDefault();
+  event.preventDefault(); 
 
   /* for the selected sake, retrieve info from the server */
-  
 /* !!!!!!!! need to send the name of the selectes sake !!!!!! */  
-  $.getJSON("php/get-sake-details.php", function(resp) {
-
+  $.getJSON("http-request-handlers/get-sake-details.php", function(resp) {
 /*    console.log(resp); */
-    
     $("#fld-name").html(resp.name);
     $("#fld-grade").html(resp.grade);
     $("#fld-overview").html(resp.overview);
@@ -51,10 +63,9 @@ $("#sake-list").click(function(event){
     $("#fld-seimaibuai").html(resp.seimaibuai + "%");
     $("#fld-brewery-name").html(resp.brewery_name);
     $("#fld-brewery-location").html(resp.brewery_location);
-
   });
+};
 
-});
 
   
 
