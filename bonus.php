@@ -53,7 +53,7 @@
         <nav>
           <ol class="breadcrumb">
             <li class="breadcrumb-item "><a href="index.php">Home</a></li>
-            <li class="breadcrumb-item active">bonus</li>
+            <li class="breadcrumb-item active">Bonus</li>
           </ol>
         </nav>
 
@@ -81,9 +81,10 @@
            <!-- The tabs themselves -->
           <nav>
             <div class="nav nav-tabs" id="nav-tab" role="tablist">
-              <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-canvas-drawing" role="tab">Canvas Drawing</a>
-              <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-svg-drawing" role="tab">SVG Drawing</a>
-              <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-TBD" role="tab">...TBD...</a>
+              <a class="nav-item nav-link active" data-toggle="tab" href="#nav-canvas-drawing" role="tab">Canvas Drawing</a>
+              <a class="nav-item nav-link" data-toggle="tab" href="#nav-svg-drawing" role="tab">SVG Drawing</a>
+              <a class="nav-item nav-link" data-toggle="tab" href="#nav-secret" role="tab">Secret Page</a>
+              <a class="nav-item nav-link" data-toggle="tab" href="#nav-TBD" role="tab">...TBD...</a>
             </div>
           </nav>
 
@@ -114,14 +115,52 @@
             </div>    <!-- end of the tab -->
             
             <!-- the second tab contents -->
-            <div class="tab-pane fade" id="nav-svg-drawing" role="tabpanel" aria-labelledby="nav-profile-tab">
-              <p>... svg drawing coming soon ...</p>
+            <div class="tab-pane fade" id="nav-svg-drawing" role="tabpanel" >
+              <h5 class="pane-header">A simple SVG drawing</h5>
+              <div class="row">
+                <div class="col-md-2 align-self-center">
+                  <button type="button" class="btn btn-secondary btn-sm btn-block" id="btn-svg-pan-up">Pan Up</button>
+                  <button type="button" class="btn btn-secondary btn-sm btn-block" id="btn-svg-pan-down">Pan Down</button>
+                  <button type="button" class="btn btn-secondary btn-sm btn-block" id="btn-svg-pan-left">Pan Left</button>
+                  <button type="button" class="btn btn-secondary btn-sm btn-block" id="btn-svg-pan-right">Pan Right</button>
+                  <button type="button" class="btn btn-secondary btn-sm btn-block" id="btn-svg-zoom-in">Zoom In</button>
+                  <button type="button" class="btn btn-secondary btn-sm btn-block" id="btn-svg-zoom-out">Zoom Out</button>
+                  <button type="button" class="btn btn-secondary btn-sm btn-block" id="btn-svg-reset">Reset</button>
+                </div>
+                <div class="col-md-10 ">
+                  <!-- I originally had the SVG in a separate file and used an <embed>, however
+                       I could not used DOM methods to manipulate it; so ended up pasting it in here -->
+                  <svg id="svg-drawing" xmlns="http://www.w3.org/2000/svg" width="600" height="600">
+                  	<g id="svg-origami-drawing" >
+                  		<polyline fill="none" stroke="black" points="58,22 51,70 89,33 67,34 58,22" />
+                  		<polyline fill="none" stroke="black" points="67,34 51,70" />
+                  		<polyline fill="none" stroke="black" points="66,55 63,137 77,137 77,45" />
+                  		<polyline fill="none" stroke="black" points="65,77 0,83 65,89" />
+                  		<polyline fill="none" stroke="black" points="52,88 63,137" />
+                  		<polyline fill="none" stroke="black" points="77,137 85,151 106,103 89,33" />
+                  		<polyline fill="none" stroke="black" points="85,151 116,135 155,134 155,128 106,103" />
+                  		<polyline fill="none" stroke="black" points="149,89 114,60 106,74 99,74" />
+                  		<polyline fill="none" stroke="black" points="106,103 198,150 165,83 106,103" />
+                  		<polyline fill="none" stroke="black" points="198,150 139,92" />
+                  		<polyline fill="none" stroke="black" points="158,85 162,0 130,73" />
+                  	</g>
+                  </svg> 
+                </div>
+              </div>
             </div>   <!-- end of the tab -->
             
             <!-- the third tab contents -->
-            <div class="tab-pane fade" id="nav-TBD" role="tabpanel" aria-labelledby="nav-contact-tab">
-              <p>... other stuff coming soon ...</p>
+            <div class="tab-pane fade" id="nav-secret" role="tabpanel" >
+              <div class="row ">
+                <a href="authentication.php" class="btn btn-secondary btn-lg " id="btn-access-secret-page">Access the Secret Page</a>
+              </div>
             </div>   <!-- end of the tab -->
+
+            <!-- the fourth tab contents -->
+            <div class="tab-pane fade" id="nav-TBD" role="tabpanel" >
+              <p>TBD</p>
+            </div>   <!-- end of the tab -->
+
 
           </div>   <!-- end of the tabs contents -->
   
