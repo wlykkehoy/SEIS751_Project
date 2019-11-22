@@ -653,6 +653,7 @@ footer .footer-copyright {
 #page-project-walkthrough .list-item-detail {
   margin-left: 6ch;
   margin-right: 1rem;
+  margin-bottom: .5rem;
 }
 
 
@@ -669,28 +670,17 @@ footer .footer-copyright {
   margin-right: auto;
   max-width: 50rem;
   background-color: white;
-/*
-  border-radius: 10px;
-*/
   max-height: 30rem;
   overflow-y: auto;
 }
 
-/*
-#page-pagespeed-insights #bubba {
-  border-radius: 10px;
-  border-style: solid;
-  border-width: 1px;
-  border-color: red;
-
+#page-pagespeed-insights #pagespeed-data thead {
+  font-style: italic;
+  font-size: 1.25rem;
 }
-*/
 
-
-#page-xxxxxxxx div {
-  border-style: solid;
-  border-width: 1px;
-  border-color: red;
+#page-pagespeed-insights #pagespeed-data td a {
+  font-size: .8rem;
 }
 
 

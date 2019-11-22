@@ -68,82 +68,272 @@
         <div class="page-description">
           <h1>PageSpeed Insights</h1>
           <p>
-            ... some descriptive text here ...
+            PageSpeed Insights is a service provided by Google which reports on the performance 
+            of a website page. For this project, we had the following criteria for each page:
+            <br>
+            Desktop: 80 or better
+            <br>
+            Mobile: 75 or better
           </p>
         </div>        
 
-        <!-- xxxxxxxxxxxxxxxxxxxxxxxxxx
+        <!-- A table with each page, it's score, and a link to 
+             run PageSpeed Insights
         ------------------------------------------------------------ -->
+        <div id="pagespeed-data">
+          <table class="table " >
+            <thead>
+              <tr>
+                <th scope="col">Page</th>
+                <th scope="col">Desktop</th>
+                <th scope="col">Mobile</th>
+              </tr>
+            </thead>
+            
+            <tbody>
+              <tr>
+                <th scope="row">Home</th>
+                <td>
+                  <marius-psi mode="desktop" score="22" size="50"></marius-psi>
+                  <br>
+                  <a target="_blank" href="https://developers.google.com/speed/pagespeed/insights/?url=http%3A%2F%2Flinux2.gps.stthomas.edu%2F~lykk3260%2Fproject%2Findex.php&tab=desktop">
+                    Run now...
+                  </a>
+                </td>
+                <td>
+                  <marius-psi mode="mobile" score="11" size="50"></marius-psi>
+                  <br>
+                  <a target="_blank" href="https://developers.google.com/speed/pagespeed/insights/?url=http%3A%2F%2Flinux2.gps.stthomas.edu%2F~lykk3260%2Fproject%2Findex.php&tab=mobile">
+                    Run now...
+                  </a>
+                </td>
+              </tr>
 
-<!--
-<table class="table table-borderless table-responsive" id="pagespeed-data">
--->
-<div id="pagespeed-data">
-<table class="table " >
-  <thead>
-    <tr>
-      <th scope="col">Page</th>
-      <th scope="col">Desktop</th>
-      <th scope="col">Mobile</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th scope="row">Home</th>
-      <td><marius-psi mode="desktop" score="90" size="50"></marius-psi><br><a href="xxxx">Run Now</a></td>
-      <td><marius-psi mode="mobile" score="11" size="50"></marius-psi><br><a href="xxxx">Run Now</a></td>
-    </tr>
-    <tr>
-      <th scope="row">Featured > How Sake is Made</th>
-      <td><marius-psi mode="desktop" score="90" size="50"></marius-psi><br><a href="xxxx">Run Now</a></td>
-      <td><marius-psi mode="mobile" score="11" size="50"></marius-psi><br><a href="xxxx">Run Now</a></td>
-    </tr>
-      <th scope="row">xxxxx > xxxxxxxx</th>
-      <td><marius-psi mode="desktop" score="90" size="50"></marius-psi><br><a href="xxxx">Run Now</a></td>
-      <td><marius-psi mode="mobile" score="11" size="50"></marius-psi><br><a href="xxxx">Run Now</a></td>
-    </tr>
-      <th scope="row">xxxxx > xxxxxxxx</th>
-      <td><marius-psi mode="desktop" score="90" size="50"></marius-psi><br><a href="xxxx">Run Now</a></td>
-      <td><marius-psi mode="mobile" score="11" size="50"></marius-psi><br><a href="xxxx">Run Now</a></td>
-    </tr>
-      <th scope="row">xxxxx > xxxxxxxx</th>
-      <td><marius-psi mode="desktop" score="90" size="50"></marius-psi><br><a href="xxxx">Run Now</a></td>
-      <td><marius-psi mode="mobile" score="11" size="50"></marius-psi><br><a href="xxxx">Run Now</a></td>
-    </tr>
-      <th scope="row">xxxxx > xxxxxxxx</th>
-      <td><marius-psi mode="desktop" score="90" size="50"></marius-psi><br><a href="xxxx">Run Now</a></td>
-      <td><marius-psi mode="mobile" score="11" size="50"></marius-psi><br><a href="xxxx">Run Now</a></td>
-    </tr>
-      <th scope="row">xxxxx > xxxxxxxx</th>
-      <td><marius-psi mode="desktop" score="90" size="50"></marius-psi><br><a href="xxxx">Run Now</a></td>
-      <td><marius-psi mode="mobile" score="11" size="50"></marius-psi><br><a href="xxxx">Run Now</a></td>
-    </tr>
-      <th scope="row">xxxxx > xxxxxxxx</th>
-      <td><marius-psi mode="desktop" score="90" size="50"></marius-psi><br><a href="xxxx">Run Now</a></td>
-      <td><marius-psi mode="mobile" score="11" size="50"></marius-psi><br><a href="xxxx">Run Now</a></td>
-    </tr>
-      <th scope="row">xxxxx > xxxxxxxx</th>
-      <td><marius-psi mode="desktop" score="90" size="50"></marius-psi><br><a href="xxxx">Run Now</a></td>
-      <td><marius-psi mode="mobile" score="11" size="50"></marius-psi><br><a href="xxxx">Run Now</a></td>
-    </tr>
-      <th scope="row">xxxxx > xxxxxxxx</th>
-      <td><marius-psi mode="desktop" score="90" size="50"></marius-psi><br><a href="xxxx">Run Now</a></td>
-      <td><marius-psi mode="mobile" score="11" size="50"></marius-psi><br><a href="xxxx">Run Now</a></td>
-    </tr>
-      <th scope="row">xxxxx > xxxxxxxx</th>
-      <td><marius-psi mode="desktop" score="90" size="50"></marius-psi><br><a href="xxxx">Run Now</a></td>
-      <td><marius-psi mode="mobile" score="11" size="50"></marius-psi><br><a href="xxxx">Run Now</a></td>
-    </tr>
-    
-    
-    
-    
-  </tbody>
-</table>
-</div>
+              <tr>
+                <th scope="row">Featured > How Sake is Made</th>
+                <td>
+                  <marius-psi mode="desktop" score="22" size="50"></marius-psi>
+                  <br>
+                  <a target="_blank" href="https://developers.google.com/speed/pagespeed/insights/?url=http%3A%2F%2Flinux2.gps.stthomas.edu%2F~lykk3260%2Fproject%2Fhow-sake-is-made.php&tab=desktop">
+                    Run now...
+                  </a>
+                </td>
+                <td>
+                  <marius-psi mode="mobile" score="11" size="50"></marius-psi>
+                  <br>
+                  <a target="_blank" href="https://developers.google.com/speed/pagespeed/insights/?url=http%3A%2F%2Flinux2.gps.stthomas.edu%2F~lykk3260%2Fproject%2Fhow-sake-is-made.php&tab=mobile">
+                    Run now...
+                  </a>
+                </td>
+              </tr>
 
+              <tr>
+                <th scope="row">Featured > Sake Breweries</th>
+                <td>
+                  <marius-psi mode="desktop" score="22" size="50"></marius-psi>
+                  <br>
+                  <a target="_blank" href="https://developers.google.com/speed/pagespeed/insights/?url=http%3A%2F%2Flinux2.gps.stthomas.edu%2F~lykk3260%2Fproject%2Fsake-breweries.php&tab=desktop">
+                    Run now...
+                  </a>
+                </td>
+                <td>
+                  <marius-psi mode="mobile" score="11" size="50"></marius-psi>
+                  <br>
+                  <a target="_blank" href="https://developers.google.com/speed/pagespeed/insights/?url=http%3A%2F%2Flinux2.gps.stthomas.edu%2F~lykk3260%2Fproject%2Fsake-breweries.php&tab=mobile">
+                    Run now...
+                  </a>
+                </td>
+              </tr>
+              
+              <tr>
+                <th scope="row">Featured > My Favorite Sake</th>
+                <td>
+                  <marius-psi mode="desktop" score="22" size="50"></marius-psi>
+                  <br>
+                  <a target="_blank" href="https://developers.google.com/speed/pagespeed/insights/?url=http%3A%2F%2Flinux2.gps.stthomas.edu%2F~lykk3260%2Fproject%2Fmy-favorite-sake.php&tab=desktop">
+                    Run now...
+                  </a>
+                </td>
+                <td>
+                  <marius-psi mode="mobile" score="11" size="50"></marius-psi>
+                  <br>
+                  <a target="_blank" href="https://developers.google.com/speed/pagespeed/insights/?url=http%3A%2F%2Flinux2.gps.stthomas.edu%2F~lykk3260%2Fproject%2Fmy-favorite-sake.php&tab=mobile">
+                    Run now...
+                  </a>
+                </td>
+              </tr>
+              
+              <tr>
+                <th scope="row">Featured > Sake Industry News</th>
+                <td>
+                  <marius-psi mode="desktop" score="22" size="50"></marius-psi>
+                  <br>
+                  <a target="_blank" href="https://developers.google.com/speed/pagespeed/insights/?url=http%3A%2F%2Flinux2.gps.stthomas.edu%2F~lykk3260%2Fproject%2Fsake-industry-news.php&tab=desktop">
+                    Run now...
+                  </a>
+                </td>
+                <td>
+                  <marius-psi mode="mobile" score="11" size="50"></marius-psi>
+                  <br>
+                  <a target="_blank" href="https://developers.google.com/speed/pagespeed/insights/?url=http%3A%2F%2Flinux2.gps.stthomas.edu%2F~lykk3260%2Fproject%2Fsake-industry-news.php&tab=mobile">
+                    Run now...
+                  </a>
+                </td>
+              </tr>
+              
+              <tr>
+                <th scope="row">About > Content Map</th>
+                <td>
+                  <marius-psi mode="desktop" score="22" size="50"></marius-psi>
+                  <br>
+                  <a target="_blank" href="https://developers.google.com/speed/pagespeed/insights/?url=http%3A%2F%2Flinux2.gps.stthomas.edu%2F~lykk3260%2Fproject%2Fcontent-map.php&tab=desktop">
+                    Run now...
+                  </a>
+                </td>
+                <td>
+                  <marius-psi mode="mobile" score="11" size="50"></marius-psi>
+                  <br>
+                  <a target="_blank" href="https://developers.google.com/speed/pagespeed/insights/?url=http%3A%2F%2Flinux2.gps.stthomas.edu%2F~lykk3260%2Fproject%2Fcontent-map.php&tab=mobile">
+                    Run now...
+                  </a>
+                </td>
+              </tr>
+              
+              <tr>
+                <th scope="row">About > Wireframes</th>
+                <td>
+                  <marius-psi mode="desktop" score="22" size="50"></marius-psi>
+                  <br>
+                  <a target="_blank" href="https://developers.google.com/speed/pagespeed/insights/?url=http%3A%2F%2Flinux2.gps.stthomas.edu%2F~lykk3260%2Fproject%2Fwireframes.php&tab=desktop">
+                    Run now...
+                  </a>
+                </td>
+                <td>
+                  <marius-psi mode="mobile" score="11" size="50"></marius-psi>
+                  <br>
+                  <a target="_blank" href="https://developers.google.com/speed/pagespeed/insights/?url=http%3A%2F%2Flinux2.gps.stthomas.edu%2F~lykk3260%2Fproject%2Fwireframes.php&tab=mobile">
+                    Run now...
+                  </a>
+                </td>
+              </tr>
+              
+              <tr>
+                <th scope="row">About > Project Walkthrough</th>
+                <td>
+                  <marius-psi mode="desktop" score="22" size="50"></marius-psi>
+                  <br>
+                  <a target="_blank" href="https://developers.google.com/speed/pagespeed/insights/?url=http%3A%2F%2Flinux2.gps.stthomas.edu%2F~lykk3260%2Fproject%2Fproject-walkthrough.php&tab=desktop">
+                    Run now...
+                  </a>
+                </td>
+                <td>
+                  <marius-psi mode="mobile" score="11" size="50"></marius-psi>
+                  <br>
+                  <a target="_blank" href="https://developers.google.com/speed/pagespeed/insights/?url=http%3A%2F%2Flinux2.gps.stthomas.edu%2F~lykk3260%2Fproject%2Fproject-walkthrough.php&tab=mobile">
+                    Run now...
+                  </a>
+                </td>
+              </tr>
+              
+              <tr>
+                <th scope="row">About > PageSpeed Insights</th>
+                <td>
+                  <marius-psi mode="desktop" score="22" size="50"></marius-psi>
+                  <br>
+                  <a target="_blank" href="https://developers.google.com/speed/pagespeed/insights/?url=http%3A%2F%2Flinux2.gps.stthomas.edu%2F~lykk3260%2Fproject%2Fpagespeed-insights.php&tab=desktop">
+                    Run now...
+                  </a>
+                </td>
+                <td>
+                  <marius-psi mode="mobile" score="11" size="50"></marius-psi>
+                  <br>
+                  <a target="_blank" href="https://developers.google.com/speed/pagespeed/insights/?url=http%3A%2F%2Flinux2.gps.stthomas.edu%2F~lykk3260%2Fproject%2Fpagespeed-insights.php&tab=mobile">
+                    Run now...
+                  </a>
+                </td>
+              </tr>
+              
+              <tr>
+                <th scope="row">About > Credits and Resources</th>
+                <td>
+                  <marius-psi mode="desktop" score="22" size="50"></marius-psi>
+                  <br>
+                  <a target="_blank" href="https://developers.google.com/speed/pagespeed/insights/?url=http%3A%2F%2Flinux2.gps.stthomas.edu%2F~lykk3260%2Fproject%2Fcredits-and-resources.php&tab=desktop">
+                    Run now...
+                  </a>
+                </td>
+                <td>
+                  <marius-psi mode="mobile" score="11" size="50"></marius-psi>
+                  <br>
+                  <a target="_blank" href="https://developers.google.com/speed/pagespeed/insights/?url=http%3A%2F%2Flinux2.gps.stthomas.edu%2F~lykk3260%2Fproject%2Fcredits-and-resources.php&tab=mobile">
+                    Run now...
+                  </a>
+                </td>
+              </tr>
+              
+              <tr>
+                <th scope="row">Bonus</th>
+                <td>
+                  <marius-psi mode="desktop" score="22" size="50"></marius-psi>
+                  <br>
+                  <a target="_blank" href="https://developers.google.com/speed/pagespeed/insights/?url=http%3A%2F%2Flinux2.gps.stthomas.edu%2F~lykk3260%2Fproject%2Fbonus.php&tab=desktop">
+                    Run now...
+                  </a>
+                </td>
+                <td>
+                  <marius-psi mode="mobile" score="11" size="50"></marius-psi>
+                  <br>
+                  <a target="_blank" href="https://developers.google.com/speed/pagespeed/insights/?url=http%3A%2F%2Flinux2.gps.stthomas.edu%2F~lykk3260%2Fproject%2Fbonus.php&tab=mobile">
+                    Run now...
+                  </a>
+                </td>
+              </tr>
+              
+              <tr>
+                <th scope="row">Contact</th>
+                <td>
+                  <marius-psi mode="desktop" score="22" size="50"></marius-psi>
+                  <br>
+                  <a target="_blank" href="https://developers.google.com/speed/pagespeed/insights/?url=http%3A%2F%2Flinux2.gps.stthomas.edu%2F~lykk3260%2Fproject%2Fcontact.php&tab=desktop">
+                    Run now...
+                  </a>
+                </td>
+                <td>
+                  <marius-psi mode="mobile" score="11" size="50"></marius-psi>
+                  <br>
+                  <a target="_blank" href="https://developers.google.com/speed/pagespeed/insights/?url=http%3A%2F%2Flinux2.gps.stthomas.edu%2F~lykk3260%2Fproject%2Fcontact.php&tab=mobile">
+                    Run now...
+                  </a>
+                </td>
+              </tr>
+              
+              <tr>
+                <th scope="row">Secret Page</th>
+                <td>
+                  <marius-psi mode="desktop" score="22" size="50"></marius-psi>
+                  <br>
+                  <a target="_blank" href="https://developers.google.com/speed/pagespeed/insights/?url=http%3A%2F%2Flinux2.gps.stthomas.edu%2F~lykk3260%2Fproject%2Fsecret-page.php&tab=desktop">
+                    Run now...
+                  </a>
+                </td>
+                <td>
+                  <marius-psi mode="mobile" score="11" size="50"></marius-psi>
+                  <br>
+                  <a target="_blank" href="https://developers.google.com/speed/pagespeed/insights/?url=http%3A%2F%2Flinux2.gps.stthomas.edu%2F~lykk3260%2Fproject%2Fsecret-page.php&tab=mobile">
+                    Run now...
+                  </a>
+                </td>
+              </tr>
+              
+              <tr>
+                <th scope="row">Fake page to show fail status</th>
+                <td><marius-psi mode="desktop" score="22" size="50"></marius-psi><br><a href="#">Run now...</a></td>
+                <td><marius-psi mode="mobile" score="11" size="50"></marius-psi><br><a href="#">Run now...</a></td>
+              </tr>
 
-
+            </tbody>
+          </table>
+        </div>
 
       </main>
 

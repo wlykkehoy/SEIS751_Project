@@ -90,7 +90,7 @@
           <!-- Page introduction / general info
           ------------------------------------------------------------ -->
           <div class="page-description">
-            <h1>Welcome to my Project Page</h1>
+            <h1>Welcome to my Project</h1>
             <p>
               This site was created as part of the <cite>SEIS751 - Web App Design and Development</cite> 
               course at the University of St. Thomas.
