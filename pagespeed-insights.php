@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="css/main.css">
   </head>
     
-  <body  id="page-my-favorite-sake">
+  <body  id="page-pagespeed-insights">
     <div class="container-fluid my-page-wrapper">   <!-- wraps the entire page contents -->
 
       <!-- ===========================================================
@@ -52,8 +52,8 @@
         ------------------------------------------------------------ -->
         <nav>
           <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="index.php">Home</a></li>
-            <li class="breadcrumb-item active">My Favorite Sake</li>
+            <li class="breadcrumb-item "><a href="index.php">Home</a></li>
+            <li class="breadcrumb-item active">PageSpeed Insights</li>
           </ol>
         </nav>
 
@@ -66,78 +66,84 @@
         <!-- Page introduction / general info
         ------------------------------------------------------------ -->
         <div class="page-description">
-          <h1>My Favorite Sake</h1>
+          <h1>PageSpeed Insights</h1>
           <p>
-            Here are some of my favorite Sake. Click on one for more information.
+            ... some descriptive text here ...
           </p>
         </div>        
 
-        <!-- The middle section with the list of sake and info display
+        <!-- xxxxxxxxxxxxxxxxxxxxxxxxxx
         ------------------------------------------------------------ -->
-        <div class="row" id="list-and-detail">
-            
-          <div class="col" id="sake-list">
-            <!-- content filled in by code when page loads -->
-          </div>
-          
-          <div class="col" id="sake-detail">
-            <div class="row">
-              <div class="sake-detail-label col-md-auto">Sake:</div>
-              <div class="sake-detail-text col-md-auto" id="fld-name" ></div>
-            </div>
-        
-            <div class="row">
-              <div class="sake-detail-label col-md-auto">Grade:</div>
-              <div class="sake-detail-text col-md-auto" id="fld-grade" ></div>
-            </div>
-        
-            <div class="row">
-              <div class="sake-detail-label col-md-auto">Overview:</div>
-              <div class="sake-detail-text col-md-auto" id="fld-overview" ></div>
-            </div>
-        
-            <div class="row">
-              <div class="sake-detail-label col-md-auto">Tasting Notes:</div>
-              <div class="sake-detail-text col-md-auto" id="fld-tasting-notes" ></div>
-            </div>
-        
-            <div class="row">
-              <div class="sake-detail-label col-md-auto">Food Pairing:</div>
-              <div class="sake-detail-text col-md-auto" id="fld-food-pairing" ></div>
-            </div>
-        
-            <div class="row">
-              <div class="sake-detail-label col-md-auto">Rice:</div>
-              <div class="sake-detail-text col-md-auto" id="fld-rice" ></div>
-            </div>
-        
-            <div class="row">
-              <div class="sake-detail-label col-md-auto">
-                <a href="#" data-toggle="popover" title="What is Seimaibuai?" 
-                  data-content="The percentage by weight of the rice grain remaining after the 
-                                polishing process. For example, a seimaibuai of 70% indicates 70% 
-                                of the rice grain remains after polishing (30% of the rice grain 
-                                has been removed). As reference, common table rice has a seimaibuai 
-                                of 90% (10% of the grain has been removed).">
-                  Seimaibuai:
-                </a>
-              </div>
-        
-              <div class="sake-detail-text col-md-auto" id="fld-seimaibuai" ></div>
-            </div>
-        
-            <div class="row">
-              <div class="sake-detail-label col-md-auto">Brewery:</div>
-              <div class="sake-detail-text col-md-auto" id="fld-brewery-name" ></div>
-            </div>
-        
-            <div class="row">
-              <div class="sake-detail-label col-md-auto">Brewery Location:</div>
-              <div class="sake-detail-text col-md-auto" id="fld-brewery-location" ></div>
-            </div>
-          </div>   <!-- end of the detail area container -->
-          
-        </div>  <!-- end of the list and detail container -->
+
+<!--
+<table class="table table-borderless table-responsive" id="pagespeed-data">
+-->
+<div id="pagespeed-data">
+<table class="table " >
+  <thead>
+    <tr>
+      <th scope="col">Page</th>
+      <th scope="col">Desktop</th>
+      <th scope="col">Mobile</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">Home</th>
+      <td><marius-psi mode="desktop" score="90" size="50"></marius-psi><br><a href="xxxx">Run Now</a></td>
+      <td><marius-psi mode="mobile" score="11" size="50"></marius-psi><br><a href="xxxx">Run Now</a></td>
+    </tr>
+    <tr>
+      <th scope="row">Featured > How Sake is Made</th>
+      <td><marius-psi mode="desktop" score="90" size="50"></marius-psi><br><a href="xxxx">Run Now</a></td>
+      <td><marius-psi mode="mobile" score="11" size="50"></marius-psi><br><a href="xxxx">Run Now</a></td>
+    </tr>
+      <th scope="row">xxxxx > xxxxxxxx</th>
+      <td><marius-psi mode="desktop" score="90" size="50"></marius-psi><br><a href="xxxx">Run Now</a></td>
+      <td><marius-psi mode="mobile" score="11" size="50"></marius-psi><br><a href="xxxx">Run Now</a></td>
+    </tr>
+      <th scope="row">xxxxx > xxxxxxxx</th>
+      <td><marius-psi mode="desktop" score="90" size="50"></marius-psi><br><a href="xxxx">Run Now</a></td>
+      <td><marius-psi mode="mobile" score="11" size="50"></marius-psi><br><a href="xxxx">Run Now</a></td>
+    </tr>
+      <th scope="row">xxxxx > xxxxxxxx</th>
+      <td><marius-psi mode="desktop" score="90" size="50"></marius-psi><br><a href="xxxx">Run Now</a></td>
+      <td><marius-psi mode="mobile" score="11" size="50"></marius-psi><br><a href="xxxx">Run Now</a></td>
+    </tr>
+      <th scope="row">xxxxx > xxxxxxxx</th>
+      <td><marius-psi mode="desktop" score="90" size="50"></marius-psi><br><a href="xxxx">Run Now</a></td>
+      <td><marius-psi mode="mobile" score="11" size="50"></marius-psi><br><a href="xxxx">Run Now</a></td>
+    </tr>
+      <th scope="row">xxxxx > xxxxxxxx</th>
+      <td><marius-psi mode="desktop" score="90" size="50"></marius-psi><br><a href="xxxx">Run Now</a></td>
+      <td><marius-psi mode="mobile" score="11" size="50"></marius-psi><br><a href="xxxx">Run Now</a></td>
+    </tr>
+      <th scope="row">xxxxx > xxxxxxxx</th>
+      <td><marius-psi mode="desktop" score="90" size="50"></marius-psi><br><a href="xxxx">Run Now</a></td>
+      <td><marius-psi mode="mobile" score="11" size="50"></marius-psi><br><a href="xxxx">Run Now</a></td>
+    </tr>
+      <th scope="row">xxxxx > xxxxxxxx</th>
+      <td><marius-psi mode="desktop" score="90" size="50"></marius-psi><br><a href="xxxx">Run Now</a></td>
+      <td><marius-psi mode="mobile" score="11" size="50"></marius-psi><br><a href="xxxx">Run Now</a></td>
+    </tr>
+      <th scope="row">xxxxx > xxxxxxxx</th>
+      <td><marius-psi mode="desktop" score="90" size="50"></marius-psi><br><a href="xxxx">Run Now</a></td>
+      <td><marius-psi mode="mobile" score="11" size="50"></marius-psi><br><a href="xxxx">Run Now</a></td>
+    </tr>
+      <th scope="row">xxxxx > xxxxxxxx</th>
+      <td><marius-psi mode="desktop" score="90" size="50"></marius-psi><br><a href="xxxx">Run Now</a></td>
+      <td><marius-psi mode="mobile" score="11" size="50"></marius-psi><br><a href="xxxx">Run Now</a></td>
+    </tr>
+    
+    
+    
+    
+  </tbody>
+</table>
+</div>
+
+
+
 
       </main>
 
@@ -152,6 +158,8 @@
     </div>   <!-- end of the overall page wrapper -->
     
 
+
+
     <!-- ===========================================================
         SCRIPTS GO WAY DOWN HERE AT THE BOTTOM
     ============================================================ -->    
@@ -164,7 +172,8 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
     <!-- My JS - very last -->
-    <script src="js/my-favorite-sake.js"></script>
+    <script src="js/marius-psi.js"></script>
+
 
   </body>
 </html>

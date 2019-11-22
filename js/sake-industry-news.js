@@ -1,7 +1,8 @@
 /* ============================================================
-    This code uses Google Charts to dras a simple line chart.
-    Note the data is curently 'hard coded' here.
+    This JavaScript is for the sake-industry-news page
 ============================================================ */
+
+
 
 /* After the page loads, load up Google Charts
   ------------------------------------------------------------ */
@@ -50,7 +51,7 @@ function drawRiceProdChart() {
         fontSize: 10,
       }          
     },
-    width: '100%',
+    width: 'auto',
     height: 'auto'
   };
   

@@ -82,7 +82,7 @@
           </div>        
 
           <!-- An overall container for this section; so we can place
-               the list of windows and the wireframe side-by-side
+               the list and the wireframe side-by-side
           ------------------------------------------------------------ -->
           <div class="row" id="wireframes-container">
 
@@ -90,11 +90,23 @@
             ------------------------------------------------------------ -->
             <div id="wireframes-list" class="col-sm-4">
               <a class="list-group-item list-group-item-action" href="#list-item-1">Home</a>
+
               <a class="list-group-item list-group-item-action" href="#list-item-2">How Sake is Made</a>
-              <a class="list-group-item list-group-item-action" href="#list-item-3">My Favorite Sake</a>
-              <a class="list-group-item list-group-item-action" href="#list-item-4">Sake Breweries</a>
-              <a class="list-group-item list-group-item-action" href="#list-item-5">Sake News</a>
-              
+              <a class="list-group-item list-group-item-action" href="#list-item-3">Sake Breweries</a>
+              <a class="list-group-item list-group-item-action" href="#list-item-4">My Favorite Sake</a>
+              <a class="list-group-item list-group-item-action" href="#list-item-5">Sake Industry News</a>
+
+              <a class="list-group-item list-group-item-action" href="#list-item-6">Content Map</a>
+              <a class="list-group-item list-group-item-action" href="#list-item-7">Wireframes</a>
+              <a class="list-group-item list-group-item-action" href="#list-item-8">Project Walkthrough</a>
+              <a class="list-group-item list-group-item-action" href="#list-item-9">PageSpeed Insights</a>
+              <a class="list-group-item list-group-item-action" href="#list-item-10">Credits and Resources</a>
+
+              <a class="list-group-item list-group-item-action" href="#list-item-11">Bonus</a>
+
+              <a class="list-group-item list-group-item-action" href="#list-item-12">Contact</a>
+
+              <a class="list-group-item list-group-item-action" href="#list-item-13">Secret Page</a>
             </div>
 
             <!-- The PDF for the wireframe of each page
@@ -102,13 +114,34 @@
             <div data-spy="scroll" data-target="#wireframes-list" data-offset="0" class="col-sm-8" id="wireframes">
               <h4 id="list-item-1">Page: Home</h4>
               <iframe src="pdf/wireframe-home.pdf#toolbar=0" width="600px" height="375px"></iframe>
+
               <h4 id="list-item-2">Page: How Sake is Made</h4>
               <iframe src="pdf/wireframe-how-sake-is-made.pdf#toolbar=0" width="600px" height="375px"></iframe>
-              <h4 id="list-item-3">Page: My Favorite Sake</h4>
-              <iframe src="pdf/wireframe-my-favorite-sake.pdf#toolbar=0" width="600px" height="375px"></iframe>
-              <h4 id="list-item-4">Page: Sake Breweries</h4>
+              <h4 id="list-item-3">Page: Sake Breweries</h4>
               <iframe src="pdf/wireframe-sake-breweries.pdf#toolbar=0" width="600px" height="375px"></iframe>
+              <h4 id="list-item-4">Page: My Favorite Sake</h4>
+              <iframe src="pdf/wireframe-my-favorite-sake.pdf#toolbar=0" width="600px" height="375px"></iframe>
               <h4 id="list-item-5">Page: Sake Industry News</h4>
+              <iframe src="pdf/xxxxxxx.pdf#toolbar=0" width="600px" height="375px"></iframe>
+
+              <h4 id="list-item-6">Page: Content Map</h4>
+              <iframe src="pdf/xxxxxxx.pdf#toolbar=0" width="600px" height="375px"></iframe>
+              <h4 id="list-item-7">Page: Wireframes</h4>
+              <iframe src="pdf/xxxxxxx.pdf#toolbar=0" width="600px" height="375px"></iframe>
+              <h4 id="list-item-8">Page: Project Walkthrough</h4>
+              <iframe src="pdf/xxxxxxx.pdf#toolbar=0" width="600px" height="375px"></iframe>
+              <h4 id="list-item-9">Page: PageSpeed Insights</h4>
+              <iframe src="pdf/xxxxxxx.pdf#toolbar=0" width="600px" height="375px"></iframe>
+              <h4 id="list-item-10">Page: Credits and Resources</h4>
+              <iframe src="pdf/xxxxxxx.pdf#toolbar=0" width="600px" height="375px"></iframe>
+
+              <h4 id="list-item-11">Page: Bonus</h4>
+              <iframe src="pdf/xxxxxxx.pdf#toolbar=0" width="600px" height="375px"></iframe>
+
+              <h4 id="list-item-12">Page: Contact</h4>
+              <iframe src="pdf/xxxxxxx.pdf#toolbar=0" width="600px" height="375px"></iframe>
+
+              <h4 id="list-item-13">Page: Secret Page</h4>
               <iframe src="pdf/xxxxxxx.pdf#toolbar=0" width="600px" height="375px"></iframe>
             </div>
 
@@ -139,8 +172,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
     <!-- My JS - very last -->
-
-
+    <script src="js/wireframes.js"></script>
 
   </body>
 </html>

@@ -47,6 +47,11 @@ body {
 
 /* Main navigation bar
   ------------------------------------------------------------ */
+#page-navbar  {      /* even thought set padding=0 above, some creeps back in here */
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
 #page-navbar .navbar-brand {
   color: var(--clr-brown);
   font-family: brush-strokes;
@@ -94,7 +99,7 @@ body {
 /* Note we have to 'push' it down into position; this is because
    the Bootstrap navbar we are using uses position:fixed */
 .breadcrumb {
-  padding-top: 100px; 
+  padding-top: 80px; 
   margin-bottom: 0;
   background-color: var(--clr-lt-tan);
 }
@@ -107,15 +112,12 @@ body {
   color: var(--clr-brown);
 }
 
-.breadcrumb-item:hover {
-  
-}
 
 
 /* Main section
   ------------------------------------------------------------ */
 main {
-  padding-bottom: 2rem;
+  min-height: 40rem;
 /*  
   background-image: linear-gradient(to bottom, rgba(0,0,0,0.7), rgba(0,0,0,0.6)), 
                     url('../img/sake-barrels.jpg');
@@ -124,16 +126,14 @@ main {
   height: auto;
   min-height: 800px;
 */
-
 }
 
 .page-description {
   text-align: center;
-  padding-top: 2rem;
-  padding-left: 4rem;
-  padding-right: 4rem;
+  padding-top: 1rem;      /* have to use padding here else get a narrow back bar across top; <main> does not act like a <div> */
+  margin-left: auto;
+  margin-right: auto;
   max-width: 60rem;
-  margin: auto;
 }
 
 .page-description h1 {
@@ -153,7 +153,6 @@ main {
   ------------------------------------------------------------ */
 footer {
   background-color: black;
-
   border-top-style:solid;
   border-top-width: 1px;
   border-top-color: var(--clr-lt-tan);
@@ -193,10 +192,24 @@ footer .footer-copyright {
 /* ============================================================
     HOME PAGE SPECIFIC ITEMS
 ============================================================ */
+#page-home main {
+/*
+  background-image: linear-gradient(to bottom, rgba(0,0,0,0.7), rgba(0,0,0,0.6)), 
+                    url('../img/sake-barrels.jpg');
+*/              
+  background-image: linear-gradient(to bottom, rgba(0,0,0,0.75), rgba(0,0,0,0.8)), 
+                    url('../img/sake-barrels2.jpg');
+                    
+  background-size: cover;
+  background-position: center;
+}
+
+
 #page-home .card-deck {
-  margin-left: 2rem;
-  margin-right: 2rem;
   margin-top: 2rem;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 60rem;
 }
 
 #page-home .card-header {
@@ -215,7 +228,6 @@ footer .footer-copyright {
 }
 
 
-
 /* ============================================================
     HOW SAKE IS MADE PAGE SPECIFIC ITEMS
 ============================================================ */
@@ -227,82 +239,76 @@ footer .footer-copyright {
   margin-left: auto;
   margin-right: auto;
   margin-top: 2rem;
+  margin-bottom: 2rem;
   max-width: 66%;
   outline-style: none;
 }
 
 
 
+
 /* ============================================================
     MY FAVORITE SAKE PAGE SPECIFIC ITEMS
 ============================================================ */
-#page-my-favorite-sake #list-and-details {
+#page-my-favorite-sake #list-and-detail {
   background-color: white;
   margin-top: 2rem;
+  margin-bottom: 2rem;
   margin-left: auto;
   margin-right: auto;
-
-
-/*  min-width: 50rem; */
-  max-width: 60rem;
-  
-/*  min-height: 40rem; */
-  max-height: 40rem;
-
-/*
-  margin-top: 2rem;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 50rem;
-  max-height: 40rem;
-*/
-/*
-border-style: solid;
-border-width: 2px;
-border-color: red;
-*/
-
+  max-width: 60rem;     /* Note on this page we are giving more width than on other pages */
+  border-radius: 10px;
 }
 
-#page-my-favorite-sake .sake-detail {
-/*
-  border-style: solid;
-  border-width: 2px;
-  border-color: purple;
-*/  
+#page-my-favorite-sake #sake-list {
+  margin-top: 1rem;
+  margin-bottom: .5rem;
+  
+  /* do not allow the list width to grow beyond a # chars */  
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: 32ch;
+  max-height: 45rem;
+  overflow-y: auto;
+}
+
+/* Note on flex basis for the labels and detail. We are doing some
+   manual control, giving more room to the detail when the window width
+   increases and not to the labels (they don't benefit from additional 
+   width). We are also not allowing the labels to shrink (so really treating
+   them as fixed vs flex).
+   
+   It is critical that the flex basis for the label + flex basis
+   for the detail = the overall container max width */
+
+#page-my-favorite-sake #sake-detail {
+   margin-top: .5rem;
+   margin-bottom: .5rem;
+}
+
+#page-my-favorite-sake #sake-detail .row {
+   margin-top: .5rem;
+   margin-bottom: .5rem;
 }
 
 #page-my-favorite-sake .sake-detail-label {
   font-weight: bold;
 
-  /* do not allow the label to shrink or grow; keep at a fixed # chars */  
+  /* do not allow the label width to shrink or grow */  
   flex-grow: 0;
   flex-shrink: 0;
   flex-basis: 20ch;
-
-  margin-top: .5rem;  
-
-/*
-  border-style: solid;
-  border-width: 2px;
-  border-color: blue;
-*/
-  
 }
 
 #page-my-favorite-sake .sake-detail-text {
-  /* the text area can shrink and grow; use 40 chars for it's flex-basis */
+  /* the text area can shrink and grow */
   flex-grow: 1;
   flex-shrink: 1;
   flex-basis: 40ch;
-
-  margin-top: .5rem;  
-/*
-  border-style: solid;
-  border-width: 2px;
-  border-color: green;
-*/
 }
+
+
+
 
 
 
@@ -316,7 +322,8 @@ border-color: red;
   margin-left: auto;
   margin-right: auto;
   margin-top: 2rem;
-  max-width: 50%;
+  margin-bottom: 2rem;
+  max-width: 600px;    /* the images are 600px; don't allow to stretch/scale */
 }
 
 #page-sake-breweries .carousel-caption {
@@ -330,31 +337,32 @@ border-color: red;
 
 
 
+
 /* ============================================================
     SAKE NEWS PAGE SPECIFIC ITEMS
 ============================================================ */
 #page-sake-industry-news #news-list {
   margin-top: 2rem;
+  margin-bottom: 2rem;
   margin-left: auto;
   margin-right: auto;
   max-width: 50rem;
-  max-height: 40rem;
 }
 
 #page-sake-industry-news .media {
   background-color: white;
   color: black;
-/*
-  margin-top: 1rem;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 50rem;
-*/
   margin-bottom: 1rem;
   border-style: solid;
   border-color: black;
   border-width: 1px;
   border-radius: 10px;
+}
+
+/* do not want last item to have bottom margin; else get a margin
+   from the item plus container at bottom */
+#page-sake-industry-news .media:last-child {
+  margin-bottom: 0;
 }
 
 #page-sake-industry-news .media img {
@@ -368,7 +376,7 @@ border-color: red;
 }
 
 #page-sake-industry-news .media .publish-date {
-  color: silver;
+  color: grey;
   font-size: .66em;
   font-style: italic;
   margin-left: 1em;
@@ -396,9 +404,13 @@ border-color: red;
   border-style: solid;
   border-width: 1px;
   border-color: black;
+/*
   margin-left: auto;
   margin-right: auto;
+  */
+  
 }
+
 
 
 /* ============================================================
@@ -407,10 +419,17 @@ border-color: red;
 #page-bonus #tabbed-area {
   background-color: white;
   margin-top: 2rem;
+  margin-bottom: 2rem;
   margin-left: auto;
   margin-right: auto;
   max-width: 50rem;
   min-height: 45rem;
+  border-radius: 10px;
+}
+
+#page-bonus .nav-item.nav-link {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
 
 #page-bonus #canvas-drawing {
@@ -451,6 +470,18 @@ border-color: red;
   line-height: normal;
 }  
 
+#page-bonus #btn-svg-pan-up,
+#page-bonus #btn-svg-pan-down,
+#page-bonus #btn-svg-pan-left,
+#page-bonus #btn-svg-pan-right,
+#page-bonus #btn-svg-zoom-in,
+#page-bonus #btn-svg-zoom-out,
+#page-bonus #btn-svg-reset {
+  max-width: 12ch;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 #page-bonus #btn-svg-pan-left {
   margin-top: 2rem;
 }
@@ -461,6 +492,7 @@ border-color: red;
 
 #page-bonus #btn-svg-reset {
   margin-top: 2rem;
+  margin-bottom: 1rem;
 }
 
 #page-bonus #btn-access-secret-page {
@@ -468,6 +500,8 @@ border-color: red;
   margin-left: auto;
   margin-right: auto;
 }
+
+
 
 
 
@@ -484,6 +518,7 @@ border-color: red;
 #page-contact #contact-form {
   background-color: white;
   margin-top: 2rem;
+  margin-bottom: 2rem;
   margin-left: auto;
   margin-right: auto;
   max-width: 50rem;
@@ -540,20 +575,19 @@ border-color: red;
 ============================================================ */
 #page-content-map #content-map-container {
   margin-top: 2rem;
+  margin-bottom: 2rem;
   margin-left: auto;
   margin-right: auto;
-  max-width: 66%;
-  height: 500px;
-/*  background-color: white; */
+  max-width: 50rem;
 }
 
 #page-content-map #content-map-container iframe {
-  margin-top: 0;
   margin-left: auto;
   margin-right: auto;
-/*  max-width: 700px; */
-  background-color: white;
+  border-radius: 10px;
 }
+
+
 
 
 
@@ -562,26 +596,24 @@ border-color: red;
 ============================================================ */
 #page-wireframes #wireframes-container {
   margin-top: 2rem;
+  margin-bottom: 2rem;
   margin-left: auto;
   margin-right: auto;
-  max-width: 90%;
-  background-color: white;
+  max-width: 60rem;
 }
 
 #page-wireframes #wireframes-list {
-  padding-left: 0;
+
 }
 
 #page-wireframes #wireframes {
-  position: relative;
-  height: 500px;
+/* start with 'too short' height; let page render and in JS, set the
+   height to the height of #wireframes-list */
+  height: 100px;       
   overflow-y: scroll;
-  
-  border-style: solid;
-  border-width: 4px;
-  border-color: red;
   background-color: white;
 }
+
 
 
 
@@ -590,11 +622,12 @@ border-color: red;
 ============================================================ */
 #page-project-walkthrough #requirements-list {
   margin-top: 2rem;
+  margin-bottom: 2rem;
   margin-left: auto;
   margin-right: auto;
   max-width: 50rem;
-  max-height: 40rem;
   background-color: white;
+  border-radius: 10px;
 }
 
 #page-project-walkthrough .requirements-list-item {
@@ -610,7 +643,6 @@ border-color: red;
   border-bottom-style: none;
 }
 
-
 #page-project-walkthrough .list-item-header {
   font-weight: bold;
   margin-left: 1rem;
@@ -623,13 +655,43 @@ border-color: red;
   margin-right: 1rem;
 }
 
-  
+
 
 
 
 /* ============================================================
     PAGESPEED INSIGHTS PAGE SPECIFIC ITEMS
 ============================================================ */
+#page-pagespeed-insights #pagespeed-data {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 50rem;
+  background-color: white;
+/*
+  border-radius: 10px;
+*/
+  max-height: 30rem;
+  overflow-y: auto;
+}
+
+/*
+#page-pagespeed-insights #bubba {
+  border-radius: 10px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: red;
+
+}
+*/
+
+
+#page-xxxxxxxx div {
+  border-style: solid;
+  border-width: 1px;
+  border-color: red;
+}
 
 
 
@@ -639,10 +701,10 @@ border-color: red;
 ============================================================ */
 #page-credits #credits-list {
   margin-top: 2rem;
+  margin-bottom: 2rem;
   margin-left: auto;
   margin-right: auto;
   max-width: 50rem;
-  max-height: 40rem;
 }
 
 #page-credits .media {
@@ -653,6 +715,12 @@ border-color: red;
   border-color: black;
   border-width: 1px;
   border-radius: 10px;
+}
+
+/* do not want last item to have bottom margin; else get a margin
+   from the item plus container at bottom */
+#page-credits .media:last-child {
+  margin-bottom: 0;
 }
 
 #page-credits .media .footer {
@@ -673,16 +741,14 @@ border-color: red;
   border-radius: 10px;
 }
 
-#page-credits .media .footer {
-  font-size: .75em;
-  font-style: italic;
-  margin-bottom: .5em;
-}
+
+  
+
 
 
 
 /* ============================================================
-    STUFF HANDY FOR TINKERING
+    STUFF HANDY FOR POSITIONING AND TINKERING
 ============================================================ */
 
 .debug-show-box {
@@ -690,3 +756,10 @@ border-color: red;
   border-width: 1px;
   border-color: red;
 }
+
+#page-xxxxxxx div {
+  border-style: solid;
+  border-width: 1px;
+  border-color: red;
+}
+

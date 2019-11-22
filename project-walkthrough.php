@@ -84,7 +84,7 @@
               Content Map
             </p>
             <p class="list-item-detail">
-              A content map may be found on the <a href="content-map-sm-">Content Map</a> page.
+              A content map may be found on the <a href="content-map.php">Content Map</a> page.
             </p>
           </div>
           
@@ -93,7 +93,7 @@
               Wireframe
             </p>
             <p class="list-item-detail">
-              A wireframe for each page may be found on the <a href="wireframes-sm-">Wireframes<a/> page.
+              A wireframe for each page may be found on the <a href="wireframes.php">Wireframes<a/> page.
             </p>
           </div>
 

@@ -1,4 +1,10 @@
 <?php
+/* ============================================================
+    This code is requires the user to authenticate (i.e. enter
+    a username and password). If they do so correctly they gain
+    access to a secret page.
+============================================================ */
+
   $enteredUserName = htmlspecialchars(trim($_SERVER['PHP_AUTH_USER']));
   $enteredPassword =  htmlspecialchars(trim($_SERVER['PHP_AUTH_PW']));
 
@@ -19,23 +25,32 @@
       <style>
         .error {
           font-weight: bold;
+          font-size: 2rem;
           color: red;
           text-align: center;
-          margin-top: 3rem;
         }
+        .hint {
+          font-weight: bold;
+          font-size: 1rem;
+          color: black;
+          text-align: center;
+        }
+        .back {
+          font-size: 1.25rem;
+          text-align: center;
+          margin-top: 2rem;
+        }
+
       </style>
-      <h2 class="error">
-        Please enter your username and password
-        <p>
-          (hint: 'sake' / 'sake')
-        </p>
-      </h2>
+      <p class="error">Please enter your username and password</p>
+      <p class="hint">(hint: 'sake' / 'sake')</p>
+      <p class="back"><a href="javascript:history.back();">Back</a></p>
 _END;
     exit();
   }
   
   // Only get to here if the user is validated
-  require("secret-page.php");
+  header("location:secret-page.php");
 
 ?>
 

@@ -82,7 +82,7 @@
           <!-- An overall container for this section
           ------------------------------------------------------------ -->
           <div class="row" id="content-map-container">
-              <iframe src="pdf/content-map.pdf#toolbar=0" width="600px" height="400px"></iframe>
+            <iframe src="pdf/content-map.pdf#toolbar=0" width="600px" height="450px"></iframe>
           </div>   <!-- end of the container for this section of the page -->
 
       </main>

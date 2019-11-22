@@ -75,7 +75,7 @@
 
         <!-- News articles
         ------------------------------------------------------------ -->
-        <div class="overflow-auto" id="news-list">
+        <div id="news-list">
           <div class="media">
             <img src="img/news-thumbnails/news_009.jpg" class="mr-3" alt="...">
             <div class="media-body">
@@ -229,7 +229,7 @@
     <script src="https://www.gstatic.com/charts/loader.js"></script>
 
     <!-- My JS - very last -->
-    <script src="js/draw-rice-prod-chart.js"></script>
+    <script src="js/sake-industry-news.js"></script>
 
 
   </body>

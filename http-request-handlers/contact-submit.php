@@ -1,4 +1,8 @@
 <?php
+/* ============================================================
+    This code is for handling the contact form submit
+============================================================ */
+
   $name = htmlspecialchars(trim($_REQUEST["name"]));
   $emailAddr = htmlspecialchars(trim($_REQUEST["email-address"]));
   $message = htmlspecialchars(trim($_REQUEST["message"]));

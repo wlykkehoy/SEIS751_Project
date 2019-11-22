@@ -106,27 +106,20 @@
               <div class="card-body">
                 <p class="card-text">
                   Curious about Japanes Sake? Find information about:
-                  <ul>
-                    <li>
-                      <a href="how-sake-is-made.php">How sake is made</a>
-                    </li>
-                    <li>
-                      <a href="sake-breweries.php">Some sake breweries</a>
-                    </li>
-                    <li>
-                      <a href="my-favorite-sake.php">Some of my favorite sake</a>
-                    </li>
-                    <li>
-                      <a href="sake-industry-news.php">Sake industry news</a>
-                    </li>
-                  </ul>
+                  <li>
+                    <a href="how-sake-is-made.php">How sake is made</a>
+                  </li>
+                  <li>
+                    <a href="sake-breweries.php">Some sake breweries</a>
+                  </li>
+                  <li>
+                    <a href="my-favorite-sake.php">Some of my favorite sake</a>
+                  </li>
+                  <li>
+                    <a href="sake-industry-news.php">Sake industry news</a>
+                  </li>
                 </p>
               </div>
-<!--              
-              <div class="card-footer">
-                <a href="design.php" class="btn">Learn More</a>
-              </div>  
--->              
             </div>  <!-- end of the card -->
     
             <div class="card">
@@ -134,7 +127,6 @@
               <div class="card-body">
                 <p class="card-text">
                   Explore some artifacts from building this site:
-                  <ul>
                   <li>
                     <a href="content-map.php">Content Map</a>
                   </li>
@@ -150,28 +142,19 @@
                   <li>
                     <a href="credits-and-resources.php">Credits and Resources</a>
                   </li>
-                  </ul>
                 </p>
               </div>
-<!--              
-              <div class="card-footer">
-                <a href="design.php" class="btn">Learn More</a>
-              </div>  
--->              
             </div>   <!-- end of the card -->
 
             <div class="card">
               <div class="card-header">Bonus Items</div>
               <div class="card-body">
                 <p class="card-text">
-                  ... coming soon ...
+                  What sort of things are in the bonus area? 
+                  Will they make you ooh and aah? 
+                  You’ll just have to <a href="bonus.php">go check them out</a>...
                 </p>
               </div>
-<!--              
-              <div class="card-footer">
-                <a href="design.php" class="btn">Learn More</a>
-              </div>  
--->              
             </div>  <!-- end of the card -->
 
           </div>    <!-- end of Cards grouping info about the site's content -->

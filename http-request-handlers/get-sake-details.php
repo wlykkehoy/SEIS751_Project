@@ -1,17 +1,36 @@
 <?php
+/* ============================================================
+    This code is for retrieving the details for the name of
+    the sake passsed in the request from our SQLite3 database.
+    It returns a JSON structure with the info.
+============================================================ */
 
-$theObj->name = "Divine Droplets";
-$theObj->overview = "Flawless yet incredibly persistent. The purity of the region of Yamagata shines in this sake, with the crispness of their pristine water, the grassy, spicy quality of dewasansan rice, and the opulent textures derived from shizuku free run finishing.";
-$theObj->tasting_notes = "Refreshing and pure with notes of pineapple, white peach, green apple, lily and a hint of white pepper.";
-$theObj->food_pairing = "Excellent paired with smoked salmon & cream cheese blinis, olive tapenade or vinegar tomato salad.";
-$theObj->grade = "Junmai Daiginjo";
-$theObj->seimaibuai = 50;
-$theObj->rice = "Dewasansan";
-$theObj->alcohol = 16;
-$theObj->brewery_name = "GINGA SHIZUKU BREWERY";
-$theObj->brewery_location = "Yamagata";
+  $sakeNameToLookup = $_REQUEST["sakeNameToLookup"];
 
-$theJSON = json_encode($theObj);
+  $db = new SQLite3("../sqlitedb/sake-data.db");
+  if (!$db) {
+    die("<h3> Fatal error: Connection to db failed <br></h3>");
+  }
 
-echo $theJSON;
+  $stmt = "SELECT * FROM sakeData where name = '" . $sakeNameToLookup . "'";
+  $theResult = $db->querySingle($stmt, TRUE);
+  if (!$theResult) {
+    die("<h3> Fatal error: database record for $sakeNameToLookup was not found <br><h3>");
+  }
+
+  $theObj->name = $theResult["Name"];
+  $theObj->overview = $theResult["Overview"];
+  $theObj->tasting_notes = $theResult["TastingNotes"];
+  $theObj->food_pairing = $theResult["FoodPairing"];
+  $theObj->grade = $theResult["Grade"];
+  $theObj->seimaibuai = $theResult["Seimaibuai"];
+  $theObj->rice = $theResult["Rice"];
+  $theObj->alcohol = $theResult["Alcohol"];
+  $theObj->brewery_name = $theResult["BreweryName"];
+  $theObj->brewery_location = $theResult["BreweryLocation"];
+
+  $theJSON = json_encode($theObj);
+
+  echo $theJSON;
+
 ?>

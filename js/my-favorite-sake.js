@@ -1,7 +1,7 @@
 /* ============================================================
-    This code retrieves the list of sake from the server
-    and displays it.
+    This JavaScript is for the my-favorite-sake page
 ============================================================ */
+
 
 
 /* This function fires when the page is loaded. It merely
@@ -9,6 +9,12 @@
    for each of the sake. 
   ------------------------------------------------------------ */
 $(function() {
+
+  /* enable Bootstrap popovers */
+  $(document).ready(function(){
+    $('[data-toggle="popover"]').popover();   
+  });
+
 
   /* fetch the list of sake from the server and populate the list */
   $.getJSON("http-request-handlers/get-sake-list.php", function(resp) {
@@ -21,23 +27,12 @@ $(function() {
     }
   });
 
+
   /* Add an event handler to the list that fires when a  list item is clicked */
   $("#sake-list").click(displaySakeDetail);
-  
-
-
-  /* automatically select the first one */
-/* seems is not yet defined 
-  var buttons = $(".sake-list-item");
-  var firstSake = buttons[0];
-    console.log(buttons);
-  console.log(firstSake);
-*/  
-/*
-  firstSake.button('toggle');
-*/  
 
 });
+ 
   
  
 /* This is the event handler for when an individual sake's
@@ -46,14 +41,11 @@ $(function() {
   ------------------------------------------------------------ */
 function displaySakeDetail(event) {
 
-  console.log("==> " + event.target.innerHTML); 
-
   event.preventDefault(); 
 
   /* for the selected sake, retrieve info from the server */
-/* !!!!!!!! need to send the name of the selectes sake !!!!!! */  
-  $.getJSON("http-request-handlers/get-sake-details.php", function(resp) {
-/*    console.log(resp); */
+  var data = {"sakeNameToLookup": event.target.innerHTML};
+  $.getJSON("http-request-handlers/get-sake-details.php", data, function(resp) {
     $("#fld-name").html(resp.name);
     $("#fld-grade").html(resp.grade);
     $("#fld-overview").html(resp.overview);
@@ -66,8 +58,6 @@ function displaySakeDetail(event) {
   });
 };
 
-
-  
 
   
 
