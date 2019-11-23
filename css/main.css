@@ -89,9 +89,16 @@ body {
   color: var(--clr-lt-tan);
 }
 
+/* changed to putting .active on the nav-link class
 #page-navbar .nav-item.active .nav-link {
   color: var(--clr-brown);
 }
+*/
+
+#page-navbar .nav-link.active {
+  color: var(--clr-brown);
+}
+
 
 
 /* Breadcrumb
@@ -532,29 +539,16 @@ footer .footer-copyright {
   text-align: center;
 }
 
-#page-contact .social-media-icon.linkedin {
-  color: #0e76a8;
+#page-contact .social-media-icon img{
+  height: 48px;
+  height: 40px;
 }
 
-#page-contact .social-media-icon.facebook {
-  color: #3b5998;
+
+#page-contact .social-media-icon img:hover {
+  height: 52px;
 }
 
-#page-contact .social-media-icon.twitter {
-  color: #00acee;
-}
-
-#page-contact .social-media-icon.github {
-  color: #333;
-}
-
-#page-contact .social-media-icon:hover {
-  color: var(--clr-lt-tan);
-}
-
-#page-contact .social-media-icon {
-  text-decoration: none;
-}
 
 #page-contact #contact-form-right {
   margin-top: 1rem;

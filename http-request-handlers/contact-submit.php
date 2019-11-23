@@ -19,6 +19,7 @@
     Thanks $name for the message!
   </h3>
   <a href="../contact.php">Back to the contact page</a>
+  <a href="javascript:history.back();">Back to the contact page</a>
 _END
 
 ?>

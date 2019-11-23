@@ -80,14 +80,10 @@
         ------------------------------------------------------------ -->
         <div class="row " id="contact-form">
           <div class="col-md-2 align-self-center " id="contact-form-left">
-            <!-- linkedin icon -->
-            <p><a class="social-media-icon linkedin" href="https://www.linkedin.com/in/wadelykkehoy">&#xf147;</a></p> 
-            <!-- facebook icon -->
-             <p><a class="social-media-icon facebook" href="https://www.facebook.com/wade.lykkehoy">&#xf126;</a></p>  
-            <!-- twitter icon -->
-             <p><a class="social-media-icon twitter" href="https://www.twitter.com">&#xf181;</a></p>  
-            <!-- github icon -->
-             <p><a class="social-media-icon github" href="https://github.com/wlykkehoy">&#xf133;</a></p>
+            <p><a class="social-media-icon" href="https://www.linkedin.com/in/wadelykkehoy"><img src="font/iconmonstr-linkedin-3.svg"></a></p> 
+            <p><a class="social-media-icon" href="https://www.facebook.com/wade.lykkehoy"><img src="font/iconmonstr-facebook-3.svg"></a></p>  
+            <p><a class="social-media-icon" href="https://www.twitter.com"><img src="font/iconmonstr-twitter-3.svg"></a></p>  
+            <p><a class="social-media-icon" href="https://github.com/wlykkehoy"><img src="font/iconmonstr-github-3.svg"></a></p>
           </div>
            
           <div class="col-md-10 " id="contact-form-right">

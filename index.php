@@ -35,8 +35,8 @@
           <div class="collapse navbar-collapse justify-content-end" id="main-navigation">
             <ul class="navbar-nav">
               
-              <li class="nav-item active">
-                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+              <li class="nav-item ">
+                <a class="nav-link active" href="index.php">Home</a>
               </li>
               
               <li class="nav-item dropdown">

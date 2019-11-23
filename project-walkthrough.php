@@ -205,6 +205,10 @@
             <p class="list-item-detail">
               On the <a href="bonus.php">Bonus</a> page, one of the tabs contains an SVG drawing.
             </p>
+            <p class="list-item-detail">
+              On the <a href="contact.php">Contact</a> page, the social media icons are SVG (obtained
+              from <a href="https://iconmonstr.com/">iconmonstr</a>).
+            </p>
           </div>
 
           <div class="requirements-list-item" >
