@@ -52,6 +52,7 @@ body {
   padding-bottom: 0;
 }
 
+/* this is the word "Sake" in the upper left of the nav bar */
 #page-navbar .navbar-brand {
   color: var(--clr-brown);
   font-family: brush-strokes;
@@ -64,47 +65,80 @@ body {
   color: var(--clr-brown);
 }
 
+/* background for the navbar and it's dropdowns */
 #page-navbar, 
 #page-navbar .dropdown-menu {
-  background: var(--clr-green);
+  background-color: var(--clr-green);
 }
 
+/* navbar items and behavior */
 #page-navbar .nav-link {
   color: white;
   font-size: 1.25rem;
   margin-right: 1rem;
 }
 
+#page-navbar .nav-link.active {
+  color: var(--clr-brown);
+}
+
+#page-navbar .nav-link:hover {
+/*
+  color: var(--clr-brown);
+*/  
+  color: var(--clr-lt-tan);
+}
+
+#page-navbar .nav-link.active:hover {
+/*
+  color: white;
+*/
+  color: var(--clr-lt-tan);
+}
+
+/* navbar dropdown items behavior; mirrors main navbar */
+
 #page-navbar .dropdown-item {
   color: white;
 }
 
-#page-navbar .nav-link:hover,
 #page-navbar .dropdown-item:hover {
+  background-color: var(--clr-green);
+/*
+  color: var(--clr-brown);
+*/
+  color: var(--clr-lt-tan);
+}
+
+#page-navbar .dropdown-item.active {
+  background-color: var(--clr-green);
   color: var(--clr-brown);
 }
 
 #page-navbar .dropdown-item:focus {
-  background-color: var(--clr-brown);
+  background-color: var(--clr-green);
+/*
+  color: var(--clr-brown);
+*/
   color: var(--clr-lt-tan);
 }
 
-/* changed to putting .active on the nav-link class
-#page-navbar .nav-item.active .nav-link {
+#page-navbar .dropdown-item:hover {
+/*
   color: var(--clr-brown);
-}
 */
-
-#page-navbar .nav-link.active {
-  color: var(--clr-brown);
+  color: var(--clr-lt-tan);
 }
+
+
 
 
 
 /* Breadcrumb
   ------------------------------------------------------------ */
-/* Note we have to 'push' it down into position; this is because
-   the Bootstrap navbar we are using uses position:fixed */
+/* Note we have to 'push' it down into position via some padding
+   on top; this is because the Bootstrap navbar we are using uses 
+   position:fixed */
 .breadcrumb {
   padding-top: 80px; 
   margin-bottom: 0;

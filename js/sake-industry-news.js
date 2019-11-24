@@ -1,13 +1,21 @@
 /* ============================================================
-    This JavaScript is for the sake-industry-news page
+    This JavaScript is for the sake-industry-news.php page
 ============================================================ */
 
 
 
-/* After the page loads, load up Google Charts
+/* After the page loads
   ------------------------------------------------------------ */
 $(function() {
+
+  /* set the navbar item for the Home page to active */
+  $("#nav-link-featured").addClass("active");
+  $("#nav-dropdown-sake-industry-news").addClass("active");
+
+  
+  /* load up google charts */
   google.charts.load('current', {packages: ['corechart', 'line']});
+  
 });
 
 

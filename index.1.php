@@ -27,7 +27,49 @@
       <header>
         <!-- Main navigation bar / menu
         ------------------------------------------------------------ -->
-        <?php require_once("navbar.php"); ?>
+        <nav class="navbar navbar-expand-md fixed-top " id="page-navbar">
+          <a class="navbar-brand" href="#">Sake</a>
+          <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#main-navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="main-navigation">
+            <ul class="navbar-nav">
+              
+              <li class="nav-item ">
+                <a class="nav-link active" href="index.php">Home</a>
+              </li>
+              
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownFeatured" role="button" data-toggle="dropdown">Featured</a>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="how-sake-is-made.php">How Sake is Made</a>
+                  <a class="dropdown-item" href="sake-breweries.php">Sake Breweries</a>
+                  <a class="dropdown-item" href="my-favorite-sake.php">My Favorite Sake</a>
+                  <a class="dropdown-item" href="sake-industry-news.php">Sake Industry News</a>
+                </div>
+              </li> 
+
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownAbout" role="button" data-toggle="dropdown">About</a>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="content-map.php">Content Map</a>
+                  <a class="dropdown-item" href="wireframes.php">Wireframes</a>
+                  <a class="dropdown-item" href="project-walkthrough.php">Project Walkthrough</a>
+                  <a class="dropdown-item" href="pagespeed-insights.php">PageSpeed Insights</a>
+                  <a class="dropdown-item" href="credits-and-resources.php">Credits and Resources</a>
+                </div>
+              </li> 
+
+              <li class="nav-item">
+                <a class="nav-link" href="bonus.php">Bonus</a>
+              </li>
+              
+              <li class="nav-item">
+                <a class="nav-link" href="contact.php">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </nav>      <!-- end of main navigation bar / menu -->
 
         <!-- Breadcrumb
         ------------------------------------------------------------ -->
@@ -36,7 +78,9 @@
             <li class="breadcrumb-item active">Home</li>
           </ol>
         </nav>
+
       </header>
+
 
 
       <!-- ===========================================================
@@ -140,7 +184,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
     <!-- My JS - very last -->
-    <script src="js/index.js"></script>
+
 
   </body>
 </html>

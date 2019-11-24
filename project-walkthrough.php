@@ -27,26 +27,7 @@
       <header>
         <!-- Main navigation bar / menu
         ------------------------------------------------------------ -->
-        <nav class="navbar navbar-expand-md fixed-top" id="page-navbar">
-          <a class="navbar-brand" href="index.php">Sake</a>
-          <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#main-navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse justify-content-end" id="main-navigation">
-            <ul class="navbar-nav">
-              
-              <li class="nav-item ">
-                <a class="nav-link" href="index.php">Home <span class="sr-only">(current)</span></a>
-              </li>
-              
-<!-- navbar will be updated from Home when fully fleshed out -->
-              <li class="nav-item">
-                <a class="nav-link" href="#">!! add rest !!</a>
-              </li>
-              
-            </ul>
-          </div>
-        </nav>      <!-- end of main navigation bar / menu -->
+        <?php require_once("navbar.php"); ?>
 
         <!-- Breadcrumb
         ------------------------------------------------------------ -->
@@ -364,7 +345,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
     <!-- My JS - very last -->
-
+    <script src="js/project-walkthrough.js"></script>
 
   </body>
 </html>

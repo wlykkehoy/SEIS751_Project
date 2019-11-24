@@ -1,5 +1,5 @@
 /* ============================================================
-    This JavaScript is for the bonus page
+    This JavaScript is for the bonus.php page
 ============================================================ */
 
 /* Some global variables for positioning the SVG drawing
@@ -12,11 +12,16 @@ var svgYPos = 0;
 /* Stuff to do after the page loads
   ------------------------------------------------------------ */
 $(function() {
+  
+  /* set the navbar item for the Home page to active */
+  $("#nav-link-bonus").addClass("active");
+
+
   /* Set event handler to render canvas drawing when it's tab is shown */
   $("a[href='#nav-canvas-drawing']").on("shown.bs.tab", drawCanvas);
   
 
-  /* Set event handlers for the SVG drawing pan/zoom/rest buttons */
+  /* Set event handlers for the SVG drawing pan/zoom/reset buttons */
   $("#btn-svg-pan-left").click(svgPanLeft);
   $("#btn-svg-pan-right").click(svgPanRight);
   $("#btn-svg-pan-up").click(svgPanUp);
@@ -24,7 +29,6 @@ $(function() {
   $("#btn-svg-zoom-in").click(svgZoomIn);
   $("#btn-svg-zoom-out").click(svgZoomOut);
   $("#btn-svg-reset").click(svgReset);
-  
 
 
   /* Was hoping I would get a 'shown.bs.tab' event on page load for the 

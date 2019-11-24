@@ -1,14 +1,17 @@
 /* ============================================================
-    This JavaScript is for the my-favorite-sake page
+    This JavaScript is for the my-favorite-sake.php page
 ============================================================ */
 
 
 
-/* This function fires when the page is loaded. It merely
-   gets the list of sake from the server and creates buttons
-   for each of the sake. 
+/* This function fires when the page is loaded. 
   ------------------------------------------------------------ */
 $(function() {
+
+  /* set the navbar item for the Home page to active */
+  $("#nav-link-featured").addClass("active");
+  $("#nav-dropdown-my-favorite-sake").addClass("active");
+
 
   /* enable Bootstrap popovers */
   $(document).ready(function(){
