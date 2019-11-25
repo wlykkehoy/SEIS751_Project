@@ -175,7 +175,7 @@
         rendered when the modal dialog is popped-up
      ============================================================ -->
     <div class="modal fade" id="rice-prod-modal" tabindex="-1" role="dialog">
-      <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-dialog modal-md modal-dialog-centered">
         <div class="modal-content">
           <div class="modal-header">
             <h5 class="modal-title" id="rice-prod-modal-label">10-Year Sake Rice Production</h5>
@@ -183,7 +183,7 @@
               <span aria-hidden="true">&times;</span>
             </button>
           </div>
-          <div class="modal-body">
+          <div class="modal-body" >
             <div id="rice-prod-modal_chart_div"></div>
           </div>
           <div class="modal-footer">

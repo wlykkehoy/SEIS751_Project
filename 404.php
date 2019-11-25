@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="css/main.css">
   </head>
     
-  <body id="page-home">
+  <body id="page-404">
     <div class="container-fluid my-page-wrapper">   <!-- wraps the entire page contents -->
 
       <!-- ===========================================================
@@ -33,7 +33,7 @@
         ------------------------------------------------------------ -->
         <nav>
           <ol class="breadcrumb">
-            <li class="breadcrumb-item active">Home</li>
+            <li class="breadcrumb-item active">404 - Page Not Found</li>
           </ol>
         </nav>
       </header>
@@ -46,75 +46,17 @@
           <!-- Page introduction / general info
           ------------------------------------------------------------ -->
           <div class="page-description">
-            <h1>Welcome to my Project</h1>
+            <h1>Page Not Found</h1>
             <p>
-              This site was created as part of the <cite>SEIS751 - Web App Design and Development</cite> 
-              course at the University of St. Thomas.
+              Oops - Looks like you found a broken link!
+            </p>
+            <p>
+              Go, grab yourself a glass of good Sake and try another link.
+            </p>
+            <p>
+              While your're at it, grab me a glass too.
             </p>
           </div>        
-
-          <!-- Cards grouping info about the site's content
-          ------------------------------------------------------------ -->
-          <div class="card-deck">
-            
-            <div class="card">
-              <div class="card-header">Featured</div>
-              <div class="card-body">
-                <p class="card-text">
-                  Curious about Japanes Sake? Find information about:
-                  <li>
-                    <a href="how-sake-is-made.php">How sake is made</a>
-                  </li>
-                  <li>
-                    <a href="sake-breweries.php">Some sake breweries</a>
-                  </li>
-                  <li>
-                    <a href="my-favorite-sake.php">Some of my favorite sake</a>
-                  </li>
-                  <li>
-                    <a href="sake-industry-news.php">Sake industry news</a>
-                  </li>
-                </p>
-              </div>
-            </div>  <!-- end of the card -->
-    
-            <div class="card">
-              <div class="card-header">About This Project</div>
-              <div class="card-body">
-                <p class="card-text">
-                  Explore some artifacts from building this site:
-                  <li>
-                    <a href="content-map.php">Content Map</a>
-                  </li>
-                  <li>
-                    <a href="wireframes.php">Wireframes</a>
-                  </li>
-                  <li>
-                    <a href="project-walkthrough.php">Project Walkthrough</a>
-                  </li>
-                  <li>
-                    <a href="pagespeed-insights.php">PageSpeed Insights</a>
-                  </li>
-                  <li>
-                    <a href="credits-and-resources.php">Credits and Resources</a>
-                  </li>
-                </p>
-              </div>
-            </div>   <!-- end of the card -->
-
-            <div class="card">
-              <div class="card-header">Bonus Items</div>
-              <div class="card-body">
-                <p class="card-text">
-                  What sort of things are in the bonus area? 
-                  I'm not telling!
-                  You’ll just have to <a href="bonus.php">go check them out...</a>
-                </p>
-              </div>
-            </div>  <!-- end of the card -->
-
-          </div>    <!-- end of Cards grouping info about the site's content -->
-
       </main>
 
 
@@ -140,7 +82,6 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
     <!-- My JS - very last -->
-    <script src="js/index.js"></script>
 
   </body>
 </html>

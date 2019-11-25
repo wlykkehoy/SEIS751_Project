@@ -305,9 +305,27 @@
                   </a>
                 </td>
               </tr>
+
+              <tr>
+                <th scope="row">404 Page</th>
+                <td>
+                  <marius-psi mode="desktop" score="22" size="50"></marius-psi>
+                  <br>
+                  <a target="_blank" href="https://developers.google.com/speed/pagespeed/insights/?url=http%3A%2F%2Flinux2.gps.stthomas.edu%2F~lykk3260%2Fproject%2F404.php&tab=desktop">
+                    Run now...
+                  </a>
+                </td>
+                <td>
+                  <marius-psi mode="mobile" score="11" size="50"></marius-psi>
+                  <br>
+                  <a target="_blank" href="https://developers.google.com/speed/pagespeed/insights/?url=http%3A%2F%2Flinux2.gps.stthomas.edu%2F~lykk3260%2Fproject%2F404.php&tab=mobile">
+                    Run now...
+                  </a>
+                </td>
+              </tr>
               
               <tr>
-                <th scope="row">Fake page to show fail status</th>
+                <th scope="row">Fake page to show fail condition</th>
                 <td><marius-psi mode="desktop" score="22" size="50"></marius-psi><br><a href="#">Run now...</a></td>
                 <td><marius-psi mode="mobile" score="11" size="50"></marius-psi><br><a href="#">Run now...</a></td>
               </tr>

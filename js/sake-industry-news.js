@@ -15,6 +15,11 @@ $(function() {
   
   /* load up google charts */
   google.charts.load('current', {packages: ['corechart', 'line']});
+
+  /* Setting an event handler to invoke the dawing function
+     when the modal pop-up has been displayed.
+    ------------------------------------------------------------ */
+  $("#rice-prod-modal").on("shown.bs.modal", drawRiceProdChart);
   
 });
 
@@ -39,6 +44,7 @@ function drawRiceProdChart() {
     ['2019', 42196]
   ]);
 
+/*
   var options = {
     hAxis: {
       title: 'Year',
@@ -62,13 +68,32 @@ function drawRiceProdChart() {
     width: 'auto',
     height: 'auto'
   };
+*/
+  var options = {
+    hAxis: {
+      title: 'Year',
+      textStyle: { 
+        fontSize: 10,
+      }          
+    },
+    vAxis: {
+      title: 'Metric Tons',
+      gridlines: { 
+        count: 4 
+      },
+      viewWindow: {
+        min: 35000,
+        max: 50000
+      },
+      textStyle: { 
+        fontSize: 10,
+      }          
+    },
+    chartArea:{width:'60%'}
+  };
   
 
   var chart = new google.visualization.LineChart(document.getElementById('rice-prod-modal_chart_div'));
   chart.draw(data, options);
 }
 
-/* Setting an event handler to invoke the dawing function
-   when the modal pop-up has been displayed.
-  ------------------------------------------------------------ */
-$("#rice-prod-modal").on("shown.bs.modal", drawRiceProdChart);

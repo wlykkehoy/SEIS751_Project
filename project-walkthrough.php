@@ -57,7 +57,7 @@
         <!-- List of requirements
         ------------------------------------------------------------ -->
         <!-- overall container for the list -->
-        <div class="overflow-auto" id="requirements-list">      
+        <div id="requirements-list">      
           
           <!-- the items of the list -->
           <div class="requirements-list-item" >

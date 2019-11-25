@@ -40,6 +40,7 @@
       <li class="nav-item">
         <a class="nav-link" id="nav-link-contact" href="contact.php">Contact</a>
       </li>
+
     </ul>
   </div>
 </nav>      <!-- end of main navigation bar / menu -->

@@ -142,6 +142,7 @@ body {
 .breadcrumb {
   padding-top: 80px; 
   margin-bottom: 0;
+  border-radius: 0;
   background-color: var(--clr-lt-tan);
 }
 
@@ -187,7 +188,15 @@ main {
   color: white;
   font-size: 1.3rem;
   line-height: 1.5;
+  margin-left: 1rem;
+  margin-right: 1rem;
 }
+
+.page-description p em {
+  font-style: italic;
+  font-weight: bold;
+}
+
 
 
 /* Footer for the page
@@ -445,11 +454,6 @@ footer .footer-copyright {
   border-style: solid;
   border-width: 1px;
   border-color: black;
-/*
-  margin-left: auto;
-  margin-right: auto;
-  */
-  
 }
 
 
@@ -542,6 +546,18 @@ footer .footer-copyright {
   margin-right: auto;
 }
 
+#page-bonus #broken-link {
+  margin-top: 4rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#page-bonus #broken-link img {
+  border-style: solid;
+  border-width: 10px;
+  border-radius: 100px;
+}
+
 
 
 
@@ -549,6 +565,18 @@ footer .footer-copyright {
 /* ============================================================
     SECRET PAGE SPECIFIC ITEMS
 ============================================================ */
+/* None (yet) */
+
+
+
+
+/* ============================================================
+    404 PAGE SPECIFIC ITEMS
+============================================================ */
+/* None (yet) */
+
+
+
 
 
 
@@ -667,8 +695,13 @@ footer .footer-copyright {
   margin-top: .5rem;
 }
 
+#page-project-walkthrough .requirements-list-item:first-child {
+  padding-top: .5rem;
+}
+
 #page-project-walkthrough .requirements-list-item:last-child {
   border-bottom-style: none;
+  padding-bottom: .5rem;
 }
 
 #page-project-walkthrough .list-item-header {
@@ -717,50 +750,70 @@ footer .footer-copyright {
 /* ============================================================
     CREDITS PAGE SPECIFIC ITEMS
 ============================================================ */
+
 #page-credits #credits-list {
   margin-top: 2rem;
   margin-bottom: 2rem;
   margin-left: auto;
   margin-right: auto;
   max-width: 50rem;
-}
-
-#page-credits .media {
   background-color: white;
-  color: black;
-  margin-bottom: 1rem;
-  border-style: solid;
-  border-color: black;
-  border-width: 1px;
   border-radius: 10px;
 }
 
-/* do not want last item to have bottom margin; else get a margin
-   from the item plus container at bottom */
-#page-credits .media:last-child {
-  margin-bottom: 0;
+#page-credits .credits-list-header {
+  background-color: silver;
+  font-family: brush-strokes;
+  font-size: 2rem;
+  text-align: center;
+  padding-top: .5rem;
 }
 
-#page-credits .media .footer {
-  font-size: .75em;
-  font-style: italic;
+#page-credits .credits-list-section:first-child .credits-list-header {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+#page-credits .credits-list-item {
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-bottom-color: silver;
+  margin-left: 1rem;
+  margin-right: 1rem;
   margin-top: .5rem;
-  margin-bottom: .5em;
-  color: red;
 }
 
-#page-credits .media img {
-  margin-left: 5px;
-  margin-top: 5px;
-  margin-bottom: 5px;
-  border-style: solid;
-  border-color: black;
-  border-width: 1px;
-  border-radius: 10px;
+#page-credits .credits-list-item:first-child {
+  padding-top: .5rem;
+}
+
+#page-credits .credits-list-item:last-child {
+  border-bottom-style: none;
+  padding-bottom: .5rem;
+}
+
+#page-credits .credits-list-item-header {
+  font-weight: bold;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-bottom: .5rem;
+}
+
+#page-credits .credits-list-item-detail {
+  margin-left: 6ch;
+  margin-right: 1rem;
+  margin-bottom: .5rem;
+}
+
+#page-credits .credits-list-item-footer {
+  margin-left: 10ch;
+  margin-right: 1rem;
+  margin-bottom: .5rem;
+  font-style: italic;
+  font-size: .75rem;
 }
 
 
-  
 
 
 

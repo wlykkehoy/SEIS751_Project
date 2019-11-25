@@ -65,7 +65,7 @@
               <a class="nav-item nav-link active" data-toggle="tab" href="#nav-canvas-drawing" role="tab">Canvas Drawing</a>
               <a class="nav-item nav-link" data-toggle="tab" href="#nav-svg-drawing" role="tab">SVG Drawing</a>
               <a class="nav-item nav-link" data-toggle="tab" href="#nav-secret" role="tab">Secret Page</a>
-              <a class="nav-item nav-link" data-toggle="tab" href="#nav-TBD" role="tab">...TBD...</a>
+              <a class="nav-item nav-link" data-toggle="tab" href="#nav-TBD" role="tab">Broken Link</a>
             </div>
           </nav>
 
@@ -139,7 +139,9 @@
 
             <!-- the fourth tab contents -->
             <div class="tab-pane fade" id="nav-TBD" role="tabpanel" >
-              <p>TBD</p>
+              <div class="row" >
+                <a href="x.php" id="broken-link"><img src="img/broken-link.png" width=250px></a>
+              </div>
             </div>   <!-- end of the tab -->
 
 
