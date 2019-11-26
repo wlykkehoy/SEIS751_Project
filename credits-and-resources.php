@@ -675,6 +675,27 @@
                 </a>
               </div>
             </div>
+
+
+ 
+            <div class="credits-list-item" >
+              <p class="credits-list-item-header">
+                PageSpeed Insights
+              </p>
+              <p class="credits-list-item-detail">
+                A great online tool for analyzing a web page’s performance, providing an overall 
+                “score”, and making suggestions how to make it faster. Overall scores for each 
+                page on this site may be found on the <a href="pagespeed-insights.php">PageSpeed Insights</a> page.
+              </p>
+              <div class="credits-list-item-footer">
+                <a href="https://developers.google.com/speed/pagespeed/insights/">
+                  Learn more about this resource >>
+                </a>
+              </div>
+            </div>
+
+
+
           </div>     <!-- end of the "Tools" section/category and items -->
 
 

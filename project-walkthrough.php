@@ -284,7 +284,8 @@
               A package.json file for the project
             </p>
             <p class="list-item-detail">
-              <span style="color:red;">NEED TO FILL THIS IN!!!!</span>
+              A <a href="package.json">package.json</a> file was created for the project
+              and is located in the root directory of the project. 
             </p>
           </div>
 
