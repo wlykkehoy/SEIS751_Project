@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang='en'>
   <head>
-    <title>Wade's - SEIS751 Project</title>
+    <title>Wade's SEIS751 Project</title>
     <meta charset="utf-8">
     <meta name="description" content="St. Thomas SEIS751 Project">
     <meta name="keywords" content="SEIS751,sake">
@@ -27,26 +27,7 @@
       <header>
         <!-- Main navigation bar / menu
         ------------------------------------------------------------ -->
-        <nav class="navbar navbar-expand-md fixed-top" id="page-navbar">
-          <a class="navbar-brand" href="index.php">Sake</a>
-          <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#main-navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse justify-content-end" id="main-navigation">
-            <ul class="navbar-nav">
-              
-              <li class="nav-item ">
-                <a class="nav-link" href="index.php">Home <span class="sr-only">(current)</span></a>
-              </li>
-              
-<!-- navbar will be updated from Home when fully fleshed out -->
-              <li class="nav-item">
-                <a class="nav-link" href="#">!! add rest !!</a>
-              </li>
-
-            </ul>
-          </div>
-        </nav>      <!-- end of main navigation bar / menu -->
+        <?php require_once("navbar.php"); ?>
 
         <!-- Breadcrumb
         ------------------------------------------------------------ -->
@@ -69,12 +50,13 @@
         <div class="page-description">
           <h1>Secret Page</h1>
           <p>
-            You have gained access to the secret page!
+            Congratulations - You have gained access to the secret page!!
           </p>
         </div>        
 
         <!-- xxxxxxxxxxxxxxxxxxxxxxxxxx
         ------------------------------------------------------------ -->
+
 
       </main>
 

@@ -1,7 +1,7 @@
 /* ============================================================
     This JavaScript is for the wireframes.php page
 ============================================================ */
-
+"use strict";
 
 
 /* This function fires when the page is loaded. 

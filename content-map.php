@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang='en'>
   <head>
-    <title>Wade's - SEIS751 Project</title>
+    <title>Wade's SEIS751 Project</title>
     <meta charset="utf-8">
     <meta name="description" content="St. Thomas SEIS751 Project">
     <meta name="keywords" content="SEIS751,sake">
@@ -63,7 +63,7 @@
           <!-- An overall container for this section
           ------------------------------------------------------------ -->
           <div class="row" id="content-map-container">
-            <iframe src="pdf/content-map.pdf#toolbar=0" width="600px" height="450px"></iframe>
+            <img src="img/content-map/content-map.webp" class="img-fluid" >
           </div>   <!-- end of the container for this section of the page -->
 
       </main>

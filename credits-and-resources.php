@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang='en'>
   <head>
-    <title>Wade's - SEIS751 Project</title>
+    <title>Wade's SEIS751 Project</title>
     <meta charset="utf-8">
     <meta name="description" content="St. Thomas SEIS751 Project">
     <meta name="keywords" content="SEIS751,sake">
@@ -676,8 +676,6 @@
               </div>
             </div>
 
-
- 
             <div class="credits-list-item" >
               <p class="credits-list-item-header">
                 PageSpeed Insights
@@ -694,13 +692,9 @@
               </div>
             </div>
 
-
-
           </div>     <!-- end of the "Tools" section/category and items -->
 
-
         </div>     <!-- end of overall container for the list -->
-
 
       </main>
 

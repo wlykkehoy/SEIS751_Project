@@ -1,7 +1,7 @@
 /* ============================================================
     This JavaScript is for the sake-industry-news.php page
 ============================================================ */
-
+"use strict";
 
 
 /* After the page loads

@@ -1,7 +1,7 @@
 /* ============================================================
     This JavaScript is for the my-favorite-sake.php page
 ============================================================ */
-
+"use strict";
 
 
 /* This function fires when the page is loaded. 

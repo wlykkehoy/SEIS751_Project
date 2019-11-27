@@ -13,14 +13,25 @@
 
   // not sure if the email service is set up; never get anything through
   mail("wadelykkehoy@gmail.com", "Message from SEIS751 project contact page", $info);
-  
-  echo <<<_END
-  <h3>
-    Thanks $name for the message!
-  </h3>
-  <a href="../contact.php">Back to the contact page</a>
-  <a href="javascript:history.back();">Back to the contact page</a>
-_END
 
+
+  // Pop up a simple page thanking the user for their message
+  echo <<<_END
+    <style>
+      .thanks {
+        font-weight: bold;
+        font-size: 2rem;
+        text-align: center;
+      }
+      .back {
+        font-size: 1.25rem;
+        text-align: center;
+        margin-top: 2rem;
+      }
+    </style>
+    <p class="thanks">Thanks $name for the message!</p>
+    <!-- Note: not using href="javascript:history.back();" here as we want to clear the form -->
+    <p class="back"><a href="../contact.php">Back to the contact page</a></p>
+_END;
 ?>
 

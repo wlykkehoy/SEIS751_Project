@@ -83,30 +83,20 @@ body {
 }
 
 #page-navbar .nav-link:hover {
-/*
-  color: var(--clr-brown);
-*/  
   color: var(--clr-lt-tan);
 }
 
 #page-navbar .nav-link.active:hover {
-/*
-  color: white;
-*/
   color: var(--clr-lt-tan);
 }
 
 /* navbar dropdown items behavior; mirrors main navbar */
-
 #page-navbar .dropdown-item {
   color: white;
 }
 
 #page-navbar .dropdown-item:hover {
   background-color: var(--clr-green);
-/*
-  color: var(--clr-brown);
-*/
   color: var(--clr-lt-tan);
 }
 
@@ -117,16 +107,10 @@ body {
 
 #page-navbar .dropdown-item:focus {
   background-color: var(--clr-green);
-/*
-  color: var(--clr-brown);
-*/
   color: var(--clr-lt-tan);
 }
 
 #page-navbar .dropdown-item:hover {
-/*
-  color: var(--clr-brown);
-*/
   color: var(--clr-lt-tan);
 }
 
@@ -160,14 +144,6 @@ body {
   ------------------------------------------------------------ */
 main {
   min-height: 40rem;
-/*  
-  background-image: linear-gradient(to bottom, rgba(0,0,0,0.7), rgba(0,0,0,0.6)), 
-                    url('../img/sake-barrels.jpg');
-  background-size: cover;
-  background-position: center;
-  height: auto;
-  min-height: 800px;
-*/
 }
 
 .page-description {
@@ -243,12 +219,8 @@ footer .footer-copyright {
     HOME PAGE SPECIFIC ITEMS
 ============================================================ */
 #page-home main {
-/*
-  background-image: linear-gradient(to bottom, rgba(0,0,0,0.7), rgba(0,0,0,0.6)), 
-                    url('../img/sake-barrels.jpg');
-*/              
   background-image: linear-gradient(to bottom, rgba(0,0,0,0.75), rgba(0,0,0,0.8)), 
-                    url('../img/sake-barrels2.jpg');
+                    url('../img/sake-barrels2.webp');
                     
   background-size: cover;
   background-position: center;
@@ -637,9 +609,9 @@ footer .footer-copyright {
   max-width: 50rem;
 }
 
-#page-content-map #content-map-container iframe {
-  margin-left: auto;
-  margin-right: auto;
+#page-content-map #content-map-container img {
+  border-style: solid;
+  border-color: black;
   border-radius: 10px;
 }
 
@@ -659,15 +631,35 @@ footer .footer-copyright {
 }
 
 #page-wireframes #wireframes-list {
-
+  max-width: 30ch;
+  margin-bottom: .5rem;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #page-wireframes #wireframes {
 /* start with 'too short' height; let page render and in JS, set the
-   height to the height of #wireframes-list */
-  height: 100px;       
+   height to the height of #wireframes which is a scrollable area
+   containing the actual wireframes */
+  height: 100px; 
+  
   overflow-y: scroll;
   background-color: white;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#page-wireframes .wireframe-header {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-top: .5rem;
+  margin-bottom: 0;
+}
+
+#page-wireframes .wireframe-image {
+  border-style: solid;
+  border-width: 1px;
+  border-color: black;
 }
 
 
@@ -729,15 +721,25 @@ footer .footer-copyright {
   margin-bottom: 2rem;
   margin-left: auto;
   margin-right: auto;
-  max-width: 50rem;
+  max-width: 40rem;
   background-color: white;
+/*  
   max-height: 30rem;
   overflow-y: auto;
+  */
+border-style: solid;
+border-width: 1px;
+border-color: black;
+border-radius: 10px;
 }
 
 #page-pagespeed-insights #pagespeed-data thead {
   font-style: italic;
   font-size: 1.25rem;
+}
+
+#page-pagespeed-insights #pagespeed-data thead th {
+  border: none;
 }
 
 #page-pagespeed-insights #pagespeed-data td a {

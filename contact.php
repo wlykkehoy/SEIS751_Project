@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang='en'>
   <head>
-    <title>Wade's - SEIS751 Project</title>
+    <title>Wade's SEIS751 Project</title>
     <meta charset="utf-8">
     <meta name="description" content="St. Thomas SEIS751 Project">
     <meta name="keywords" content="SEIS751,sake">
@@ -49,7 +49,7 @@
         <div class="page-description">
           <h1>Contact Me</h1>
           <p>
-            I welcome questions, feedback, general ponderings, and good jokes.
+            I welcome questions, feedback, general ponderings, and bad jokes.
           </p>
           <p>
             Shoot me a line...

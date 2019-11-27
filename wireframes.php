@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang='en'>
   <head>
-    <title>Wade's - SEIS751 Project</title>
+    <title>Wade's SEIS751 Project</title>
     <meta charset="utf-8">
     <meta name="description" content="St. Thomas SEIS751 Project">
     <meta name="keywords" content="SEIS751,sake">
@@ -88,42 +88,45 @@
               <a class="list-group-item list-group-item-action" href="#list-item-12">Contact</a>
 
               <a class="list-group-item list-group-item-action" href="#list-item-13">Secret Page</a>
+
+              <a class="list-group-item list-group-item-action" href="#list-item-14">404 Page</a>
             </div>
 
-            <!-- The PDF for the wireframe of each page
-            ------------------------------------------------------------ -->
             <div data-spy="scroll" data-target="#wireframes-list" data-offset="0" class="col-sm-8" id="wireframes">
-              <h4 id="list-item-1">Page: Home</h4>
-              <iframe src="pdf/wireframe-home.pdf#toolbar=0" width="600px" height="375px"></iframe>
+              <p class="wireframe-header" id="list-item-1">Page: Home</p>
+              <img src="img/wireframes/home.webp" class="img-fluid wireframe-image" >
 
-              <h4 id="list-item-2">Page: How Sake is Made</h4>
-              <iframe src="pdf/wireframe-how-sake-is-made.pdf#toolbar=0" width="600px" height="375px"></iframe>
-              <h4 id="list-item-3">Page: Sake Breweries</h4>
-              <iframe src="pdf/wireframe-sake-breweries.pdf#toolbar=0" width="600px" height="375px"></iframe>
-              <h4 id="list-item-4">Page: My Favorite Sake</h4>
-              <iframe src="pdf/wireframe-my-favorite-sake.pdf#toolbar=0" width="600px" height="375px"></iframe>
-              <h4 id="list-item-5">Page: Sake Industry News</h4>
-              <iframe src="pdf/xxxxxxx.pdf#toolbar=0" width="600px" height="375px"></iframe>
+              <p class="wireframe-header" id="list-item-2">Page: How Sake is Made</p>
+              <img src="img/wireframes/how-sake-is-made.webp" class="img-fluid wireframe-image" >
+              <p class="wireframe-header" id="list-item-3">Page: Sake Breweries</p>
+              <img src="img/wireframes/sake-breweries.webp" class="img-fluid wireframe-image" >
+              <p class="wireframe-header" id="list-item-4">Page: My Favorite Sake</p>
+              <img src="img/wireframes/my-favorite-sake.webp" class="img-fluid wireframe-image" >
+              <p class="wireframe-header" id="list-item-5">Page: Sake Industry News</p>
+              <img src="img/wireframes/sake-industry-news.webp" class="img-fluid wireframe-image" >
 
-              <h4 id="list-item-6">Page: Content Map</h4>
-              <iframe src="pdf/xxxxxxx.pdf#toolbar=0" width="600px" height="375px"></iframe>
-              <h4 id="list-item-7">Page: Wireframes</h4>
-              <iframe src="pdf/xxxxxxx.pdf#toolbar=0" width="600px" height="375px"></iframe>
-              <h4 id="list-item-8">Page: Project Walkthrough</h4>
-              <iframe src="pdf/xxxxxxx.pdf#toolbar=0" width="600px" height="375px"></iframe>
-              <h4 id="list-item-9">Page: PageSpeed Insights</h4>
-              <iframe src="pdf/xxxxxxx.pdf#toolbar=0" width="600px" height="375px"></iframe>
-              <h4 id="list-item-10">Page: Credits and Resources</h4>
-              <iframe src="pdf/xxxxxxx.pdf#toolbar=0" width="600px" height="375px"></iframe>
+              <p class="wireframe-header" id="list-item-6">Page: Content Map</p>
+              <img src="img/wireframes/content-map.webp" class="img-fluid wireframe-image" >
+              <p class="wireframe-header"  id="list-item-7">Page: Wireframes</p>
+              <img src="img/wireframes/wireframes.webp" class="img-fluid wireframe-image" >
+              <p class="wireframe-header"  id="list-item-8">Page: Project Walkthrough</p>
+              <img src="img/wireframes/project-walkthrough.webp" class="img-fluid wireframe-image" >
+              <p class="wireframe-header"  id="list-item-9">Page: PageSpeed Insights</p>
+              <img src="img/wireframes/pagespeed-insights.webp" class="img-fluid wireframe-image" >
+              <p class="wireframe-header"  id="list-item-10">Page: Credits and Resources</p>
+              <img src="img/wireframes/credits-and-resources.webp" class="img-fluid wireframe-image" >
 
-              <h4 id="list-item-11">Page: Bonus</h4>
-              <iframe src="pdf/xxxxxxx.pdf#toolbar=0" width="600px" height="375px"></iframe>
+              <p class="wireframe-header" id="list-item-11">Page: Bonus</p>
+              <img src="img/wireframes/bonus.webp" class="img-fluid wireframe-image" >
 
-              <h4 id="list-item-12">Page: Contact</h4>
-              <iframe src="pdf/xxxxxxx.pdf#toolbar=0" width="600px" height="375px"></iframe>
+              <p class="wireframe-header" id="list-item-12">Page: Contact</p>
+              <img src="img/wireframes/contact.webp" class="img-fluid wireframe-image" >
 
-              <h4 id="list-item-13">Page: Secret Page</h4>
-              <iframe src="pdf/xxxxxxx.pdf#toolbar=0" width="600px" height="375px"></iframe>
+              <p class="wireframe-header" id="list-item-13">Page: Secret Page</p>
+              <img src="img/wireframes/secret-page.webp" class="img-fluid wireframe-image" >
+
+              <p class="wireframe-header" id="list-item-14">Page: 404</p>
+              <img src="img/wireframes/404.webp" class="img-fluid wireframe-image" >
             </div>
 
           </div>   <!-- end of the container for this section of the page -->

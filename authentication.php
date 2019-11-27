@@ -6,7 +6,7 @@
 ============================================================ */
 
   $enteredUserName = htmlspecialchars(trim($_SERVER['PHP_AUTH_USER']));
-  $enteredPassword =  htmlspecialchars(trim($_SERVER['PHP_AUTH_PW']));
+  $enteredPassword = htmlspecialchars(trim($_SERVER['PHP_AUTH_PW']));
 
   if (($enteredUserName == "sake") and ($enteredPassword == "sake")) {
     $validated = true;
@@ -40,7 +40,6 @@
           text-align: center;
           margin-top: 2rem;
         }
-
       </style>
       <p class="error">Please enter your username and password</p>
       <p class="hint">(hint: 'sake' / 'sake')</p>
