@@ -1,0 +1,23 @@
+{
+  "name": "seis751_sake",
+  "version": "1.0.0",
+  "description": "My St Thomas SEIS751 project. Is a website with focus on Japanese Sake.",
+  "main": "index.php",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wlykkehoy/SEIS751_Project.git"
+  },
+  "keywords": [
+    "SEIS751",
+    "sake"
+  ],
+  "author": "Wade Lykkehoy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wlykkehoy/SEIS751_Project/issues"
+  },
+  "homepage": "https://github.com/wlykkehoy/SEIS751_Project#readme"
+}
