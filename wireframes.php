@@ -70,26 +70,26 @@
             <!-- The nav menu listing each page
             ------------------------------------------------------------ -->
             <div id="wireframes-list" class="col-sm-4">
-              <a class="list-group-item list-group-item-action" href="#list-item-1">Home</a>
+              <a class="list-group-item list-group-item-action btn-secondary" href="#list-item-1">Home</a>
 
-              <a class="list-group-item list-group-item-action" href="#list-item-2">How Sake is Made</a>
-              <a class="list-group-item list-group-item-action" href="#list-item-3">Sake Breweries</a>
-              <a class="list-group-item list-group-item-action" href="#list-item-4">My Favorite Sake</a>
-              <a class="list-group-item list-group-item-action" href="#list-item-5">Sake Industry News</a>
+              <a class="list-group-item list-group-item-action btn-secondary" href="#list-item-2">How Sake is Made</a>
+              <a class="list-group-item list-group-item-action btn-secondary" href="#list-item-3">Sake Breweries</a>
+              <a class="list-group-item list-group-item-action btn-secondary" href="#list-item-4">My Favorite Sake</a>
+              <a class="list-group-item list-group-item-action btn-secondary" href="#list-item-5">Sake Industry News</a>
 
-              <a class="list-group-item list-group-item-action" href="#list-item-6">Content Map</a>
-              <a class="list-group-item list-group-item-action" href="#list-item-7">Wireframes</a>
-              <a class="list-group-item list-group-item-action" href="#list-item-8">Project Walkthrough</a>
-              <a class="list-group-item list-group-item-action" href="#list-item-9">PageSpeed Insights</a>
-              <a class="list-group-item list-group-item-action" href="#list-item-10">Credits and Resources</a>
+              <a class="list-group-item list-group-item-action btn-secondary" href="#list-item-6">Content Map</a>
+              <a class="list-group-item list-group-item-action btn-secondary" href="#list-item-7">Wireframes</a>
+              <a class="list-group-item list-group-item-action btn-secondary" href="#list-item-8">Project Walkthrough</a>
+              <a class="list-group-item list-group-item-action btn-secondary" href="#list-item-9">PageSpeed Insights</a>
+              <a class="list-group-item list-group-item-action btn-secondary" href="#list-item-10">Credits and Resources</a>
 
-              <a class="list-group-item list-group-item-action" href="#list-item-11">Bonus</a>
+              <a class="list-group-item list-group-item-action btn-secondary" href="#list-item-11">Bonus</a>
 
-              <a class="list-group-item list-group-item-action" href="#list-item-12">Contact</a>
+              <a class="list-group-item list-group-item-action btn-secondary" href="#list-item-12">Contact</a>
 
-              <a class="list-group-item list-group-item-action" href="#list-item-13">Secret Page</a>
+              <a class="list-group-item list-group-item-action btn-secondary" href="#list-item-13">Secret Page</a>
 
-              <a class="list-group-item list-group-item-action" href="#list-item-14">404 Page</a>
+              <a class="list-group-item list-group-item-action btn-secondary" href="#list-item-14">404 Page</a>
             </div>
 
             <div data-spy="scroll" data-target="#wireframes-list" data-offset="0" class="col-sm-8" id="wireframes">

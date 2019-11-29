@@ -250,6 +250,8 @@ footer .footer-copyright {
 }
 
 
+
+
 /* ============================================================
     HOW SAKE IS MADE PAGE SPECIFIC ITEMS
 ============================================================ */
@@ -380,6 +382,11 @@ footer .footer-copyright {
   border-width: 1px;
   border-radius: 10px;
 }
+
+#page-sake-industry-news .media-body {
+  margin-right: .5rem;
+}
+
 
 /* do not want last item to have bottom margin; else get a margin
    from the item plus container at bottom */
