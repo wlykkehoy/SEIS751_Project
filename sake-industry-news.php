@@ -57,7 +57,7 @@
         ------------------------------------------------------------ -->
         <div id="news-list">
           <div class="media">
-            <img src="img/news-thumbnails/news_009.jpg" class="mr-3" alt="...">
+            <img src="img/news-thumbnails/news_009.jpg" class="mr-3" alt="Image of sake fermeting">
             <div class="media-body">
               <h5 class="mt-0">First batches of 2019 season nearing completion <span class="publish-date">Nov 5, 2019</span></h5>
               The first batches of Sake for the 2019 season are nearly ready for pressing. Head brewer, 
@@ -68,7 +68,7 @@
           </div>
   
           <div class="media">
-            <img src="img/news-thumbnails/news_008.jpg" class="mr-3" alt="...">
+            <img src="img/news-thumbnails/news_008.jpg" class="mr-3" alt="Image of podcast logo">
             <div class="media-body">
               <h5 class="mt-0">First batches of 2019 season nearing completion <span class="publish-date">Oct 14, 2019</span></h5>
               The latest episode of Sake on Air is now available. This episode focuses on koji. What is it? 
@@ -78,7 +78,7 @@
           </div>
   
           <div class="media">
-            <img src="img/news-thumbnails/news_007.jpg" class="mr-3" alt="...">
+            <img src="img/news-thumbnails/news_007.jpg" class="mr-3" alt="Image of person cleaning container">
             <div class="media-body">
               <h5 class="mt-0">Brewing season starts <span class="publish-date">Oct 1, 2019</span></h5>
               Sake breweries across Japan are getting a good scrubbing down and cleaning as the Sake brewing 
@@ -88,7 +88,7 @@
           </div>
   
           <div class="media">
-            <img src="img/news-thumbnails/news_006.jpg" class="mr-3" alt="...">
+            <img src="img/news-thumbnails/news_006.jpg" class="mr-3" alt="Image of rice being bagged">
             <div class="media-body">
               <h5 class="mt-0">Rice harvest complete <span class="publish-date">Sept 30, 2019</span></h5>
               The last of the 2019 rice is now in. Yields varied across Japan, with the total quantity
@@ -102,7 +102,7 @@
           </div>
   
           <div class="media">
-            <img src="img/news-thumbnails/news_005.jpg" class="mr-3" alt="...">
+            <img src="img/news-thumbnails/news_005.jpg" class="mr-3" alt="Image of test tube">
             <div class="media-body">
               <h5 class="mt-0">New yeast strain released <span class="publish-date">Sept 21, 2019</span></h5>
               The Japan Yeast Society has released a new strain just in time for the 2019 sake brewing season. 
@@ -113,7 +113,7 @@
           </div>
   
           <div class="media">
-            <img src="img/news-thumbnails/news_004.jpg" class="mr-3" alt="...">
+            <img src="img/news-thumbnails/news_004.jpg" class="mr-3" alt="Image of rice being harvested">
             <div class="media-body">
               <h5 class="mt-0">Rice harvest is underway <span class="publish-date">Sept 12, 2019</span></h5>
               Rice harvest across Japan has been in full swing for a couple of weeks. Early indications 
@@ -123,7 +123,7 @@
           </div>
   
           <div class="media">
-            <img src="img/news-thumbnails/news_003.jpg" class="mr-3" alt="...">
+            <img src="img/news-thumbnails/news_003.jpg" class="mr-3" alt="Image of sake bottles">
             <div class="media-body">
               <h5 class="mt-0">First of the 2018 sake released <span class="publish-date">Sept 2, 2019</span></h5>
               The first of the 2018 brewing season is now hitting store shelves. Having sampled a view of my 
@@ -134,7 +134,7 @@
           </div>
   
           <div class="media">
-            <img src="img/news-thumbnails/news_002.jpg" class="mr-3" alt="...">
+            <img src="img/news-thumbnails/news_002.jpg" class="mr-3" alt="Image of polished rice grains">
             <div class="media-body">
               <h5 class="mt-0">Sake made from rice milled to 1% seimaibuai <span class="publish-date">Aug 17, 2019</span></h5>
               Sake made from rice milled to 1% seimaibuai - is that even possible? One brewer has done just that. 
@@ -144,7 +144,7 @@
           </div>
   
           <div class="media">
-            <img src="img/news-thumbnails/news_001.jpg" class="mr-3" alt="...">
+            <img src="img/news-thumbnails/news_001.jpg" class="mr-3" alt="Image of sake bottles">
             <div class="media-body">
               <h5 class="mt-0">National New Sake Competition results <span class="publish-date">Aug 5, 2019</span></h5>
               The annual National New Sake Competition was held last week in Tokyo. Of the 857 entries, there 

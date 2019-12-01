@@ -50,7 +50,11 @@
           <h1>Bonus Items</h1>
           <p>
             Here you will find some bonus items.
+          </p>
+          <p>
             Some were requirements of the project.
+          </p>
+          <p>
             Some were just for fun.
           </p>
         </div>        

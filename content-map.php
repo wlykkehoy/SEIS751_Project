@@ -63,7 +63,7 @@
           <!-- An overall container for this section
           ------------------------------------------------------------ -->
           <div class="row" id="content-map-container">
-            <img src="img/content-map/content-map.webp" class="img-fluid" >
+            <img src="img/content-map/content-map.webp" class="img-fluid" alt="Image of the content map" >
           </div>   <!-- end of the container for this section of the page -->
 
       </main>

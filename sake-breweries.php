@@ -75,56 +75,56 @@
             </ol>
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <img src="img/sake-breweries/gekkeikan.jpg" class="d-block  w-100" alt="Gekkeikan Brewery">
+                <img src="img/sake-breweries/gekkeikan.jpg" class="d-block  w-100" alt="Gekkeikan Brewery photo">
                 <div class="carousel-caption d-none d-md-block">
                   <h5>Gekkeikan Brewery</h5>
                   <p>in Kyoto</p>
                 </div>
               </div>
               <div class="carousel-item">
-                <img src="img/sake-breweries/hachinohe.jpg" class="d-block w-100" alt="Hachinohe Brewery">
+                <img src="img/sake-breweries/hachinohe.jpg" class="d-block w-100" alt="Hachinohe Brewery photo">
                 <div class="carousel-caption d-none d-md-block">
                   <h5>Hachinohe Brewery</h5>
                   <p>in Aomori Prefecture</p>
                 </div>
               </div>
               <div class="carousel-item">
-                <img src="img/sake-breweries/ishikawa.jpg" class="d-block w-100" alt="Ishikawa Brewery">
+                <img src="img/sake-breweries/ishikawa.jpg" class="d-block w-100" alt="Ishikawa Brewery photo">
                 <div class="carousel-caption d-none d-md-block">
                   <h5>Ishikawa Brewery</h5>
                   <p>in Tokyo</p>
                 </div>
               </div>
               <div class="carousel-item">
-                <img src="img/sake-breweries/kamoizumi.jpg" class="d-block w-100" alt="Kamoizumi Brewery">
+                <img src="img/sake-breweries/kamoizumi.jpg" class="d-block w-100" alt="Kamoizumi Brewery photo">
                 <div class="carousel-caption d-none d-md-block">
                   <h5>Kamoizumi Brewery</h5>
                   <p>in Hiroshima Prefecture</p>
                 </div>
               </div>
               <div class="carousel-item">
-                <img src="img/sake-breweries/kobeShushinkan.jpg" class="d-block w-100" alt="Shushinkan Brewery">
+                <img src="img/sake-breweries/kobeShushinkan.jpg" class="d-block w-100" alt="Shushinkan Brewery photo">
                 <div class="carousel-caption d-none d-md-block">
                   <h5>Shushinkan Brewery</h5>
                   <p>in Kobe</p>
                 </div>
               </div>
               <div class="carousel-item">
-                <img src="img/sake-breweries/matsuoka.jpg" class="d-block w-100" alt="Matsuoka Brewery">
+                <img src="img/sake-breweries/matsuoka.jpg" class="d-block w-100" alt="Matsuoka Brewery photo">
                 <div class="carousel-caption d-none d-md-block">
                   <h5>Matsuoka Brewery</h5>
                   <p>in Saitama Prefecture</p>
                 </div>
               </div>
               <div class="carousel-item">
-                <img src="img/sake-breweries/ozawa.jpg" class="d-block w-100" alt="Ozawa Brewery">
+                <img src="img/sake-breweries/ozawa.jpg" class="d-block w-100" alt="Ozawa Brewery photo">
                 <div class="carousel-caption d-none d-md-block">
                   <h5>Ozawa Brewery</h5>
                   <p>in Tokyo</p>
                 </div>
               </div>
               <div class="carousel-item">
-                <img src="img/sake-breweries/suehiro.jpg" class="d-block w-100" alt="Suehiro Brewery">
+                <img src="img/sake-breweries/suehiro.jpg" class="d-block w-100" alt="Suehiro Brewery photo">
                 <div class="carousel-caption d-none d-md-block">
                   <h5>Suehiro Brewery</h5>
                   <p>in Fukushima Prefecture</p>

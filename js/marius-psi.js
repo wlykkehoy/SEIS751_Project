@@ -45,19 +45,9 @@ class MariusPSI extends HTMLElement {
     // determine if we have a thumbs-up or thumbs-down situation
     var thumbsUp;
     if (mode == "desktop") {
-      if (score >= 80) {
-        thumbsUp = true;
-      }
-      else {
-        thumbsUp = false;
-      }
+      thumbsUp = (score >=80) ? true : false;
     } else {  /* mode == "mobile" */
-      if (score >= 75) {
-        thumbsUp = true;
-      }
-      else {
-        thumbsUp = false;
-      }
+      thumbsUp = (score >=75) ? true : false;
     }
   
 

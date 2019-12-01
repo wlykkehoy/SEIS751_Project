@@ -47,8 +47,10 @@
           ------------------------------------------------------------ -->
           <div class="page-description">
             <h1>Page Not Found</h1>
-            <p>
-              Oops - Looks like you found a broken link!
+            <p class="oops">
+              <em><strong>Oops!</strong></em> 
+            </p>
+            <p>Looks like you found a broken link!
             </p>
             <p>
               Go, grab yourself a glass of good Sake and try another link.

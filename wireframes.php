@@ -94,39 +94,39 @@
 
             <div data-spy="scroll" data-target="#wireframes-list" data-offset="0" class="col-sm-8" id="wireframes">
               <p class="wireframe-header" id="list-item-1">Page: Home</p>
-              <img src="img/wireframes/home.webp" class="img-fluid wireframe-image" >
+              <img src="img/wireframes/home.webp" class="img-fluid wireframe-image" alt="Wireframe of home page">
 
               <p class="wireframe-header" id="list-item-2">Page: How Sake is Made</p>
-              <img src="img/wireframes/how-sake-is-made.webp" class="img-fluid wireframe-image" >
+              <img src="img/wireframes/how-sake-is-made.webp" class="img-fluid wireframe-image" alt="Wireframe of page describing how sake is made">
               <p class="wireframe-header" id="list-item-3">Page: Sake Breweries</p>
-              <img src="img/wireframes/sake-breweries.webp" class="img-fluid wireframe-image" >
+              <img src="img/wireframes/sake-breweries.webp" class="img-fluid wireframe-image" alt="Wireframe of page with sake brewery photos">
               <p class="wireframe-header" id="list-item-4">Page: My Favorite Sake</p>
-              <img src="img/wireframes/my-favorite-sake.webp" class="img-fluid wireframe-image" >
+              <img src="img/wireframes/my-favorite-sake.webp" class="img-fluid wireframe-image" alt="Wireframe of page listing my favorite sake">
               <p class="wireframe-header" id="list-item-5">Page: Sake Industry News</p>
-              <img src="img/wireframes/sake-industry-news.webp" class="img-fluid wireframe-image" >
+              <img src="img/wireframes/sake-industry-news.webp" class="img-fluid wireframe-image" alt="Wireframe of page with sake industry news">
 
               <p class="wireframe-header" id="list-item-6">Page: Content Map</p>
-              <img src="img/wireframes/content-map.webp" class="img-fluid wireframe-image" >
+              <img src="img/wireframes/content-map.webp" class="img-fluid wireframe-image" alt="wireframe of page showing the content map">
               <p class="wireframe-header"  id="list-item-7">Page: Wireframes</p>
-              <img src="img/wireframes/wireframes.webp" class="img-fluid wireframe-image" >
+              <img src="img/wireframes/wireframes.webp" class="img-fluid wireframe-image" alt="Wireframe of page with wireframes; this page">
               <p class="wireframe-header"  id="list-item-8">Page: Project Walkthrough</p>
-              <img src="img/wireframes/project-walkthrough.webp" class="img-fluid wireframe-image" >
+              <img src="img/wireframes/project-walkthrough.webp" class="img-fluid wireframe-image" alt="Wireframe of page with the project walkthrough">
               <p class="wireframe-header"  id="list-item-9">Page: PageSpeed Insights</p>
-              <img src="img/wireframes/pagespeed-insights.webp" class="img-fluid wireframe-image" >
+              <img src="img/wireframes/pagespeed-insights.webp" class="img-fluid wireframe-image" alt="Wireframe of page with PageSpeed Insights scores">
               <p class="wireframe-header"  id="list-item-10">Page: Credits and Resources</p>
-              <img src="img/wireframes/credits-and-resources.webp" class="img-fluid wireframe-image" >
+              <img src="img/wireframes/credits-and-resources.webp" class="img-fluid wireframe-image" atl="Wireframe of page with list of credits">
 
               <p class="wireframe-header" id="list-item-11">Page: Bonus</p>
-              <img src="img/wireframes/bonus.webp" class="img-fluid wireframe-image" >
+              <img src="img/wireframes/bonus.webp" class="img-fluid wireframe-image" alt="Wireframe for the bonus page">
 
               <p class="wireframe-header" id="list-item-12">Page: Contact</p>
-              <img src="img/wireframes/contact.webp" class="img-fluid wireframe-image" >
+              <img src="img/wireframes/contact.webp" class="img-fluid wireframe-image" alt="Wireframe for the contact page">
 
               <p class="wireframe-header" id="list-item-13">Page: Secret Page</p>
-              <img src="img/wireframes/secret-page.webp" class="img-fluid wireframe-image" >
+              <img src="img/wireframes/secret-page.webp" class="img-fluid wireframe-image" alt="Wireframe for the secret page">
 
               <p class="wireframe-header" id="list-item-14">Page: 404</p>
-              <img src="img/wireframes/404.webp" class="img-fluid wireframe-image" >
+              <img src="img/wireframes/404.webp" class="img-fluid wireframe-image" alt="Wireframe for the custom 404 page">
             </div>
 
           </div>   <!-- end of the container for this section of the page -->

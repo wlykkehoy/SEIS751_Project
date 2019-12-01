@@ -151,7 +151,7 @@ main {
   padding-top: 1rem;      /* have to use padding here else get a narrow back bar across top; <main> does not act like a <div> */
   margin-left: auto;
   margin-right: auto;
-  max-width: 60rem;
+  max-width: 50rem;
 }
 
 .page-description h1 {
@@ -552,7 +552,9 @@ footer .footer-copyright {
 /* ============================================================
     404 PAGE SPECIFIC ITEMS
 ============================================================ */
-/* None (yet) */
+#page-404 .oops {
+  font-size: 300%;
+}
 
 
 

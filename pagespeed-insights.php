@@ -49,8 +49,12 @@
         <div class="page-description">
           <h1>PageSpeed Insights</h1>
           <p>
-            PageSpeed Insights is a service provided by Google which reports on the performance 
-            of a website page. For this project, we had the following criteria for each page:
+            PageSpeed Insights is a service provided by Google which provides performance
+            data for a website page. 
+            For desktop browsing and mobile browsing, an overall score is provided anlong with 
+            suggestions for improving the page performance.
+          </p>
+          <p>For this project, we had the following score criteria for each page:
             <br>
             Desktop: 80 or better
             <br>
