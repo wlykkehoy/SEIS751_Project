@@ -144,7 +144,7 @@
             <!-- the fourth tab contents -->
             <div class="tab-pane fade" id="nav-TBD" role="tabpanel" >
               <div class="row" >
-                <a href="x.php" id="broken-link"><img src="img/broken-link.png" width=250px></a>
+                <a href="x.php" id="broken-link"><img src="img/broken-link.png" width=250px class="btn-secondary"></a>
               </div>
             </div>   <!-- end of the tab -->
 

@@ -127,6 +127,21 @@
                 </a>
               </div>
             </div>
+
+            <div class="credits-list-item" >
+              <p class="credits-list-item-header">
+                tenor
+              </p>
+              <p class="credits-list-item-detail">
+                A company entirely focused on communicating via GIFs. Now owned by Google. 
+                This is where I found the dancing alien GIF featured on the “secret” page. 
+              </p>
+              <div class="credits-list-item-footer">
+                <a href="https://tenor.com">
+                  Learn more about this resource >>
+                </a>
+              </div>
+            </div>
           </div>   <!-- end of the "Content" section/category and items  --> 
 
           <!-- the "Tutorials and References" section/category and items  -->

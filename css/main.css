@@ -544,7 +544,16 @@ footer .footer-copyright {
 /* ============================================================
     SECRET PAGE SPECIFIC ITEMS
 ============================================================ */
-/* None (yet) */
+#page-secret #dancing-alien {
+  display: block;
+  width: 50%;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 5px;
+}
+
 
 
 

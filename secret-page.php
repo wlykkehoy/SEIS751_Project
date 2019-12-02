@@ -54,9 +54,9 @@
           </p>
         </div>        
 
-        <!-- xxxxxxxxxxxxxxxxxxxxxxxxxx
+        <!-- The page's content; just an animated gif of an alien dancing...
         ------------------------------------------------------------ -->
-
+        <img src="media/dancing-alien.gif" id="dancing-alien">
 
       </main>
 
