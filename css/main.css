@@ -441,20 +441,54 @@ footer .footer-copyright {
     BONUS PAGE SPECIFIC ITEMS
 ============================================================ */
 #page-bonus #tabbed-area {
-  background-color: white;
   margin-top: 2rem;
   margin-bottom: 2rem;
   margin-left: auto;
   margin-right: auto;
   max-width: 50rem;
-  min-height: 45rem;
-  border-radius: 10px;
 }
 
-#page-bonus .nav-item.nav-link {
+#page-bonus #nav-tabContent {
+  background-color: white;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
+  min-height: 40rem;
+}
+
+#page-bonus #tabbed-area .nav-tabs {
+  border: none;
+}
+
+
+#page-bonus #tabbed-area .nav-link {
+ border: none;
+ background-color: silver; 
+ color: white;
+}
+
+#page-bonus #tabbed-area .nav-link:hover {
+ background-color: grey; 
+ color: white;
+}
+
+
+#page-bonus #tabbed-area .nav-link.active {
+ background-color: grey; 
+ color: white;
+}
+
+
+#page-bonus #tabbed-area .nav-link {
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
 }
+
+#page-bonus #tabbed-area .tab-header {
+  text-align: center;
+  padding-top: 0.25rem;
+}
+
 
 #page-bonus #canvas-drawing {
   display: block;
@@ -537,6 +571,40 @@ footer .footer-copyright {
   border-radius: 100px;
 }
 
+#page-bonus #jq-animation-container {
+  border-style: solid;
+  border-width: 1px;
+  border-color: black;
+  height: 600px;
+  width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2rem;
+  color: white;
+  text-align: center;
+}
+
+#page-bonus #jq-animation-text {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-size: 3rem;
+  color: grey;
+  opacity: 0;
+}
+
+#page-bonus #jq-animation-box {
+  margin: 0;
+  padding: 0;
+  background-color: gray;
+  position: relative;
+  visibility: hidden;
+}
+
+#page-bonus #jq-animation-box:hover {
+  background-color: silver;
+}
+
 
 
 
@@ -592,7 +660,6 @@ footer .footer-copyright {
 }
 
 #page-contact .social-media-icon img{
-  height: 48px;
   height: 40px;
 }
 

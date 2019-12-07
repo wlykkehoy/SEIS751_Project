@@ -66,10 +66,11 @@
            <!-- The tabs themselves -->
           <nav>
             <div class="nav nav-tabs" id="nav-tab" role="tablist">
-              <a class="nav-item nav-link active" data-toggle="tab" href="#nav-canvas-drawing" role="tab">Canvas Drawing</a>
-              <a class="nav-item nav-link" data-toggle="tab" href="#nav-svg-drawing" role="tab">SVG Drawing</a>
-              <a class="nav-item nav-link" data-toggle="tab" href="#nav-secret" role="tab">Secret Page</a>
-              <a class="nav-item nav-link" data-toggle="tab" href="#nav-TBD" role="tab">Broken Link</a>
+              <a class="nav-item nav-link  active" data-toggle="tab" href="#nav-canvas-drawing" role="tab">Canvas Drawing</a>
+              <a class="nav-item nav-link " data-toggle="tab" href="#nav-svg-drawing" role="tab">SVG Drawing</a>
+              <a class="nav-item nav-link " data-toggle="tab" href="#nav-secret" role="tab">Secret Page</a>
+              <a class="nav-item nav-link " data-toggle="tab" href="#nav-broken-link" role="tab">Broken Link</a>
+              <a class="nav-item nav-link " data-toggle="tab" href="#nav-jq-animation" role="tab">jQuery Animation</a>
             </div>
           </nav>
 
@@ -78,7 +79,7 @@
   
             <!-- the first tab contents -->
             <div class="tab-pane fade show active" id="nav-canvas-drawing" role="tabpanel">
-              <h5 class="pane-header">A simple 2D drawing using canvas</h5>
+              <h5 class="tab-header">A simple 2D drawing using canvas</h5>
               <p>
                 Creating drawings this way is very tedious (this one required ~100 lines of JavaScript). 
                 A technique I eventually stumbled on which worked well for me was to initially not worry 
@@ -101,7 +102,7 @@
             
             <!-- the second tab contents -->
             <div class="tab-pane fade" id="nav-svg-drawing" role="tabpanel" >
-              <h5 class="pane-header">A simple SVG drawing</h5>
+              <h5 class="tab-header">A simple SVG drawing</h5>
               <div class="row">
                 <div class="col-md-2 align-self-center">
                   <button type="button" class="btn btn-secondary btn-sm btn-block" id="btn-svg-pan-up">Pan Up</button>
@@ -142,12 +143,25 @@
             </div>   <!-- end of the tab -->
 
             <!-- the fourth tab contents -->
-            <div class="tab-pane fade" id="nav-TBD" role="tabpanel" >
+            <div class="tab-pane fade" id="nav-broken-link" role="tabpanel" >
               <div class="row" >
                 <a href="x.php" id="broken-link"><img src="img/broken-link.png" width=250px class="btn-secondary"></a>
               </div>
             </div>   <!-- end of the tab -->
 
+            <!-- the fifth tab contents -->
+            <div class="tab-pane fade" id="nav-jq-animation" role="tabpanel" >
+              <div class="row" >
+                <div id="jq-animation-container">
+                  <p id="jq-animation-text">
+                    They're here!
+                  </p>
+                  <div id="jq-animation-box">
+                    Click Me!
+                  </div>
+                </div>
+              </div>
+            </div>   <!-- end of the tab -->
 
           </div>   <!-- end of the tabs contents -->
   

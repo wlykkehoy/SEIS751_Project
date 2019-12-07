@@ -34,6 +34,13 @@ $(function() {
   $("#btn-svg-reset").click(svgReset);
 
 
+  /* Set event handler to initialize the jQuery animation stuffs when the tab 
+     is shown and the handler for when the clicks on the box which starts
+     the animation */
+  $("a[href='#nav-jq-animation']").on("shown.bs.tab", initJQAnimation);
+  $("#jq-animation-box").click(doJQAnimation);
+  
+
   /* Was hoping I would get a 'shown.bs.tab' event on page load for the 
      initial tab being displayed; but I don't. So, here we will 'assume'
      the canvas drawing tab is first in the HTML and display it's 
@@ -256,5 +263,73 @@ function drawCanvas() {
 }  
   
   
+function initJQAnimation() {
+
+  var theBox = $("#jq-animation-box");
+  var theContainer = $("#jq-animation-container");
+
+  theBox.css("width", "50px");
+  theBox.css("height", "50px");
+  theBox.css("border-radius", "0px");
+
+  var leftCoord = (theContainer.width() / 2);
+  leftCoord -= theBox.width() / 2;
+  theBox.css("left", (Math.round(leftCoord).toString() + "px")); 
+
+  var topCoord = theContainer.height() - $("#jq-animation-text").height();
+  topCoord -= theBox.height();
+  theBox.css("top", (Math.round(topCoord).toString() + "px"));
+
+  theBox.css("visibility", "visible"); 
+
+  theBox.html("Click Me!");
+
+}
 
 
+        
+function doJQAnimation() {
+
+  $(this).html("");
+
+  var containerWidth  = $("#jq-animation-container").width();
+  var containerHeight = $("#jq-animation-container").height() - $("#jq-animation-text").height();
+  
+  var leftPos = [];
+  var topPos  = [];
+  
+  leftPos.push(Math.round(containerWidth  *  0.10).toString() + "px");
+  topPos.push( Math.round(containerHeight * -0.10).toString() + "px");
+
+  leftPos.push(Math.round(containerWidth  *  0.05).toString() + "px");
+  topPos.push( Math.round(containerHeight *  0.75).toString() + "px");
+
+  leftPos.push(Math.round(containerWidth  *  0.70).toString() + "px");
+  topPos.push( Math.round(containerHeight *  0.15).toString() + "px");
+
+  leftPos.push(Math.round(containerWidth  *  0.70).toString() + "px");
+  topPos.push( Math.round(containerHeight *  0.90).toString() + "px");
+
+  leftPos.push(Math.round(containerWidth  *  0.05).toString() + "px");
+  topPos.push( Math.round(containerHeight *  0.90).toString() + "px");
+
+  leftPos.push(Math.round(containerWidth  *  0.66).toString() + "px");
+  topPos.push("-1000px");
+
+  $(this).animate({top: "-=100"}, 1000)
+         .animate({width: 100, left: "-=25", height: 15}, 1000)
+         .animate({borderRadius: "50%"}, 1000)
+         .animate({left: leftPos[0], top: topPos[0]}, 1000)
+         .animate({left: leftPos[1], top: topPos[1]}, 1000)
+         .animate({left: leftPos[2], top: topPos[2]}, 250)
+         .animate({left: leftPos[3], top: topPos[3]}, 250)
+         .animate({left: leftPos[4], top: topPos[4]}, 4000)
+         .animate({left: leftPos[5], top: topPos[5]}, 250, jQAnimationDoneFn);
+
+}
+
+      
+function jQAnimationDoneFn() {
+  $("#jq-animation-text").animate({opacity: 1}, 3000)
+                         .animate({opacity: 0}, 250, initJQAnimation);
+}
