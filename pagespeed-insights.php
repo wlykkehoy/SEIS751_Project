@@ -266,7 +266,7 @@
                   </a>
                 </td>
                 <td>
-                  <marius-psi mode="mobile" score="100" size="50"></marius-psi>
+                  <marius-psi mode="mobile" score="99" size="50"></marius-psi>
                   <br>
                   <a target="_blank" href="https://developers.google.com/speed/pagespeed/insights/?url=http%3A%2F%2Flinux2.gps.stthomas.edu%2F~lykk3260%2Fproject%2Fbonus.php&tab=mobile">
                     Run now...
@@ -329,7 +329,7 @@
               </tr>
               
               <tr>
-                <th scope="row">ford.com (to show fail condition <br> for &lt;marius-psi&gt;)</th>
+                <th scope="row">ford.com <br> (to show fail condition for &lt;marius-psi&gt;)</th>
                 <td>
                   <marius-psi mode="desktop" score="58" size="50"></marius-psi>
                   <br>

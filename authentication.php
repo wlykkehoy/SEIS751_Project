@@ -19,8 +19,6 @@
     header('HTTP/1.0 401 Unauthorized');
     
     // User only sees the following if they click 'Cancel'
-    // Note we can echo back as elaborate HTML as we like,
-    // even do an include/require of a page.
     echo <<<_END
       <style>
         .error {
@@ -48,7 +46,11 @@ _END;
     exit();
   }
   
-  // Only get to here if the user is validated
+  // Only get to here if the user is validated; forward on to the secret-page
+  // I know this is not very secure as you can directly access the secret page
+  // directly anyways. However when I tried putting this code into the secret
+  // page, PageSpeed Insights would not work. It is more important in this
+  // project for that to work vs being super-secure.
   header("location:secret-page.php");
 
 ?>

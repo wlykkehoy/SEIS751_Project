@@ -296,6 +296,25 @@ footer .footer-copyright {
   overflow-y: auto;
 }
 
+#page-my-favorite-sake button.list-group-item:hover {
+  background-color: #fafafa;
+  border: solid 1px black;
+}
+
+#page-my-favorite-sake button.list-group-item:active {
+  background-color: #545B62;
+  color: white;
+  border-color: #545B62;
+}
+
+#page-my-favorite-sake button.list-group-item.active {
+  background-color: #545B62;
+  color: white;
+  border-color: #545B62;
+}
+
+
+
 /* Note on flex basis for the labels and detail. We are doing some
    manual control, giving more room to the detail when the window width
    increases and not to the labels (they don't benefit from additional 
@@ -440,6 +459,9 @@ footer .footer-copyright {
 /* ============================================================
     BONUS PAGE SPECIFIC ITEMS
 ============================================================ */
+
+/* The tabs and tabbed content display area
+  ------------------------------------------------------------ */
 #page-bonus #tabbed-area {
   margin-top: 2rem;
   margin-bottom: 2rem;
@@ -453,18 +475,19 @@ footer .footer-copyright {
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
   border-top-right-radius: 10px;
-  min-height: 40rem;
+  min-height: 30rem;
 }
 
 #page-bonus #tabbed-area .nav-tabs {
   border: none;
 }
 
-
 #page-bonus #tabbed-area .nav-link {
- border: none;
- background-color: silver; 
- color: white;
+  border: none;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  background-color: silver; 
+  color: white;
 }
 
 #page-bonus #tabbed-area .nav-link:hover {
@@ -472,40 +495,9 @@ footer .footer-copyright {
  color: white;
 }
 
-
 #page-bonus #tabbed-area .nav-link.active {
  background-color: grey; 
  color: white;
-}
-
-
-#page-bonus #tabbed-area .nav-link {
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-}
-
-#page-bonus #tabbed-area .tab-header {
-  text-align: center;
-  padding-top: 0.25rem;
-}
-
-
-#page-bonus #canvas-drawing {
-  display: block;
-  border-style: solid;
-  border-width: 1px;
-  border-color: black;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-#page-bonus #svg-drawing {
-  display: block;
-  border-style: solid;
-  border-width: 1px;
-  border-color: black;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 #page-bonus .tab-pane {
@@ -522,11 +514,42 @@ footer .footer-copyright {
   line-height: 120%;
 }  
 
-#page-bonus .tab-content code {
+
+
+/* Canvas drawing specific items
+  ------------------------------------------------------------ */
+#page-bonus #nav-canvas-drawing p {
+  padding-top: .5rem;
+}
+
+#page-bonus #nav-canvas-drawing code {
   color: slategray;
   display: inline-block;
   line-height: normal;
 }  
+
+#page-bonus #canvas-drawing {
+  display: block;
+  border-style: solid;
+  border-width: 1px;
+  border-color: black;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+/* SVG drawing specific items
+  ------------------------------------------------------------ */
+#page-bonus #svg-drawing {
+  display: block;
+  border-style: solid;
+  border-width: 1px;
+  border-color: black;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
 
 #page-bonus #btn-svg-pan-up,
 #page-bonus #btn-svg-pan-down,
@@ -538,6 +561,10 @@ footer .footer-copyright {
   max-width: 12ch;
   margin-left: auto;
   margin-right: auto;
+}
+
+#page-bonus #btn-svg-pan-up {
+  margin-top: 1rem;
 }
 
 #page-bonus #btn-svg-pan-left {
@@ -553,12 +580,18 @@ footer .footer-copyright {
   margin-bottom: 1rem;
 }
 
+
+/* Secret page specific items
+  ------------------------------------------------------------ */
 #page-bonus #btn-access-secret-page {
   margin-top: 4rem;
   margin-left: auto;
   margin-right: auto;
 }
 
+
+/* Broken link specific items
+  ------------------------------------------------------------ */
 #page-bonus #broken-link {
   margin-top: 4rem;
   margin-left: auto;
@@ -571,15 +604,19 @@ footer .footer-copyright {
   border-radius: 100px;
 }
 
+
+/* jQuery animation specific items
+  ------------------------------------------------------------ */
 #page-bonus #jq-animation-container {
   border-style: solid;
   border-width: 1px;
   border-color: black;
-  height: 600px;
-  width: 600px;
+  height: 500px;
+  width: 500px;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 2rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
   color: white;
   text-align: center;
 }
@@ -608,13 +645,12 @@ footer .footer-copyright {
 
 
 
-
 /* ============================================================
     SECRET PAGE SPECIFIC ITEMS
 ============================================================ */
 #page-secret #dancing-alien {
   display: block;
-  width: 50%;
+  height: 350px;
   margin-top: 2rem;
   margin-bottom: 2rem;
   margin-left: auto;

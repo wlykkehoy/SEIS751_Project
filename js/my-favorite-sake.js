@@ -39,12 +39,16 @@ $(function() {
   
  
 /* This is the event handler for when an individual sake's
-   button is clicked. It retrieves the details from the
+   button is clicked. It marks the selected item with class "active"
+   so the CSS can do it's thing and retrieves the details from the
    server and populates the fields (elements) on screen.
   ------------------------------------------------------------ */
 function displaySakeDetail(event) {
 
   event.preventDefault(); 
+
+  $("#page-my-favorite-sake button.list-group-item").removeClass("active");
+  $(event.target).addClass("active");
 
   /* for the selected sake, retrieve info from the server */
   var data = {"sakeNameToLookup": event.target.innerHTML};

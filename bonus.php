@@ -79,7 +79,6 @@
   
             <!-- the first tab contents -->
             <div class="tab-pane fade show active" id="nav-canvas-drawing" role="tabpanel">
-              <h5 class="tab-header">A simple 2D drawing using canvas</h5>
               <p>
                 Creating drawings this way is very tedious (this one required ~100 lines of JavaScript). 
                 A technique I eventually stumbled on which worked well for me was to initially not worry 
@@ -102,7 +101,6 @@
             
             <!-- the second tab contents -->
             <div class="tab-pane fade" id="nav-svg-drawing" role="tabpanel" >
-              <h5 class="tab-header">A simple SVG drawing</h5>
               <div class="row">
                 <div class="col-md-2 align-self-center">
                   <button type="button" class="btn btn-secondary btn-sm btn-block" id="btn-svg-pan-up">Pan Up</button>
@@ -116,7 +114,7 @@
                 <div class="col-md-10 ">
                   <!-- I originally had the SVG in a separate file and used an <embed>, however
                        I could not used DOM methods to manipulate it; so ended up pasting it in here -->
-                  <svg id="svg-drawing" xmlns="http://www.w3.org/2000/svg" width="600" height="600">
+                  <svg id="svg-drawing" xmlns="http://www.w3.org/2000/svg" width="500" height="500">
                   	<g id="svg-origami-drawing" >
                   		<polyline fill="none" stroke="black" points="58,22 51,70 89,33 67,34 58,22" />
                   		<polyline fill="none" stroke="black" points="67,34 51,70" />
