@@ -844,14 +844,10 @@ footer .footer-copyright {
   margin-right: auto;
   max-width: 40rem;
   background-color: white;
-/*  
-  max-height: 30rem;
-  overflow-y: auto;
-  */
-border-style: solid;
-border-width: 1px;
-border-color: black;
-border-radius: 10px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: black;
+  border-radius: 10px;
 }
 
 #page-pagespeed-insights #pagespeed-data thead {
