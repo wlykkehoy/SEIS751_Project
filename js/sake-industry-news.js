@@ -44,31 +44,6 @@ function drawRiceProdChart() {
     ['2019', 42196]
   ]);
 
-/*
-  var options = {
-    hAxis: {
-      title: 'Year',
-      textStyle: { 
-        fontSize: 10,
-      }          
-    },
-    vAxis: {
-      title: 'Metric Tons',
-      gridlines: { 
-        count: 4 
-      },
-      viewWindow: {
-        min: 35000,
-        max: 50000
-      },
-      textStyle: { 
-        fontSize: 10,
-      }          
-    },
-    width: 'auto',
-    height: 'auto'
-  };
-*/
   var options = {
     hAxis: {
       title: 'Year',

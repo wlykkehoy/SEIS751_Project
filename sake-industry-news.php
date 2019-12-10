@@ -183,7 +183,7 @@
               <span aria-hidden="true">&times;</span>
             </button>
           </div>
-          <div class="modal-body" >
+          <div class="modal-body">
             <div id="rice-prod-modal_chart_div"></div>
           </div>
           <div class="modal-footer">
