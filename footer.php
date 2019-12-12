@@ -9,6 +9,7 @@
       <li><a href="sake-breweries.php">Sake Breweries</a></li>
       <li><a href="my-favorite-sake.php">My Favorite Sake</a></li>
       <li><a href="sake-industry-news.php">Sake Industry News</a></li>
+      <li><a href="bonus.php">Bonus Items</a></li>
     </div>
     <div class="col-md-auto">
       About
@@ -17,9 +18,6 @@
       <li><a href="project-walkthrough.php">Project Walkthrough</a></li>
       <li><a href="pagespeed-insights.php">PageSpeed Insights</a></li>
       <li><a href="credits-and-resources.php">Credits and Resources</a></li>
-    </div>
-    <div class="col-md-auto ">
-      <a href="bonus.php">Bonus</a>
     </div>
     <div class="col-md-auto ">
       <a href="contact.php">Contact</a>

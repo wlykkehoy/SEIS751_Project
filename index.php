@@ -62,18 +62,24 @@
               <div class="card-body">
                 <p class="card-text">
                   Curious about Japanes Sake? Find information about:
-                  <li>
+                  <li class="card-list-item">
                     <a href="how-sake-is-made.php">How sake is made</a>
                   </li>
-                  <li>
+                  <li class="card-list-item">
                     <a href="sake-breweries.php">Some sake breweries</a>
                   </li>
-                  <li>
+                  <li class="card-list-item">
                     <a href="my-favorite-sake.php">Some of my favorite sake</a>
                   </li>
-                  <li>
+                  <li class="card-list-item">
                     <a href="sake-industry-news.php">Sake industry news</a>
                   </li>
+                </p>
+                <p>
+                  Explore some bonus items. 
+                  What are they? 
+                  I'm not telling!
+                  You’ll just have to <a href="bonus.php">go check them out...</a>
                 </p>
               </div>
             </div>  <!-- end of the card -->
@@ -83,35 +89,24 @@
               <div class="card-body">
                 <p class="card-text">
                   Explore some artifacts from building this site:
-                  <li>
+                  <li class="card-list-item">
                     <a href="content-map.php">Content Map</a>
                   </li>
-                  <li>
+                  <li class="card-list-item">
                     <a href="wireframes.php">Wireframes</a>
                   </li>
-                  <li>
+                  <li class="card-list-item">
                     <a href="project-walkthrough.php">Project Walkthrough</a>
                   </li>
-                  <li>
+                  <li class="card-list-item">
                     <a href="pagespeed-insights.php">PageSpeed Insights</a>
                   </li>
-                  <li>
+                  <li class="card-list-item">
                     <a href="credits-and-resources.php">Credits and Resources</a>
                   </li>
                 </p>
               </div>
             </div>   <!-- end of the card -->
-
-            <div class="card">
-              <div class="card-header">Bonus Items</div>
-              <div class="card-body">
-                <p class="card-text">
-                  What sort of things are in the bonus area? 
-                  I'm not telling!
-                  You’ll just have to <a href="bonus.php">go check them out...</a>
-                </p>
-              </div>
-            </div>  <!-- end of the card -->
 
           </div>    <!-- end of Cards grouping info about the site's content -->
 

@@ -19,6 +19,7 @@
           <a class="dropdown-item" id="nav-dropdown-sake-breweries" href="sake-breweries.php">Sake Breweries</a>
           <a class="dropdown-item" id="nav-dropdown-my-favorite-sake" href="my-favorite-sake.php">My Favorite Sake</a>
           <a class="dropdown-item" id="nav-dropdown-sake-industry-news" href="sake-industry-news.php">Sake Industry News</a>
+          <a class="dropdown-item" id="nav-dropdown-bonus" href="bonus.php">Bonus Items</a>
         </div>
       </li> 
 
@@ -33,10 +34,6 @@
         </div>
       </li> 
 
-      <li class="nav-item">
-        <a class="nav-link" id="nav-link-bonus" href="bonus.php">Bonus</a>
-      </li>
-      
       <li class="nav-item">
         <a class="nav-link" id="nav-link-contact" href="contact.php">Contact</a>
       </li>

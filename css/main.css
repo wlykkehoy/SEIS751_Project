@@ -226,12 +226,11 @@ footer .footer-copyright {
   background-position: center;
 }
 
-
 #page-home .card-deck {
   margin-top: 2rem;
   margin-right: auto;
   margin-left: auto;
-  max-width: 60rem;
+  max-width: 50rem;
 }
 
 #page-home .card-header {
@@ -240,13 +239,8 @@ footer .footer-copyright {
   font-size: 1.25rem;
 }
 
-#page-home .card-footer .btn {
-  background-color: var(--clr-green);
-  color: white;
-}
-
-#page-home .card-footer a:hover {
-  color: var(--clr-brown);
+#page-home .card-list-item { 
+  margin-left: 1rem;
 }
 
 

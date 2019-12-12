@@ -16,8 +16,9 @@ var svgYPos = 0;
   ------------------------------------------------------------ */
 $(function() {
   
-  /* set the navbar item for the Home page to active */
-  $("#nav-link-bonus").addClass("active");
+  /* set the navbar item for the bonus page to active */
+  $("#nav-link-featured").addClass("active");
+  $("#nav-dropdown-bonus").addClass("active");
 
 
   /* Set event handler to render canvas drawing when it's tab is shown */
